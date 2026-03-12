@@ -123,6 +123,46 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
+
+    /* ===============================
+       FAQ ACCORDION
+    =============================== */
+
+    const faqQuestions = document.querySelectorAll(".faq-question");
+
+    faqQuestions.forEach((question) => {
+
+        question.addEventListener("click", () => {
+
+            const answer = question.nextElementSibling;
+            const icon = question.querySelector(".faq-icon");
+
+            // Close all other FAQs
+            document.querySelectorAll(".faq-answer").forEach(item => {
+                if(item !== answer){
+                    item.classList.add("hidden");
+                }
+            });
+
+            document.querySelectorAll(".faq-icon").forEach(i => {
+                if(i !== icon){
+                    i.textContent = "+";
+                }
+            });
+
+            // Toggle current
+            answer.classList.toggle("hidden");
+
+            if(answer.classList.contains("hidden")){
+                icon.textContent = "+";
+            } else {
+                icon.textContent = "−";
+            }
+
+        });
+
+    });
+
 });
 
 
