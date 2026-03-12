@@ -1,0 +1,213 @@
+ body {
+     font-family: 'Inter', sans-serif;
+ }
+
+ .bg-hero-pattern {
+     background: linear-gradient(135deg, #083459 0%, #0BA5DF 50%, #083459 100%);
+ }
+
+ .glass-card {
+     background: rgba(255, 255, 255, 0.95);
+     backdrop-filter: blur(10px);
+ }
+
+ .timeline-line {
+     background: linear-gradient(to bottom, #FCC312, #0BA5DF, #FCC312);
+ }
+
+ .cta-gradient {
+     background: linear-gradient(to right, #0BA5DF 0%, #083459 100%);
+ }
+
+ .timeline-container::before {
+     content: '';
+     position: absolute;
+     top: 40px;
+     left: 0;
+     right: 0;
+     height: 2px;
+     background: #0BA5DF;
+     opacity: 0.2;
+     z-index: 0;
+ }
+
+ @media (max-width: 1024px) {
+     .timeline-container::before {
+         display: none;
+     }
+ }
+ .icon-tilt{
+display:inline-block;
+animation: randomRotate 1s ease-in-out infinite;
+transform-origin:center;
+}
+
+@keyframes randomRotate{
+
+0%{
+transform: rotate(-4deg);
+}
+
+20%{
+transform: rotate(5deg);
+}
+
+40%{
+transform: rotate(9deg);
+}
+
+60%{
+transform: rotate(6deg);
+}
+
+80%{
+transform: rotate(-1deg);
+}
+
+100%{
+transform: rotate(1deg);
+}
+
+}
+
+  .particle {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: white;
+            border-radius: 50%;
+            opacity: 0;
+            animation: floatDots 10s linear infinite;
+        }
+
+        /* smooth float animation */
+
+        @keyframes floatDots {
+
+            0% {
+                transform: translateY(-40px);
+                opacity: 0;
+            }
+
+            20% {
+                opacity: .3;
+            }
+
+            50% {
+                transform: translateY(40px);
+                opacity: .6;
+            }
+
+            80% {
+                opacity: .3;
+            }
+
+            100% {
+                transform: translateY(-40px);
+                opacity: 0;
+            }
+
+        }
+
+        .particle:nth-child(1) {
+            left: 5%;
+            top: 20%;
+            animation-delay: -1s;
+        }
+
+        .particle:nth-child(2) {
+            left: 10%;
+            top: 60%;
+            animation-delay: -2s;
+        }
+
+        .particle:nth-child(3) {
+            left: 15%;
+            top: 30%;
+            animation-delay: -3s;
+        }
+
+        .particle:nth-child(4) {
+            left: 20%;
+            top: 80%;
+            animation-delay: -4s;
+        }
+
+        .particle:nth-child(5) {
+            left: 30%;
+            top: 40%;
+            animation-delay: -5s;
+        }
+
+        .particle:nth-child(6) {
+            left: 40%;
+            top: 70%;
+            animation-delay: -6s;
+        }
+
+        .particle:nth-child(7) {
+            left: 50%;
+            top: 20%;
+            animation-delay: -7s;
+        }
+
+        .particle:nth-child(8) {
+            left: 60%;
+            top: 50%;
+            animation-delay: -8s;
+        }
+
+        .particle:nth-child(9) {
+            left: 70%;
+            top: 30%;
+            animation-delay: -9s;
+        }
+
+        .particle:nth-child(10) {
+            left: 80%;
+            top: 70%;
+            animation-delay: -10s;
+        }
+
+        .particle:nth-child(11) {
+            left: 85%;
+            top: 40%;
+            animation-delay: -11s;
+        }
+
+        .particle:nth-child(12) {
+            left: 90%;
+            top: 60%;
+            animation-delay: -12s;
+        }
+
+        .particle:nth-child(13) {
+            left: 35%;
+            top: 10%;
+            animation-delay: -13s;
+        }
+
+        .particle:nth-child(14) {
+            left: 65%;
+            top: 85%;
+            animation-delay: -14s;
+        }
+
+        .wave {
+            animation: waveMove 8s linear infinite;
+        }
+
+        .wave2 {
+            animation: waveMove 12s linear infinite reverse;
+            opacity: .6;
+        }
+
+        @keyframes waveMove {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-500px);
+            }
+        }
