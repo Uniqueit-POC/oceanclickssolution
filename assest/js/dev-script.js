@@ -295,3 +295,64 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 // end tavs b2b-lead-generation-services
+
+    /* ===============================
+       auto open model
+    =============================== */
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const modal = document.getElementById('offerModal');
+
+        // 1. Wait 2 seconds (2000 milliseconds)
+        setTimeout(() => {
+            // 2. Make it exist in the layout
+            modal.style.display = 'block';
+            
+            // 3. Small delay to trigger the CSS transition (opacity and transform)
+            setTimeout(() => {
+                modal.style.opacity = '1';
+                modal.style.transform = 'translateY(0)';
+            }, 10);
+        }, 2000);
+    });
+
+    // Function to close the modal
+    function closeModal() {
+        const modal = document.getElementById('offerModal');
+        modal.style.opacity = '0';
+        modal.style.transform = 'translateY(20px)';
+        
+        // Remove from display after animation finishes
+        setTimeout(() => {
+            modal.style.display = 'none';
+        }, 500);
+    }
+
+    // left side chet iocn click open model
+    
+    const card = document.getElementById('quickActionsCard');
+
+    // Auto-open after 3 seconds
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            openCard();
+        }, 3000); 
+    });
+
+    function openCard() {
+        card.style.display = 'block';
+        setTimeout(() => {
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+        }, 10);
+    }
+
+    function toggleQuickActions() {
+        if (card.style.display === 'none' || card.style.opacity === '0') {
+            openCard();
+        } else {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            setTimeout(() => { card.style.display = 'none'; }, 500);
+        }
+    }

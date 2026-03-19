@@ -5216,7 +5216,104 @@
     </footer>
     <!-- end Footer -->
 
+<div id="quickActionsContainer" class="fixed bottom-[15%] left-8 z-50 hidden lg:block floating-container">
+    
+    <div id="quickActionsCard" 
+         class="bg-white rounded-2xl shadow-2xl p-6 mb-4 w-80 border-2 border-[#0BA5DF] bright-glow transition-all duration-500 ease-in-out" 
+         style="display: none; opacity: 0; transform: translateY(20px);">
+        
+        <div class="flex justify-between items-start mb-4">
+            <h3 class="font-bold text-[#083459] text-lg">Quick Actions</h3>
+            <button onclick="toggleQuickActions()" class="text-[#455A64] hover:text-[#083459] transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x w-5 h-5"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+            </button>
+        </div>
 
+        <div class="space-y-3">
+            <a href="tel:+1234567890" class="flex items-center gap-3 p-3 rounded-lg bg-gradient-to-r from-[#0BA5DF] to-[#083459] text-white hover:shadow-lg transition-all group">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5 group-hover:rotate-12 transition-transform"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <div><div class="font-semibold">Call Now</div><div class="text-xs opacity-90">Speak with an expert</div></div>
+            </a>
+            <a href="#" class="flex items-center gap-3 p-3 rounded-lg bg-[#FCC312] text-[#083459] hover:shadow-lg transition-all group">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5 group-hover:scale-110 transition-transform"><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="M8 2v4"></path><path d="M16 2v4"></path></svg>
+                <div class="text-left"><div class="font-semibold">Book a Demo</div><div class="text-xs opacity-90">See our process live</div></div>
+            </a>
+            <button data-modal="myModal" class="openModalBtn  flex items-center gap-3 p-3 rounded-lg border-2 border-[#0BA5DF] text-[#083459] hover:bg-[#E2F4FB] transition-all w-full group">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5 group-hover:scale-110 transition-transform"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg>
+                <div class="text-left"><div class="font-semibold">Chat with Us</div><div class="text-xs opacity-90">Instant response</div></div>
+            </button>
+        </div>
+    </div>
+
+    <button onclick="toggleQuickActions()" class="w-16 h-16 bg-gradient-to-br from-[#FCC312] to-[#e5af10] rounded-full shadow-2xl flex items-center justify-center group relative">
+        <span class="absolute inline-flex h-full w-full rounded-full bg-[#FCC312] opacity-75 animate-ping"></span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle w-7 h-7 text-[#083459] relative z-10"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg>
+        <span class="absolute -top-1 -right-1 w-5 h-5 bg-red-500 rounded-full flex items-center justify-center text-white text-xs font-bold">1</span>
+    </button>
+</div>
+
+<div id="myModal" class="modal hidden fixed inset-0 z-50">
+      <div class="modalBackdrop fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 ">
+
+         <div class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="sticky top-0 bg-gradient-to-r from-[#083459] to-[#0BA5DF] text-white p-6 rounded-t-2xl">
+               <div class="flex justify-between items-start">
+                  <div>
+                     <h2 class="text-2xl md:text-3xl font-bold mb-2">Request Sample Demo</h2>
+                     <p class="text-white/90">Get a sample credit report audit to see our process in action.</p>
+                  </div>
+                  <button class="text-white hover:bg-white/20 p-2 rounded-lg transition-colors">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-x w-6 h-6">
+                        <path d="M18 6 6 18"></path>
+                        <path d="m6 6 12 12"></path>
+                     </svg>
+                  </button>
+               </div>
+            </div>
+            <form class="p-6 space-y-4">
+               <div class="grid md:grid-cols-2 gap-4">
+                  <div><label for="name" class="block text-sm font-semibold text-[#083459] mb-2">Full Name <span
+                           class="text-red-500">*</span></label><input type="text" id="name" name="name" required=""
+                        class="w-full px-4 py-3 border border-[#B0BEC5] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0BA5DF] focus:border-transparent"
+                        placeholder="John Doe" value=""></div>
+                  <div><label for="email" class="block text-sm font-semibold text-[#083459] mb-2">Email Address <span
+                           class="text-red-500">*</span></label><input type="email" id="email" name="email" required=""
+                        class="w-full px-4 py-3 border border-[#B0BEC5] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0BA5DF] focus:border-transparent"
+                        placeholder="john@company.com" value=""></div>
+               </div>
+               <div class="grid md:grid-cols-2 gap-4">
+                  <div><label for="phone" class="block text-sm font-semibold text-[#083459] mb-2">Phone
+                        Number</label><input type="tel" id="phone" name="phone"
+                        class="w-full px-4 py-3 border border-[#B0BEC5] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0BA5DF] focus:border-transparent"
+                        placeholder="(555) 123-4567" value=""></div>
+                  <div><label for="company" class="block text-sm font-semibold text-[#083459] mb-2">Company
+                        Name</label><input type="text" id="company" name="company"
+                        class="w-full px-4 py-3 border border-[#B0BEC5] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0BA5DF] focus:border-transparent"
+                        placeholder="Your Company" value=""></div>
+               </div>
+               <div><label for="message"
+                     class="block text-sm font-semibold text-[#083459] mb-2">Message</label><textarea id="message"
+                     name="message" rows="4"
+                     class="w-full px-4 py-3 border border-[#B0BEC5] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0BA5DF] focus:border-transparent resize-none"
+                     placeholder="Tell us about your needs..."></textarea></div>
+               <div class="flex items-start gap-3 p-4 bg-[#E2F4FB] rounded-lg"><input type="checkbox" id="consent"
+                     name="consent" required=""
+                     class="mt-1 w-4 h-4 text-[#0BA5DF] border-[#B0BEC5] rounded focus:ring-[#0BA5DF]"><label
+                     for="consent" class="text-sm text-[#455A64]">I consent to Ocean Clicks storing my information and
+                     contacting me about their services. I understand that I can opt out at any time. <span
+                        class="text-red-500">*</span></label></div>
+               <button type="submit"
+                  class="w-full bg-gradient-to-r from-[#0BA5DF] to-[#083459] text-white py-4 rounded-lg font-bold text-sm md:text-lg hover:shadow-xl transition-all disabled:opacity-50 disabled:cursor-not-allowed">Request
+                  Sample</button>
+               <p class="text-xs text-center text-[#455A64] mt-4">Your information is secure and will never be shared
+                  with third parties. See our <a href="/privacy-policy" class="text-[#0BA5DF] hover:underline">Privacy
+                     Policy</a>.</p>
+            </form>
+         </div>
+      </div>
+   </div>
 
     <script src="./assest/js/dev-script.js"></script>
 </body>
