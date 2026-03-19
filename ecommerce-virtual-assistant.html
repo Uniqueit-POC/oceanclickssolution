@@ -1,0 +1,2416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Clicks Header</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assest/css/dev-style.css">
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Progress Bar -->
+    <div id="scrollProgress"
+        class="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#FCC312] via-[#0BA5DF] to-[#083459] origin-left z-[60] scale-x-0">
+    </div>
+    <div id="floatingButtons"
+        class="hidden lg:flex fixed bottom-8 right-8 z-40 gap-3 transition-all duration-300 opacity-0 translate-y-5">
+
+        <!-- Call Button -->
+        <a href="tel:+1234567890"
+            class="bg-white text-[#083459] p-4 rounded-full shadow-2xl border-2 border-[#0BA5DF] hover:bg-[#E2F4FB] transition-all group"
+            title="Call Us">
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 group-hover:text-[#0BA5DF] transition-colors"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+        </a>
+
+        <!-- Start Free Trial -->
+        <button
+            class="bg-gradient-to-r from-[#FCC312] to-[#e6b010] text-[#083459] px-6 py-4 rounded-full shadow-2xl hover:shadow-3xl transition-all font-bold flex items-center gap-2 group">
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path d="M8 2v4" />
+                <path d="M16 2v4" />
+                <rect width="18" height="18" x="3" y="4" rx="2" />
+                <path d="M3 10h18" />
+            </svg>
+            <span>Start Free Trial</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+            </svg>
+        </button>
+        <!-- Back To Top -->
+        <button id="backToTop"
+            class="bg-[#083459] text-white p-4 rounded-full shadow-2xl hover:bg-[#0BA5DF] transition-all"
+            title="Back to Top">
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 -rotate-90" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+            </svg>
+        </button>
+    </div>
+    <!-- start top header  -->
+    <div class="bg-[#083459] text-white py-2 px-4 md:px-8">
+        <div
+            class="max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-center gap-2 md:gap-0 text-[11px] md:text-sm">
+            <div class="flex items-center gap-4 md:gap-8">
+                <a class="hover:text-[#FCC312] transition-colors font-semibold" href="contact-center-outsourcing.html">Contact Center Outsourcing</a>
+                <a class="hover:text-[#FCC312] transition-colors font-semibold" href="b2b-lead-generation-services.html">Lead Generation Services</a>
+            </div>
+            <div class="flex items-center gap-4 md:gap-6 opacity-90">
+                <a class="hover:text-[#0BA5DF] transition-colors" href="resources.html">Resources</a>
+                <a class="hover:text-[#0BA5DF] transition-colors" href="about.html">About</a>
+                <a class="hover:text-[#0BA5DF] transition-colors" href="articles.html">Articles</a>
+                <a class="hover:text-[#0BA5DF] transition-colors hidden md:inline" href="careers.html">Careers</a>
+                <a class="hover:text-[#0BA5DF] transition-colors" href="contact-center-outsourcing.html">Reach Us</a>
+            </div>
+        </div>
+    </div>
+    <!-- end top header  -->
+
+    <!-- start nav bar  -->
+   <nav class="bg-white border-b border-gray-100 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-[1440px] mx-auto px-4 md:px-8">
+            <div class="flex items-center justify-between h-20 md:h-24">
+
+                <div class="flex items-center flex-shrink-0">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <img src="./assest/img/logo/logo.avif" alt="Ocean Clicks" class="h-10 md:h-12 w-auto">
+                    </a>
+                </div>
+
+                <div class="hidden min-[1240px]:flex items-center gap-2 xl:gap-4">
+
+                    <div class="group relative py-8">
+                        <a class="flex items-center gap-1 text-[#083459] group-hover:text-[#0BA5DF] transition-colors font-bold text-[14px]"
+                            href="credit-repair-outsourcing.html">
+                            Credit Repair Outsourcing
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3"
+                                class="mt-0.5 transition-transform group-hover:rotate-180">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg>
+                        </a>
+                        <div
+                            class="absolute top-full left-0 w-[350px] bg-[#083459] shadow-xl rounded-b-lg border-t-2 border-[#0BA5DF] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60]">
+                            <div class="py-2">
+                                <a href="full-cycle-credit-repair-processing.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Full-Cycle
+                                    Credit Repair Processing</a>
+                                <a href="credit-dispute-outsourcing.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Credit
+                                    Dispute Outsourcing</a>
+                                <a href="credit-report-audit-analysis.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Credit
+                                    Report Audit & Analysis Outsourcing</a>
+                                <a href="fcra-fdcpa-compliance-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">FCRA
+                                    & FDCPA Compliance Support Outsourcing Services</a>
+                                <a href="virtual-assistants-for-credit-repair.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Virtual
+                                    Assistants for Credit Repair Companies</a>
+                                <a href="credit-repair-fulfillment.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Credit
+                                    Repair Fulfillment Services</a>
+                                <a href="automation-workflow-outsourcing.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold">Credit
+                                    Repair Automation & Workflow Outsourcing Services</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group relative py-8">
+                        <a class="flex items-center gap-1 text-[#083459] group-hover:text-[#0BA5DF] transition-colors font-bold text-[14px]"
+                            href="paralegal-legal-support-outsourcing.html">
+                            Legal Process Outsourcing
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3"
+                                class="mt-0.5 transition-transform group-hover:rotate-180">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg>
+                        </a>
+                        <div
+                            class="absolute top-full left-0 w-[320px] bg-[#083459] shadow-xl rounded-b-lg border-t-2 border-[#0BA5DF] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60]">
+                            <div class="py-2">
+                                <a href="personal-injury-case-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Personal
+                                    Injury Case Support</a>
+                                <a href="bankruptcy-petition-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Bankruptcy
+                                    Petition Support</a>
+                                <a href="workers-comp-case-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Workers'
+                                    Compensation Case Support</a>
+                                <a href="identity-theft-case-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Identity
+                                    Theft Case Support</a>
+                                <a href="fcra-litigation-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">FCRA
+                                    Litigation Support</a>
+                                <a href="legal-research-drafting.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Legal
+                                    Research & Drafting</a>
+                                <a href="virtual-paralegal-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold">Virtual
+                                    Paralegal Assistant</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group relative py-8">
+                        <a class="flex items-center gap-1 text-[#083459] group-hover:text-[#0BA5DF] transition-colors font-bold text-[14px]"
+                            href="hire-virtual-assistants.html">
+                            Hire Virtual Assistants
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3"
+                                class="mt-0.5 transition-transform group-hover:rotate-180">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg>
+                        </a>
+                        <div
+                            class="absolute top-full left-0 w-[320px] bg-[#083459] shadow-xl rounded-b-lg border-t-2 border-[#0BA5DF] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60]">
+                            <div class="py-2">
+                                <a href="real-estate-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Real
+                                    Estate Virtual Assistant</a>
+                                <a href="ecommerce-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Ecommerce
+                                    Virtual Assistant</a>
+                                <a href="small-business-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Small
+                                    Business Virtual Assistant</a>
+                                <a href="credit-repair-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Credit
+                                    Repair Virtual Assistant</a>
+                                <a href="startup-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Startup
+                                    Virtual Assistant</a>
+                                <a href="coaches-consultants-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Coaches
+                                    & Consultants Virtual Assistant</a>
+                                <a href="law-firm-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold">Law
+                                    Firm Virtual Assistant</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group relative py-8">
+                        <a class="flex items-center gap-1 text-[#083459] group-hover:text-[#0BA5DF] transition-colors font-bold text-[14px]"
+                            href="property-management-outsourcing.html">
+                            Property Management
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3"
+                                class="mt-0.5 transition-transform group-hover:rotate-180">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg>
+                        </a>
+                        <div
+                            class="absolute top-full right-0 w-[350px] bg-[#083459] shadow-xl rounded-b-lg border-t-2 border-[#0BA5DF] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60]">
+                            <div class="py-2">
+                                <a href="tenant-screening-application-processing.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Tenant
+                                    Screening & Application Processing</a>
+                                <a href="leasing-tenant-placement.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Leasing
+                                    & Tenant Placement Support</a>
+                                <a href="property-maintenance-coordination.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Property
+                                    Maintenance & Coordination Outsourcing</a>
+                                <a href="property-accounting.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Property
+                                    Accounting & Bookkeeping Services</a>
+                                <a href="property-preservation.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Property
+                                    Preservation Processing</a>
+                                <a href="hoa-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">HOA
+                                    & Community Association Support</a>
+                                <a href="str-management.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold">Short-Term
+                                    Rental Management Support</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="bg-[#FCC312] text-[#083459] px-7 py-3 rounded-lg font-bold hover:bg-[#e5af10] transition-all transform hover:scale-105 shadow-md ml-4 whitespace-nowrap"
+                        href="contact.html">
+                        Get Started
+                    </a>
+                </div>
+
+                <div class="min-[1240px]:hidden">
+                    <button id="mobile-menu-open" class="text-[#083459] p-2" aria-label="Toggle menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="4" x2="20" y1="12" y2="12"></line>
+                            <line x1="4" x2="20" y1="6" y2="6"></line>
+                            <line x1="4" x2="20" y1="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <div id="mobile-sidebar"
+        class="fixed inset-y-0 right-0 w-full max-w-[320px] bg-[#083459] z-[100] transform translate-x-full transition-transform duration-300 ease-in-out min-[1240px]:hidden flex flex-col shadow-2xl">
+
+        <div class="flex items-center justify-between p-6 border-b border-white/10 bg-[#062846]">
+            <img src="./assest/img/logo/logo.avif" alt="Logo" class="h-8 brightness-0 invert">
+            <button id="mobile-menu-close" class="text-white p-2 text-3xl leading-none">&times;</button>
+        </div>
+
+        <div class="flex-1 overflow-y-auto py-4 px-6 custom-scrollbar">
+            <div class="space-y-1">
+
+                <div class="border-b border-white/5 py-1">
+                    <div class="flex items-center justify-between">
+                        <a href="credit-repair-outsourcing.html"
+                            class="text-white font-bold text-[15px] py-3 flex-1">Credit Repair Outsourcing</a>
+                        <button class="mobile-chevron-btn p-3 text-[#0BA5DF] transition-transform duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div
+                        class="mobile-dropdown-content hidden flex flex-col gap-4 pl-4 pt-2 pb-6 border-l border-[#0BA5DF]/30 mt-1">
+                        <a href="full-cycle-credit-repair-processing.html" class="text-white/70 text-sm">Full-Cycle
+                            Credit Repair Processing</a>
+                        <a href="credit-dispute-outsourcing.html" class="text-white/70 text-sm">Credit Dispute
+                            Outsourcing</a>
+                        <a href="credit-report-audit-analysis.html" class="text-white/70 text-sm">Credit Report Audit &
+                            Analysis</a>
+                        <a href="fcra-fdcpa-compliance-support.html" class="text-white/70 text-sm">FCRA & FDCPA
+                            Compliance Support</a>
+                        <a href="virtual-assistants-for-credit-repair.html" class="text-white/70 text-sm">VAs for Credit
+                            Repair Companies</a>
+                        <a href="credit-repair-fulfillment.html" class="text-white/70 text-sm">Credit Repair Fulfillment
+                            Services</a>
+                        <a href="automation-workflow-outsourcing.html" class="text-white/70 text-sm">Automation &
+                            Workflow Services</a>
+                    </div>
+                </div>
+
+                <div class="border-b border-white/5 py-1">
+                    <div class="flex items-center justify-between">
+                        <a href="paralegal-legal-support-outsourcing.html"
+                            class="text-white font-bold text-[15px] py-3 flex-1">Legal Process Outsourcing</a>
+                        <button class="mobile-chevron-btn p-3 text-[#0BA5DF] transition-transform duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div
+                        class="mobile-dropdown-content hidden flex flex-col gap-4 pl-4 pt-2 pb-6 border-l border-[#0BA5DF]/30 mt-1">
+                        <a href="personal-injury-case-support.html" class="text-white/70 text-sm">Personal Injury Case
+                            Support</a>
+                        <a href="bankruptcy-petition-support.html" class="text-white/70 text-sm">Bankruptcy Petition
+                            Support</a>
+                        <a href="workers-comp-case-support.html" class="text-white/70 text-sm">Workers' Comp Case
+                            Support</a>
+                        <a href="identity-theft-case-support.html" class="text-white/70 text-sm">Identity Theft Case
+                            Support</a>
+                        <a href="fcra-litigation-support.html" class="text-white/70 text-sm">FCRA Litigation Support</a>
+                        <a href="legal-research-drafting.html" class="text-white/70 text-sm">Legal Research &
+                            Drafting</a>
+                        <a href="virtual-paralegal-assistant.html" class="text-white/70 text-sm">Virtual Paralegal
+                            Assistant</a>
+                    </div>
+                </div>
+
+                <div class="border-b border-white/5 py-1">
+                    <div class="flex items-center justify-between">
+                        <a href="hire-virtual-assistants.html" class="text-white font-bold text-[15px] py-3 flex-1">Hire
+                            Virtual Assistants</a>
+                        <button class="mobile-chevron-btn p-3 text-[#0BA5DF] transition-transform duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div
+                        class="mobile-dropdown-content hidden flex flex-col gap-4 pl-4 pt-2 pb-6 border-l border-[#0BA5DF]/30 mt-1">
+                        <a href="real-estate-virtual-assistant.html" class="text-white/70 text-sm">Real Estate Virtual
+                            Assistant</a>
+                        <a href="ecommerce-virtual-assistant.html" class="text-white/70 text-sm">Ecommerce Virtual
+                            Assistant</a>
+                        <a href="small-business-virtual-assistant.html" class="text-white/70 text-sm">Small Business
+                            Virtual Assistant</a>
+                        <a href="credit-repair-virtual-assistant.html" class="text-white/70 text-sm">Credit Repair
+                            Virtual Assistant</a>
+                        <a href="startup-virtual-assistant.html" class="text-white/70 text-sm">Startup Virtual
+                            Assistant</a>
+                        <a href="coaches-consultants-virtual-assistant.html" class="text-white/70 text-sm">Coaches &
+                            Consultants VA</a>
+                        <a href="law-firm-virtual-assistant.html" class="text-white/70 text-sm">Law Firm Virtual
+                            Assistant</a>
+                    </div>
+                </div>
+
+                <div class="border-b border-white/5 py-1">
+                    <div class="flex items-center justify-between">
+                        <a href="property-management-outsourcing.html"
+                            class="text-white font-bold text-[15px] py-3 flex-1">Property Management</a>
+                        <button class="mobile-chevron-btn p-3 text-[#0BA5DF] transition-transform duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div
+                        class="mobile-dropdown-content hidden flex flex-col gap-4 pl-4 pt-2 pb-6 border-l border-[#0BA5DF]/30 mt-1">
+                        <a href="tenant-screening-application-processing.html" class="text-white/70 text-sm">Tenant
+                            Screening & Application</a>
+                        <a href="leasing-tenant-placement.html" class="text-white/70 text-sm">Leasing & Tenant
+                            Placement</a>
+                        <a href="property-maintenance-coordination.html" class="text-white/70 text-sm">Maintenance &
+                            Coordination</a>
+                        <a href="property-accounting.html" class="text-white/70 text-sm">Accounting & Bookkeeping</a>
+                        <a href="property-preservation.html" class="text-white/70 text-sm">Property Preservation
+                            Processing</a>
+                        <a href="hoa-support.html" class="text-white/70 text-sm">HOA & Community Association</a>
+                        <a href="str-management.html" class="text-white/70 text-sm">Short-Term Rental Management</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-8 mb-12">
+                <a href="contact.html"
+                    class="block w-full bg-[#FCC312] text-[#083459] text-center py-4 rounded-xl font-bold shadow-lg">Get
+                    Started</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobile-overlay"
+        class="fixed inset-0 bg-[#083459]/80 backdrop-blur-sm z-[90] opacity-0 invisible transition-all duration-300 min-[1240px]:hidden">
+    </div>
+    <!-- end nav bar  -->
+
+    <main>
+        <div class="">
+   <section class="relative bg-gradient-to-br from-[#083459] via-[#0BA5DF] to-[#083459] text-white py-10 md:py-20 px-4 sm:px-8 overflow-hidden">
+      <div class="absolute inset-0 opacity-10">
+         <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0px); background-size: 40px 40px;"></div>
+      </div>
+      <div class="max-w-[1440px] mx-auto relative z-10">
+         <div class="max-w-4xl" style="opacity: 1; transform: none;">
+            <div class="inline-block bg-[#FCC312] text-[#083459] px-4 py-2 rounded-full text-sm font-bold mb-6">AMAZON • SHOPIFY • WALMART • ETSY</div>
+            <h1 class="text-3xl md:text-6xl font-bold mb-6 leading-tight">Hire an Ecommerce Virtual Assistant for Your Online Store</h1>
+            <p class="text-lg sm:text-xl mb-8 text-white/90 leading-relaxed max-w-3xl">Grow your online store with a trained Ecommerce Virtual Assistant who manages your listings, orders, customers, and operations. Our ecommerce VAs support Amazon sellers, Shopify brands, Walmart Marketplace stores, Etsy shops, and multi-channel DTC operations across the United States. Whether you're a solo founder or a fast-scaling ecommerce company, a dedicated VA helps streamline your workflows, increase efficiency, and reduce operational load.</p>
+            <div class="flex flex-col sm:flex-row gap-4">
+               <a class="inline-flex items-center justify-center gap-2 bg-[#FCC312] text-[#083459] px-8 py-4 rounded-lg font-bold hover:bg-[#e5af10] transition-all shadow-lg text-base sm:text-lg" href="contact.html" data-discover="true">
+                  Hire an Ecommerce VA Today
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5">
+                     <path d="M5 12h14"></path>
+                     <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+               </a>
+               <a class="inline-flex items-center justify-center gap-2 bg-white text-[#083459] px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-all shadow-lg text-base sm:text-lg" href="contact.html" data-discover="true">Book a Free Consultation</a>
+            </div>
+         </div>
+      </div>
+   </section>
+  <section class="py-10 md:py-20 px-4 sm:px-8 bg-white">
+   <div class="max-w-[1440px] mx-auto">
+      <div class="max-w-4xl mx-auto" style="opacity: 1; transform: none;">
+         <h2 class="text-2xl sm:text-4xl md:text-5xl font-bold text-[#083459] mb-6 text-center">Why Ecommerce Brands Are Relying on Virtual Assistants in 2025</h2>
+         <p class="text-base sm:text-lg text-[#455A64] leading-relaxed mb-8">Ecommerce today moves at a relentless pace. Customers expect instant responses. Marketplaces demand strict compliance. Inventory changes constantly. Orders need constant monitoring. Listings need optimization. And competition is rising daily.</p>
+         <p class="text-base sm:text-lg text-[#455A64] leading-relaxed mb-8">With this growth, ecommerce founders increasingly search for "ecommerce virtual assistant," "amazon VA," "shopify VA," and similar roles — because doing everything alone is simply not sustainable.</p>
+         <p class="text-base sm:text-lg text-[#455A64] leading-relaxed mb-8 font-semibold">An Ecommerce Virtual Assistant enables you to:</p>
+         <div class="grid sm:grid-cols-2 gap-4 mb-8">
+            <div class="flex items-start gap-3" style="opacity: 1; transform: none;">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-6 h-6 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                  <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                  <path d="m9 11 3 3L22 4"></path>
+               </svg>
+               <span class="text-[#455A64]">Keep listings updated across all platforms</span>
+            </div>
+            <div class="flex items-start gap-3" style="opacity: 1; transform: none;">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-6 h-6 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                  <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                  <path d="m9 11 3 3L22 4"></path>
+               </svg>
+               <span class="text-[#455A64]">Process orders faster</span>
+            </div>
+            <div class="flex items-start gap-3" style="opacity: 1; transform: none;">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-6 h-6 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                  <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                  <path d="m9 11 3 3L22 4"></path>
+               </svg>
+               <span class="text-[#455A64]">Manage customer queries</span>
+            </div>
+            <div class="flex items-start gap-3" style="opacity: 1; transform: none;">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-6 h-6 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                  <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                  <path d="m9 11 3 3L22 4"></path>
+               </svg>
+               <span class="text-[#455A64]">Monitor seller metrics</span>
+            </div>
+            <div class="flex items-start gap-3" style="opacity: 1; transform: none;">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-6 h-6 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                  <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                  <path d="m9 11 3 3L22 4"></path>
+               </svg>
+               <span class="text-[#455A64]">Maintain inventory accuracy</span>
+            </div>
+            <div class="flex items-start gap-3" style="opacity: 1; transform: none;">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-6 h-6 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                  <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                  <path d="m9 11 3 3L22 4"></path>
+               </svg>
+               <span class="text-[#455A64]">Improve product visibility</span>
+            </div>
+            <div class="flex items-start gap-3" style="opacity: 1; transform: none;">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-6 h-6 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                  <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                  <path d="m9 11 3 3L22 4"></path>
+               </svg>
+               <span class="text-[#455A64]">Reduce fulfillment errors</span>
+            </div>
+            <div class="flex items-start gap-3" style="opacity: 1; transform: none;">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-6 h-6 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                  <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                  <path d="m9 11 3 3L22 4"></path>
+               </svg>
+               <span class="text-[#455A64]">Focus on scaling the brand</span>
+            </div>
+         </div>
+         <p class="text-base sm:text-lg text-[#455A64] leading-relaxed font-semibold">When your VA manages backend operations, you stay focused on growth, revenue, and product expansion.</p>
+      </div>
+   </div>
+</section>
+
+<section class="py-10 md:py-20 px-4 sm:px-8 bg-gray-50">
+   <div class="max-w-[1440px] mx-auto">
+      <div class="text-center mb-12 md:mb-16" style="opacity: 1; transform: none;">
+         <h2 class="text-2xl sm:text-4xl md:text-5xl font-bold text-[#083459] mb-6">Core Responsibilities of an Ecommerce Virtual Assistant</h2>
+         <p class="text-base sm:text-lg text-[#455A64] leading-relaxed max-w-4xl mx-auto">Ecommerce founders spend the majority of their time doing tasks that don't generate direct revenue. A trained ecommerce VA takes these off your plate:</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+         <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all" style="opacity: 1; transform: none;">
+            <div class="w-14 h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-package w-7 h-7 text-white">
+                  <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"></path>
+                  <path d="M12 22V12"></path>
+                  <polyline points="3.29 7 12 12 20.71 7"></polyline>
+                  <path d="m7.5 4.27 9 5.15"></path>
+               </svg>
+            </div>
+            <h3 class="text-xl font-bold text-[#083459] mb-4">Product Management</h3>
+            <ul class="space-y-2">
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Uploading product listings</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Updating descriptions, titles &amp; tags</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Uploading images &amp; optimizing alt text</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Price updates</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Category management</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Bundle creation</span>
+               </li>
+            </ul>
+         </div>
+         <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all" style="opacity: 1; transform: none;">
+            <div class="w-14 h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-truck w-7 h-7 text-white">
+                  <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"></path>
+                  <path d="M15 18H9"></path>
+                  <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"></path>
+                  <circle cx="17" cy="18" r="2"></circle>
+                  <circle cx="7" cy="18" r="2"></circle>
+               </svg>
+            </div>
+            <h3 class="text-xl font-bold text-[#083459] mb-4">Order &amp; Fulfillment Support</h3>
+            <ul class="space-y-2">
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Order confirmation</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Tracking and updating status</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Coordinating with suppliers or warehouses</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Monitoring fulfillment performance</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Managing delayed or canceled orders</span>
+               </li>
+            </ul>
+         </div>
+         <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all" style="opacity: 1; transform: none;">
+            <div class="w-14 h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square w-7 h-7 text-white">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+               </svg>
+            </div>
+            <h3 class="text-xl font-bold text-[#083459] mb-4">Customer Support</h3>
+            <ul class="space-y-2">
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Responding to customer inquiries</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Managing tickets &amp; emails</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Handling returns &amp; refunds</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Post-purchase follow-up</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Review requests</span>
+               </li>
+            </ul>
+         </div>
+         <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all" style="opacity: 1; transform: none;">
+            <div class="w-14 h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart w-7 h-7 text-white">
+                  <circle cx="8" cy="21" r="1"></circle>
+                  <circle cx="19" cy="21" r="1"></circle>
+                  <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+               </svg>
+            </div>
+            <h3 class="text-xl font-bold text-[#083459] mb-4">Marketplace Assistance</h3>
+            <ul class="space-y-2">
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Amazon listing optimization</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Walmart Marketplace enhancements</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Etsy store management</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>eBay listing uploads</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>FBA inventory alerts</span>
+               </li>
+            </ul>
+         </div>
+         <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all" style="opacity: 1; transform: none;">
+            <div class="w-14 h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings w-7 h-7 text-white">
+                  <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+               </svg>
+            </div>
+            <h3 class="text-xl font-bold text-[#083459] mb-4">Operations &amp; Admin</h3>
+            <ul class="space-y-2">
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Inventory monitoring</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Syncing SKUs</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Updating stock levels</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Coordinating with vendors</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Preparing weekly reports</span>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="mt-8 text-center" >
+         <p class="text-base sm:text-lg text-[#455A64] leading-relaxed max-w-3xl mx-auto font-semibold">This structure is intentionally aligned with high-volume ecommerce VA search queries.</p>
+      </div>
+   </div>
+</section>
+<section class="py-10 md:py-20 px-4 sm:px-8 bg-white">
+   <div class="max-w-[1440px] mx-auto">
+      <div class="text-center mb-12 md:mb-16" style="opacity: 1; transform: none;">
+         <h2 class="text-2xl sm:text-4xl md:text-5xl font-bold text-[#083459] mb-6">Product Listing &amp; Catalog Management (Amazon, Shopify, Walmart, Etsy)</h2>
+         <p class="text-base sm:text-lg text-[#455A64] leading-relaxed max-w-4xl mx-auto">Product listings are the heart of ecommerce sales. Your ecommerce VA ensures your catalog is always accurate, compliant, and optimized.</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6 md:gap-8">
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 md:p-8 border-2 border-[#0BA5DF]/20" style="opacity: 1; transform: none;">
+            <h3 class="text-xl font-bold text-[#083459] mb-4">Listing Creation &amp; Optimization</h3>
+            <ul class="space-y-3">
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Keyword-rich titles</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Bullet points &amp; product descriptions</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Attribute optimization</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Image uploads</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Variations (size, color, bundles)</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Category placement</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>SEO alignment for marketplace search</span>
+               </li>
+            </ul>
+         </div>
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 md:p-8 border-2 border-[#0BA5DF]/20" style="opacity: 1; transform: none;">
+            <h3 class="text-xl font-bold text-[#083459] mb-4">Amazon Listing Optimization (A+ Ready)</h3>
+            <ul class="space-y-3">
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Backend keywords</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Search-term optimization</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Listing health checks</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Suppressed listing fixes</span>
+               </li>
+            </ul>
+         </div>
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 md:p-8 border-2 border-[#0BA5DF]/20" style="opacity: 1; transform: none;">
+            <h3 class="text-xl font-bold text-[#083459] mb-4">Shopify Product Management</h3>
+            <ul class="space-y-3">
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Creating products</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Managing categories/collections</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Updating SKU data</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Tracking stock levels</span>
+               </li>
+            </ul>
+         </div>
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 md:p-8 border-2 border-[#0BA5DF]/20" style="opacity: 1; transform: none;">
+            <h3 class="text-xl font-bold text-[#083459] mb-4">Walmart, Etsy &amp; eBay Listing Support</h3>
+            <ul class="space-y-3">
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Category matching</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Price comparisons</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Photo uploads</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Policy compliance</span>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="mt-8 text-center" ></div>
+   </div>
+</section>
+<section class="py-10 md:py-20 px-4 sm:px-8 bg-gray-50">
+   <div class="max-w-[1440px] mx-auto">
+      <div class="text-center mb-12 md:mb-16" style="opacity: 1; transform: none;">
+         <h2 class="text-2xl sm:text-4xl md:text-5xl font-bold text-[#083459] mb-6">Order Processing, Fulfillment &amp; Inventory Coordination</h2>
+         <p class="text-base sm:text-lg text-[#455A64] leading-relaxed max-w-4xl mx-auto">One missed order or delayed update can create negative customer experiences. A trained ecommerce VA ensures smooth end-to-end execution.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+         <div class="bg-white rounded-2xl p-6 shadow-lg" style="opacity: 1; transform: none;">
+            <div class="w-14 h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-check w-7 h-7 text-white">
+                  <path d="M18 6 7 17l-5-5"></path>
+                  <path d="m22 10-7.5 7.5L13 16"></path>
+               </svg>
+            </div>
+            <h3 class="text-xl font-bold text-[#083459] mb-4">Order Processing</h3>
+            <ul class="space-y-2">
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Confirming orders</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Coordinating with suppliers</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Updating order status</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Monitoring pending orders</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Handling cancellations</span>
+               </li>
+            </ul>
+         </div>
+         <div class="bg-white rounded-2xl p-6 shadow-lg" style="opacity: 1; transform: none;">
+            <div class="w-14 h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-truck w-7 h-7 text-white">
+                  <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"></path>
+                  <path d="M15 18H9"></path>
+                  <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"></path>
+                  <circle cx="17" cy="18" r="2"></circle>
+                  <circle cx="7" cy="18" r="2"></circle>
+               </svg>
+            </div>
+            <h3 class="text-xl font-bold text-[#083459] mb-4">Fulfillment Coordination</h3>
+            <ul class="space-y-2">
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Tracking shipments</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Communicating with fulfillment centers</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Sending tracking details</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Managing delays</span>
+               </li>
+            </ul>
+         </div>
+         <div class="bg-white rounded-2xl p-6 shadow-lg" style="opacity: 1; transform: none;">
+            <div class="w-14 h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-box w-7 h-7 text-white">
+                  <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path>
+                  <path d="m3.3 7 8.7 5 8.7-5"></path>
+                  <path d="M12 22V12"></path>
+               </svg>
+            </div>
+            <h3 class="text-xl font-bold text-[#083459] mb-4">Inventory Oversight</h3>
+            <ul class="space-y-2">
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Checking low-stock alerts</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Updating SKUs</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Out-of-stock notifications</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Avoiding overselling issues</span>
+               </li>
+            </ul>
+         </div>
+         <div class="bg-white rounded-2xl p-6 shadow-lg" style="opacity: 1; transform: none;">
+            <div class="w-14 h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-package w-7 h-7 text-white">
+                  <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"></path>
+                  <path d="M12 22V12"></path>
+                  <polyline points="3.29 7 12 12 20.71 7"></polyline>
+                  <path d="m7.5 4.27 9 5.15"></path>
+               </svg>
+            </div>
+            <h3 class="text-xl font-bold text-[#083459] mb-4">FBA Coordination (Amazon Sellers)</h3>
+            <ul class="space-y-2">
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Preparing FBA shipment plans</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Monitoring inbound shipments</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Replenishment alerts</span>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="mt-8 text-center" style="opacity: 1; transform: none;">
+         <p class="text-base sm:text-lg text-[#455A64] leading-relaxed max-w-3xl mx-auto font-semibold">This reduces fulfillment errors and improves operational consistency.</p>
+      </div>
+   </div>
+</section>
+<section class="py-10 md:py-20 px-4 sm:px-8 bg-white">
+   <div class="max-w-[1440px] mx-auto">
+      <div class="text-center mb-12 md:mb-16" style="opacity: 1; transform: none;">
+         <h2 class="text-2xl sm:text-4xl md:text-5xl font-bold text-[#083459] mb-6">Customer Support &amp; Returns Management</h2>
+         <p class="text-base sm:text-lg text-[#455A64] leading-relaxed max-w-4xl mx-auto">Customer support is a major ranking factor for all ecommerce marketplaces. Your ecommerce virtual assistant helps you:</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8 md:gap-12">
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 md:p-8 border-2 border-[#0BA5DF]/20" style="opacity: 1; transform: none;">
+            <h3 class="text-2xl font-bold text-[#083459] mb-6">Customer Service Tasks</h3>
+            <ul class="space-y-3">
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Respond to pre-purchase questions</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Handle post-purchase support</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Manage email and chat</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Resolve issues quickly</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Provide order updates</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Send review &amp; feedback requests</span>
+               </li>
+            </ul>
+         </div>
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 md:p-8 border-2 border-[#0BA5DF]/20" style="opacity: 1; transform: none;">
+            <h3 class="text-2xl font-bold text-[#083459] mb-6">Returns &amp; Refund Support</h3>
+            <ul class="space-y-3">
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Approving or declining returns</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Coordinating replacements</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Processing refunds</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Tracking return shipments</span>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="mt-8 text-center" style="opacity: 1; transform: none;">
+         <p class="text-base sm:text-lg text-[#455A64] leading-relaxed max-w-3xl mx-auto font-semibold">This helps maintain your seller rating, response time, and marketplace health metrics, which are critical for Amazon and Walmart visibility.</p>
+      </div>
+   </div>
+</section>
+<div class="px-4 sm:px-8">
+   <div class="max-w-[1440px] mx-auto">
+      <div class="my-16 md:my-24" style="opacity: 1; transform: none;">
+         <div class="bg-gradient-to-br from-[#FCC312] via-[#e5af10] to-[#FCC312] rounded-2xl p-4 md:p-8md:p-12 text-center shadow-2xl relative overflow-hidden">
+            <div class="absolute inset-0 opacity-20">
+               <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, rgb(8, 52, 89) 1px, transparent 0px); background-size: 30px 30px;"></div>
+            </div>
+            <div class="relative z-10">
+               <div class="inline-flex items-center gap-2 bg-red-500 text-white px-4 py-2 rounded-full text-sm font-bold mb-4 animate-pulse">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-4 h-4">
+                     <circle cx="12" cy="12" r="10"></circle>
+                     <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span>⏰ ACT NOW - Limited Slots Available</span>
+               </div>
+               <h3 class="text-2xl md:text-3xl font-bold text-[#083459] mb-3">Only 3 Trial Spots Left This Week</h3>
+               <p class="text-[#083459]/80 text-lg mb-6 max-w-2xl mx-auto">We limit free trials to ensure quality. Book your 5-hour trial before slots fill up.</p>
+               <a class="inline-flex items-center gap-2 bg-[#083459] text-white px-8 py-4 rounded-lg font-bold hover:bg-[#0BA5DF] transition-all shadow-lg text-lg" href="/contact" data-discover="true">
+                  Reserve My Free Trial Now
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5">
+                     <path d="M5 12h14"></path>
+                     <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<section class="py-10 md:py-20 px-4 sm:px-8 bg-gray-50">
+   <div class="max-w-[1440px] mx-auto">
+      <div class="text-center mb-12 md:mb-16" style="opacity: 1; transform: none;">
+         <h2 class="text-2xl sm:text-4xl md:text-5xl font-bold text-[#083459] mb-6">Ecommerce Marketplace Management (Amazon, Walmart, eBay, Etsy)</h2>
+         <p class="text-base sm:text-lg text-[#455A64] leading-relaxed max-w-4xl mx-auto">Your ecommerce VA manages your marketplace backend daily.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+         <div class="bg-white rounded-2xl p-6 shadow-lg" style="opacity: 1; transform: none;">
+            <div class="w-14 h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart w-7 h-7 text-white">
+                  <circle cx="8" cy="21" r="1"></circle>
+                  <circle cx="19" cy="21" r="1"></circle>
+                  <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+               </svg>
+            </div>
+            <h3 class="text-xl font-bold text-[#083459] mb-4">Amazon Seller Central Tasks</h3>
+            <ul class="space-y-2">
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>ASIN creation</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Listing updates</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>A+ content upload coordination</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Competitor price monitoring</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Handling suppressed listings</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Maintaining listing quality score</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Buy Box monitoring</span>
+               </li>
+            </ul>
+         </div>
+         <div class="bg-white rounded-2xl p-6 shadow-lg" style="opacity: 1; transform: none;">
+            <div class="w-14 h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tag w-7 h-7 text-white">
+                  <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
+                  <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+               </svg>
+            </div>
+            <h3 class="text-xl font-bold text-[#083459] mb-4">Walmart Seller Support</h3>
+            <ul class="space-y-2">
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Listing corrections</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Category optimization</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Pricing updates</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Inventory accuracy</span>
+               </li>
+            </ul>
+         </div>
+         <div class="bg-white rounded-2xl p-6 shadow-lg" style="opacity: 1; transform: none;">
+            <div class="w-14 h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe w-7 h-7 text-white">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                  <path d="M2 12h20"></path>
+               </svg>
+            </div>
+            <h3 class="text-xl font-bold text-[#083459] mb-4">eBay &amp; Etsy Support</h3>
+            <ul class="space-y-2">
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Uploading new items</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Managing promotions</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>SEO-friendly product descriptions</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Order &amp; buyer messaging</span>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="mt-8 text-center" style="opacity: 1; transform: none;">
+         <p class="text-base sm:text-lg text-[#455A64] leading-relaxed max-w-3xl mx-auto font-semibold">A well-managed marketplace presence improves ranking, conversion, and order volume.</p>
+      </div>
+   </div>
+</section>
+<section class="py-10 md:py-20 px-4 sm:px-8 bg-white">
+   <div class="max-w-[1440px] mx-auto">
+      <div class="text-center mb-12 md:mb-16" style="opacity: 1; transform: none;">
+         <h2 class="text-2xl sm:text-4xl md:text-5xl font-bold text-[#083459] mb-6">Ecommerce Store Management (Shopify, WooCommerce, BigCommerce)</h2>
+         <p class="text-base sm:text-lg text-[#455A64] leading-relaxed max-w-4xl mx-auto">DTC brands require daily operational support that a VA can easily take over.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 md:p-8 border-2 border-[#0BA5DF]/20" style="opacity: 1; transform: none;">
+            <h3 class="text-xl font-bold text-[#083459] mb-4">Daily Store Upkeep</h3>
+            <ul class="space-y-3">
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Homepage banner updates</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Collection creation</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Updating product availability</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Managing discount codes</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Reviewing abandoned cart reports</span>
+               </li>
+            </ul>
+         </div>
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 md:p-8 border-2 border-[#0BA5DF]/20" style="opacity: 1; transform: none;">
+            <h3 class="text-xl font-bold text-[#083459] mb-4">Checkout &amp; UX Enhancements (Support Role)</h3>
+            <ul class="space-y-3">
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Reviewing customer feedback</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Reporting UX issues</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Testing payment flow</span>
+               </li>
+            </ul>
+         </div>
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 md:p-8 border-2 border-[#0BA5DF]/20" style="opacity: 1; transform: none;">
+            <h3 class="text-xl font-bold text-[#083459] mb-4">Shopify Back-End Support</h3>
+            <ul class="space-y-3">
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Product imports</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>App integration assistance</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Theme-level content updates</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Inventory sync coordination</span>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="mt-8 text-center" style="opacity: 1; transform: none;">
+         <p class="text-base sm:text-lg text-[#455A64] leading-relaxed max-w-3xl mx-auto font-semibold">This enables founders to focus on marketing, brand building, and scaling rather than admin tasks.</p>
+      </div>
+   </div>
+</section>
+<section class="py-10 md:py-20 px-4 sm:px-8 bg-gray-50">
+   <div class="max-w-[1440px] mx-auto">
+      <div class="text-center mb-12 md:mb-16" style="opacity: 1; transform: none;">
+         <h2 class="text-2xl sm:text-4xl md:text-5xl font-bold text-[#083459] mb-6">Pricing, Promotions &amp; Competitor Research Support</h2>
+         <p class="text-base sm:text-lg text-[#455A64] leading-relaxed max-w-4xl mx-auto">Ecommerce is dynamic — pricing and competition change daily. Your VA helps you stay ahead through:</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+         <div class="bg-white rounded-2xl p-6 shadow-lg" style="opacity: 1; transform: none;">
+            <div class="w-14 h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign w-7 h-7 text-white">
+                  <line x1="12" x2="12" y1="2" y2="22"></line>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+               </svg>
+            </div>
+            <h3 class="text-xl font-bold text-[#083459] mb-4">Pricing Support</h3>
+            <ul class="space-y-2">
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Updating product prices</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Managing discount periods</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Running promotional codes</span>
+               </li>
+            </ul>
+         </div>
+         <div class="bg-white rounded-2xl p-6 shadow-lg" style="opacity: 1; transform: none;">
+            <div class="w-14 h-14 bg-gradient-to-br from-[#FCC312] to-[#e5af10] rounded-xl flex items-center justify-center mb-4">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search w-7 h-7 text-[#083459]">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <path d="m21 21-4.3-4.3"></path>
+               </svg>
+            </div>
+            <h3 class="text-xl font-bold text-[#083459] mb-4">Competitor Monitoring</h3>
+            <ul class="space-y-2">
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#FCC312] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Price comparisons</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#FCC312] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Listing quality evaluation</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#FCC312] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Reviews analysis</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#FCC312] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>New competitor entry alerts</span>
+               </li>
+            </ul>
+         </div>
+         <div class="bg-white rounded-2xl p-6 shadow-lg" style="opacity: 1; transform: none;">
+            <div class="w-14 h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up w-7 h-7 text-white">
+                  <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                  <polyline points="16 7 22 7 22 13"></polyline>
+               </svg>
+            </div>
+            <h3 class="text-xl font-bold text-[#083459] mb-4">Keyword &amp; Trend Research</h3>
+            <ul class="space-y-2">
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Identifying trending products</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Optimizing listings for search</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Monitoring search demand</span>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="mt-8 text-center" style="opacity: 1; transform: none;">
+         <p class="text-base sm:text-lg text-[#455A64] leading-relaxed max-w-3xl mx-auto font-semibold">This insight allows you to adjust strategy quickly.</p>
+      </div>
+   </div>
+</section>
+<div class="px-4 sm:px-8">
+   <div class="max-w-[1440px] mx-auto">
+      <div class="my-16 md:my-24" style="opacity: 1; transform: none;">
+         <div class="bg-gradient-to-br from-[#083459] to-[#0BA5DF] rounded-2xl p-4 md:p-8md:p-12 text-white shadow-2xl">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+               <div>
+                  <div class="inline-block bg-[#FCC312] text-[#083459] px-4 py-2 rounded-full text-sm font-bold mb-4">💰 SAVE 50-70% ON COSTS</div>
+                  <h3 class="text-2xl md:text-3xl font-bold mb-4">Why Pay $50K/Year When You Can Pay $8/Hour?</h3>
+                  <ul class="space-y-3 mb-6">
+                     <li class="flex items-start gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#FCC312] flex-shrink-0 mt-0.5">
+                           <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                           <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                        <span>No benefits or overhead costs</span>
+                     </li>
+                     <li class="flex items-start gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#FCC312] flex-shrink-0 mt-0.5">
+                           <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                           <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                        <span>No office space required</span>
+                     </li>
+                     <li class="flex items-start gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#FCC312] flex-shrink-0 mt-0.5">
+                           <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                           <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                        <span>Scale up or down instantly</span>
+                     </li>
+                     <li class="flex items-start gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#FCC312] flex-shrink-0 mt-0.5">
+                           <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                           <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                        <span>Pay only for hours worked</span>
+                     </li>
+                  </ul>
+                  <a class="inline-flex items-center gap-2 bg-[#FCC312] text-[#083459] px-8 py-4 rounded-lg font-bold hover:bg-[#e5af10] transition-all shadow-lg" href="/contact" data-discover="true">
+                     Calculate Your Savings
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path>
+                     </svg>
+                  </a>
+               </div>
+               <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border-2 border-white/20">
+                  <div class="text-center mb-4">
+                     <div class="text-3xl md:text-5xl text-[#FCC312] mb-2">$8</div>
+                     <div class="text-lg">per hour starting rate</div>
+                  </div>
+                  <div class="space-y-2 text-sm">
+                     <div class="flex justify-between py-2 border-b border-white/10"><span>Full-time employee</span><span class="font-bold line-through">$50,000+/yr</span></div>
+                     <div class="flex justify-between py-2 border-b border-white/10"><span>Benefits &amp; taxes</span><span class="font-bold line-through">$15,000+/yr</span></div>
+                     <div class="flex justify-between py-2 border-b border-white/10"><span>Office space</span><span class="font-bold line-through">$8,000+/yr</span></div>
+                     <div class="flex justify-between py-3 bg-[#FCC312]/20 rounded-lg px-3 mt-3"><span class="font-bold">Your VA Cost</span><span class="font-bold text-[#FCC312]">~$16,640/yr</span></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<section class="py-10 md:py-20 px-4 sm:px-8 bg-white">
+   <div class="max-w-[1440px] mx-auto">
+      <div class="text-center mb-12 md:mb-16" style="opacity: 1; transform: none;">
+         <h2 class="text-2xl sm:text-4xl md:text-5xl font-bold text-[#083459] mb-6">Ecommerce Operations Analytics &amp; Reporting</h2>
+         <p class="text-base sm:text-lg text-[#455A64] leading-relaxed max-w-4xl mx-auto">Data is the foundation of ecommerce decisions. Your VA prepares weekly or monthly reports covering:</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 md:p-8 border-2 border-[#0BA5DF]/20" style="opacity: 1; transform: none;">
+            <div class="flex items-center gap-3 mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-column w-8 h-8 text-[#0BA5DF]">
+                  <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
+                  <path d="M18 17V9"></path>
+                  <path d="M13 17V5"></path>
+                  <path d="M8 17v-3"></path>
+               </svg>
+               <h3 class="text-2xl font-bold text-[#083459]">Performance Metrics</h3>
+            </div>
+            <ul class="space-y-3">
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Sales overview</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Conversion rates</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>AOV (Average Order Value)</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Top-selling products</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Return trends</span>
+               </li>
+            </ul>
+         </div>
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 md:p-8 border-2 border-[#0BA5DF]/20" style="opacity: 1; transform: none;">
+            <div class="flex items-center gap-3 mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings w-8 h-8 text-[#0BA5DF]">
+                  <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+               </svg>
+               <h3 class="text-2xl font-bold text-[#083459]">Operational KPIs</h3>
+            </div>
+            <ul class="space-y-3">
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Order accuracy</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Inventory levels</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Fulfillment times</span>
+               </li>
+            </ul>
+         </div>
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 md:p-8 border-2 border-[#0BA5DF]/20" style="opacity: 1; transform: none;">
+            <div class="flex items-center gap-3 mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up w-8 h-8 text-[#0BA5DF]">
+                  <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                  <polyline points="16 7 22 7 22 13"></polyline>
+               </svg>
+               <h3 class="text-2xl font-bold text-[#083459]">Marketing Metrics</h3>
+            </div>
+            <ul class="space-y-3">
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>Ad spend reports (if you share data)</span>
+               </li>
+               <li class="flex items-start gap-2 text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                     <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <span>CTR/engagement on listing promotions</span>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="mt-8 text-center" style="opacity: 1; transform: none;">
+         <p class="text-base sm:text-lg text-[#455A64] leading-relaxed max-w-3xl mx-auto font-semibold">This enables your brand to forecast demand, identify gaps, and scale responsibly.</p>
+      </div>
+   </div>
+</section>
+<section class="py-10 md:py-20 px-4 sm:px-8 bg-gray-50">
+   <div class="max-w-[1440px] mx-auto">
+      <div class="text-center mb-12 md:mb-16" style="opacity: 1; transform: none;">
+         <h2 class="text-2xl sm:text-4xl md:text-5xl font-bold text-[#083459] mb-6">Cost of Hiring an Ecommerce Virtual Assistant (US Pricing Guide)</h2>
+         <p class="text-base sm:text-lg text-[#455A64] leading-relaxed max-w-4xl mx-auto">Pricing varies depending on marketplace experience, tool familiarity, and operational scope.</p>
+      </div>
+      <div class="max-w-3xl mx-auto" style="opacity: 1; transform: none;">
+         <div class="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-[#0BA5DF]/20">
+            <div class="overflow-x-auto">
+               <table class="w-full">
+                  <thead class="bg-gradient-to-r from-[#083459] to-[#0BA5DF]">
+                     <tr>
+                        <th class="px-6 py-4 text-left text-white font-bold">VA Role</th>
+                        <th class="px-6 py-4 text-left text-white font-bold">Typical Cost Range</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr class="bg-gray-50">
+                        <td class="px-6 py-4 text-[#083459] font-semibold">Ecommerce Administrative VA</td>
+                        <td class="px-6 py-4 text-[#0BA5DF] font-bold">$7–$11/hour</td>
+                     </tr>
+                     <tr class="bg-white">
+                        <td class="px-6 py-4 text-[#083459] font-semibold">Amazon Virtual Assistant</td>
+                        <td class="px-6 py-4 text-[#0BA5DF] font-bold">$8–$14/hour</td>
+                     </tr>
+                     <tr class="bg-gray-50">
+                        <td class="px-6 py-4 text-[#083459] font-semibold">Shopify Store Assistant</td>
+                        <td class="px-6 py-4 text-[#0BA5DF] font-bold">$7–$12/hour</td>
+                     </tr>
+                     <tr class="bg-white">
+                        <td class="px-6 py-4 text-[#083459] font-semibold">Order &amp; Fulfillment Support VA</td>
+                        <td class="px-6 py-4 text-[#0BA5DF] font-bold">$7–$11/hour</td>
+                     </tr>
+                     <tr class="bg-gray-50">
+                        <td class="px-6 py-4 text-[#083459] font-semibold">Ecommerce Customer Support VA</td>
+                        <td class="px-6 py-4 text-[#0BA5DF] font-bold">$8–$12/hour</td>
+                     </tr>
+                     <tr class="bg-white">
+                        <td class="px-6 py-4 text-[#083459] font-semibold">Product Listing &amp; Catalog VA</td>
+                        <td class="px-6 py-4 text-[#0BA5DF] font-bold">$8–$13/hour</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+      </div>
+      <div class="mt-12" style="opacity: 1; transform: none;">
+         <h3 class="text-2xl font-bold text-[#083459] mb-6 text-center">Factors Influencing Pricing</h3>
+         <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+            <div class="flex items-center gap-2 bg-[#E2F4FB] rounded-lg px-4 py-3" style="opacity: 1; transform: none;">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign w-5 h-5 text-[#0BA5DF] flex-shrink-0">
+                  <line x1="12" x2="12" y1="2" y2="22"></line>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+               </svg>
+               <span class="text-[#455A64] font-medium">Marketplace expertise</span>
+            </div>
+            <div class="flex items-center gap-2 bg-[#E2F4FB] rounded-lg px-4 py-3" style="opacity: 1; transform: none;">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign w-5 h-5 text-[#0BA5DF] flex-shrink-0">
+                  <line x1="12" x2="12" y1="2" y2="22"></line>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+               </svg>
+               <span class="text-[#455A64] font-medium">Multi-channel management</span>
+            </div>
+            <div class="flex items-center gap-2 bg-[#E2F4FB] rounded-lg px-4 py-3" style="opacity: 1; transform: none;">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign w-5 h-5 text-[#0BA5DF] flex-shrink-0">
+                  <line x1="12" x2="12" y1="2" y2="22"></line>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+               </svg>
+               <span class="text-[#455A64] font-medium">Inventory &amp; FBA experience</span>
+            </div>
+            <div class="flex items-center gap-2 bg-[#E2F4FB] rounded-lg px-4 py-3">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign w-5 h-5 text-[#0BA5DF] flex-shrink-0">
+                  <line x1="12" x2="12" y1="2" y2="22"></line>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+               </svg>
+               <span class="text-[#455A64] font-medium">Customer support skill level</span>
+            </div>
+            <div class="flex items-center gap-2 bg-[#E2F4FB] rounded-lg px-4 py-3">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign w-5 h-5 text-[#0BA5DF] flex-shrink-0">
+                  <line x1="12" x2="12" y1="2" y2="22"></line>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+               </svg>
+               <span class="text-[#455A64] font-medium">US-time-zone availability</span>
+            </div>
+         </div>
+         <p class="text-center text-[#455A64] mt-8 text-lg max-w-3xl mx-auto">Hiring a VA gives ecommerce founders predictable, scalable operational assistance at a fraction of in-house staffing costs.</p>
+      </div>
+   </div>
+</section>
+<section class="py-10 md:py-20 px-4 sm:px-8 bg-white">
+   <div class="max-w-[1440px] mx-auto">
+      <div class="text-center mb-12 md:mb-16" style="opacity: 1; transform: none;">
+         <h2 class="text-2xl sm:text-4xl md:text-5xl font-bold text-[#083459] mb-6">Our Workflow for Ecommerce VA Onboarding &amp; Execution</h2>
+         <p class="text-base sm:text-lg text-[#455A64] leading-relaxed max-w-4xl mx-auto">A structured workflow ensures smooth operations.</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+         <div class="bg-white rounded-2xl p-6 shadow-lg relative border-2 border-gray-100" style="opacity: 1; transform: none;">
+            <div class="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-[#FCC312] to-[#e5af10] rounded-full flex items-center justify-center shadow-lg"><span class="text-[#083459] font-bold text-xl">1</span></div>
+            <h3 class="text-xl font-bold text-[#083459] mb-3 mt-2">Requirement Discovery</h3>
+            <p class="text-[#455A64] leading-relaxed">We understand your platforms, back-end processes, product catalog, and order volume.</p>
+         </div>
+         <div class="bg-white rounded-2xl p-6 shadow-lg relative border-2 border-gray-100" style="opacity: 1; transform: none;">
+            <div class="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-[#FCC312] to-[#e5af10] rounded-full flex items-center justify-center shadow-lg"><span class="text-[#083459] font-bold text-xl">2</span></div>
+            <h3 class="text-xl font-bold text-[#083459] mb-3 mt-2">Candidate Shortlisting</h3>
+            <p class="text-[#455A64] leading-relaxed">You receive trained ecommerce VAs experienced in your required tasks.</p>
+         </div>
+         <div class="bg-white rounded-2xl p-6 shadow-lg relative border-2 border-gray-100" style="opacity: 1; transform: none;">
+            <div class="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-[#FCC312] to-[#e5af10] rounded-full flex items-center justify-center shadow-lg"><span class="text-[#083459] font-bold text-xl">3</span></div>
+            <h3 class="text-xl font-bold text-[#083459] mb-3 mt-2">Tools &amp; Access Setup</h3>
+            <p class="text-[#455A64] leading-relaxed">We configure access for Shopify, Amazon Seller Central, inventory systems, and customer support channels.</p>
+         </div>
+         <div class="bg-white rounded-2xl p-6 shadow-lg relative border-2 border-gray-100" style="opacity: 1; transform: none;">
+            <div class="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-[#FCC312] to-[#e5af10] rounded-full flex items-center justify-center shadow-lg"><span class="text-[#083459] font-bold text-xl">4</span></div>
+            <h3 class="text-xl font-bold text-[#083459] mb-3 mt-2">Daily Execution</h3>
+            <p class="text-[#455A64] leading-relaxed">Your VA begins handling listings, inventory, orders, and customer support.</p>
+         </div>
+         <div class="bg-white rounded-2xl p-6 shadow-lg relative border-2 border-gray-100" style="opacity: 1; transform: none;">
+            <div class="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-[#FCC312] to-[#e5af10] rounded-full flex items-center justify-center shadow-lg"><span class="text-[#083459] font-bold text-xl">5</span></div>
+            <h3 class="text-xl font-bold text-[#083459] mb-3 mt-2">Weekly Reporting</h3>
+            <p class="text-[#455A64] leading-relaxed">You receive transparent insights on operations and productivity.</p>
+         </div>
+         <div class="bg-white rounded-2xl p-6 shadow-lg relative border-2 border-gray-100" style="opacity: 1; transform: none;">
+            <div class="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-[#FCC312] to-[#e5af10] rounded-full flex items-center justify-center shadow-lg"><span class="text-[#083459] font-bold text-xl">6</span></div>
+            <h3 class="text-xl font-bold text-[#083459] mb-3 mt-2">Scale Without Limits</h3>
+            <p class="text-[#455A64] leading-relaxed">Increase hours, add more VAs, or expand to additional tasks anytime.</p>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="py-10 md:py-20 px-4 sm:px-8 bg-gray-50">
+   <div class="max-w-[1440px] mx-auto">
+      <div class="text-center mb-12 md:mb-16" style="opacity: 1; transform: none;">
+         <h2 class="text-2xl sm:text-4xl md:text-5xl font-bold text-[#083459] mb-6">Tools Our Ecommerce VAs Work With (Daily Tech Stack)</h2>
+         <p class="text-base sm:text-lg text-[#455A64] leading-relaxed max-w-4xl mx-auto">Our VAs integrate seamlessly into your workflows, minimizing onboarding friction.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 border-2 border-[#0BA5DF]/20" style="opacity: 1; transform: none;">
+            <h3 class="text-lg font-bold text-[#083459] mb-4">Ecommerce Platforms</h3>
+            <ul class="space-y-2">
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#FCC312] flex-shrink-0 mt-0.5">
+                     <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                  </svg>
+                  <span>Amazon Seller Central</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#FCC312] flex-shrink-0 mt-0.5">
+                     <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                  </svg>
+                  <span>Shopify</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#FCC312] flex-shrink-0 mt-0.5">
+                     <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                  </svg>
+                  <span>WooCommerce</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#FCC312] flex-shrink-0 mt-0.5">
+                     <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                  </svg>
+                  <span>BigCommerce</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#FCC312] flex-shrink-0 mt-0.5">
+                     <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                  </svg>
+                  <span>Etsy</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#FCC312] flex-shrink-0 mt-0.5">
+                     <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                  </svg>
+                  <span>Walmart Seller Center</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#FCC312] flex-shrink-0 mt-0.5">
+                     <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                  </svg>
+                  <span>eBay</span>
+               </li>
+            </ul>
+         </div>
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 border-2 border-[#0BA5DF]/20" style="opacity: 1; transform: none;">
+            <h3 class="text-lg font-bold text-[#083459] mb-4">Inventory &amp; Order Tools</h3>
+            <ul class="space-y-2">
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#FCC312] flex-shrink-0 mt-0.5">
+                     <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                  </svg>
+                  <span>ShipStation</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#FCC312] flex-shrink-0 mt-0.5">
+                     <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                  </svg>
+                  <span>Skubana</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#FCC312] flex-shrink-0 mt-0.5">
+                     <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                  </svg>
+                  <span>Zoho Inventory</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#FCC312] flex-shrink-0 mt-0.5">
+                     <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                  </svg>
+                  <span>Cin7</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#FCC312] flex-shrink-0 mt-0.5">
+                     <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                  </svg>
+                  <span>DEAR Systems</span>
+               </li>
+            </ul>
+         </div>
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 border-2 border-[#0BA5DF]/20" style="opacity: 1; transform: none;">
+            <h3 class="text-lg font-bold text-[#083459] mb-4">Customer Support Tools</h3>
+            <ul class="space-y-2">
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#FCC312] flex-shrink-0 mt-0.5">
+                     <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                  </svg>
+                  <span>Zendesk</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#FCC312] flex-shrink-0 mt-0.5">
+                     <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                  </svg>
+                  <span>Freshdesk</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#FCC312] flex-shrink-0 mt-0.5">
+                     <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                  </svg>
+                  <span>Gorgias</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#FCC312] flex-shrink-0 mt-0.5">
+                     <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                  </svg>
+                  <span>Intercom</span>
+               </li>
+            </ul>
+         </div>
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 border-2 border-[#0BA5DF]/20" style="opacity: 1; transform: none;">
+            <h3 class="text-lg font-bold text-[#083459] mb-4">Productivity Tools</h3>
+            <ul class="space-y-2">
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#FCC312] flex-shrink-0 mt-0.5">
+                     <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                  </svg>
+                  <span>Google Workspace</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#FCC312] flex-shrink-0 mt-0.5">
+                     <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                  </svg>
+                  <span>Excel / Sheets</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#FCC312] flex-shrink-0 mt-0.5">
+                     <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                  </svg>
+                  <span>Trello</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#FCC312] flex-shrink-0 mt-0.5">
+                     <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                  </svg>
+                  <span>Slack</span>
+               </li>
+               <li class="flex items-start gap-2 text-sm text-[#455A64]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-4 h-4 text-[#FCC312] flex-shrink-0 mt-0.5">
+                     <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                  </svg>
+                  <span>Notion</span>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="py-10 md:py-20 px-4 sm:px-8 bg-white">
+   <div class="max-w-[1440px] mx-auto">
+      <div class="text-center mb-12 md:mb-16" style="opacity: 1; transform: none;">
+         <h2 class="text-2xl sm:text-4xl md:text-5xl font-bold text-[#083459] mb-6">Case Studies: How Ecommerce VAs Improve Efficiency &amp; Reduce Workload</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-gray-100" style="opacity: 1; transform: none;">
+            <h3 class="text-xl font-bold text-[#083459] mb-4">DTC Brand in California</h3>
+            <div class="space-y-4">
+               <div>
+                  <div class="text-sm font-bold text-[#0BA5DF] mb-1">Problem:</div>
+                  <div class="text-[#455A64]">Founders were handling product uploads &amp; customer support manually.</div>
+               </div>
+               <div>
+                  <div class="text-sm font-bold text-[#0BA5DF] mb-1">Solution:</div>
+                  <div class="text-[#455A64]">Assigned VA for catalog management and support</div>
+               </div>
+               <div>
+                  <div class="text-sm font-bold text-[#FCC312] mb-2">Result:</div>
+                  <ul class="space-y-2">
+                     <li class="flex items-start gap-2 text-[#455A64]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                           <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                           <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                        <span>200+ SKUs optimized</span>
+                     </li>
+                     <li class="flex items-start gap-2 text-[#455A64]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                           <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                           <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                        <span>30% faster order processing</span>
+                     </li>
+                     <li class="flex items-start gap-2 text-[#455A64]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                           <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                           <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                        <span>Customer support response time improved by 48%</span>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-gray-100" style="opacity: 1; transform: none;">
+            <h3 class="text-xl font-bold text-[#083459] mb-4">Amazon Seller – Florida</h3>
+            <div class="space-y-4">
+               <div>
+                  <div class="text-sm font-bold text-[#0BA5DF] mb-1">Problem:</div>
+                  <div class="text-[#455A64]">Listing suppression &amp; inventory inconsistencies.</div>
+               </div>
+               <div>
+                  <div class="text-sm font-bold text-[#0BA5DF] mb-1">Solution:</div>
+                  <div class="text-[#455A64]">Dedicated Amazon VA cleaned up catalog and optimized listings.</div>
+               </div>
+               <div>
+                  <div class="text-sm font-bold text-[#FCC312] mb-2">Result:</div>
+                  <ul class="space-y-2">
+                     <li class="flex items-start gap-2 text-[#455A64]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                           <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                           <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                        <span>12 suppressed listings reinstated</span>
+                     </li>
+                     <li class="flex items-start gap-2 text-[#455A64]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                           <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                           <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                        <span>22% increase in listing visibility</span>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-gray-100" style="opacity: 1; transform: none;">
+            <h3 class="text-xl font-bold text-[#083459] mb-4">Etsy Handmade Store – Texas</h3>
+            <div class="space-y-4">
+               <div>
+                  <div class="text-sm font-bold text-[#0BA5DF] mb-1">Problem:</div>
+                  <div class="text-[#455A64]">Seasonal orders overwhelmed operations.</div>
+               </div>
+               <div>
+                  <div class="text-sm font-bold text-[#0BA5DF] mb-1">Solution:</div>
+                  <div class="text-[#455A64]">VA managed order processing + customer messages.</div>
+               </div>
+               <div>
+                  <div class="text-sm font-bold text-[#FCC312] mb-2">Result:</div>
+                  <ul class="space-y-2">
+                     <li class="flex items-start gap-2 text-[#455A64]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                           <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                           <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                        <span>Holiday season handled without delays</span>
+                     </li>
+                     <li class="flex items-start gap-2 text-[#455A64]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                           <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                           <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                        <span>Seller rating improved to 4.9</span>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="py-10 md:py-20 px-4 sm:px-8 bg-white">
+   <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12 sm:mb-16">
+         <h2 class="text-2xl md:text-5xl font-bold mb-4 sm:mb-6 text-[#083459]">Frequently Asked Questions</h2>
+         <p class="text-lg sm:text-xl text-gray-600">Everything you need to know about hiring an Ecommerce Virtual Assistant.</p>
+      </div>
+      <div class="space-y-4">
+         
+         <div class="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-[#0BA5DF] transition-all group">
+            <button class="faq-question w-full px-4 sm:px-8 py-4 sm:py-6 flex items-center justify-between text-left hover:bg-white/50 transition-colors">
+               <span class="font-bold text-base sm:text-lg text-[#083459] pr-4 sm:pr-8">What does an ecommerce virtual assistant do?</span>
+               <div class="faq-icon w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all bg-gray-100 text-gray-400 font-bold text-xl group-hover:text-[#0BA5DF]">+</div>
+            </button>
+            <div class="faq-answer hidden px-4 sm:px-8 pb-6 text-[#455A64]">
+                <p class="pt-2 leading-relaxed text-sm md:text-base border-t border-gray-100 mt-2 pt-4">They manage the day-to-day operations of your online store, including product listing optimization, inventory tracking, order processing, and providing customer support via email or live chat.</p>
+            </div>
+         </div>
+
+         <div class="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-[#0BA5DF] transition-all group">
+            <button class="faq-question w-full px-4 sm:px-8 py-4 sm:py-6 flex items-center justify-between text-left hover:bg-white/50 transition-colors">
+               <span class="font-bold text-base sm:text-lg text-[#083459] pr-4 sm:pr-8">Can a VA manage Amazon or Shopify stores?</span>
+               <div class="faq-icon w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all bg-gray-100 text-gray-400 font-bold text-xl group-hover:text-[#0BA5DF]">+</div>
+            </button>
+            <div class="faq-answer hidden px-4 sm:px-8 pb-6 text-[#455A64]">
+                <p class="pt-2 leading-relaxed text-sm md:text-base border-t border-gray-100 mt-2 pt-4">Absolutely. Our VAs are specialists in Amazon Seller Central, Shopify, eBay, and Walmart Marketplace. They handle everything from A+ content creation to managing returns and disputes.</p>
+            </div>
+         </div>
+
+         <div class="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-[#0BA5DF] transition-all group">
+            <button class="faq-question w-full px-4 sm:px-8 py-4 sm:py-6 flex items-center justify-between text-left hover:bg-white/50 transition-colors">
+               <span class="font-bold text-base sm:text-lg text-[#083459] pr-4 sm:pr-8">How much does an ecommerce VA cost?</span>
+               <div class="faq-icon w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all bg-gray-100 text-gray-400 font-bold text-xl group-hover:text-[#0BA5DF]">+</div>
+            </button>
+            <div class="faq-answer hidden px-4 sm:px-8 pb-6 text-[#455A64]">
+                <p class="pt-2 leading-relaxed text-sm md:text-base border-t border-gray-100 mt-2 pt-4">Pricing depends on the complexity of your store and the number of hours required. We offer scalable packages that allow you to start with part-time support and grow as your sales increase.</p>
+            </div>
+         </div>
+
+         <div class="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-[#0BA5DF] transition-all group">
+            <button class="faq-question w-full px-4 sm:px-8 py-4 sm:py-6 flex items-center justify-between text-left hover:bg-white/50 transition-colors">
+               <span class="font-bold text-base sm:text-lg text-[#083459] pr-4 sm:pr-8">Can a VA work US hours?</span>
+               <div class="faq-icon w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all bg-gray-100 text-gray-400 font-bold text-xl group-hover:text-[#0BA5DF]">+</div>
+            </button>
+            <div class="faq-answer hidden px-4 sm:px-8 pb-6 text-[#455A64]">
+                <p class="pt-2 leading-relaxed text-sm md:text-base border-t border-gray-100 mt-2 pt-4">Yes. We match you with assistants who work your specific business hours (EST, CST, PST, etc.) to ensure that order fulfillment and customer inquiries are handled in real-time.</p>
+            </div>
+         </div>
+
+         <div class="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-[#0BA5DF] transition-all group">
+            <button class="faq-question w-full px-4 sm:px-8 py-4 sm:py-6 flex items-center justify-between text-left hover:bg-white/50 transition-colors">
+               <span class="font-bold text-base sm:text-lg text-[#083459] pr-4 sm:pr-8">Can I assign the VA to multiple marketplaces?</span>
+               <div class="faq-icon w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all bg-gray-100 text-gray-400 font-bold text-xl group-hover:text-[#0BA5DF]">+</div>
+            </button>
+            <div class="faq-answer hidden px-4 sm:px-8 pb-6 text-[#455A64]">
+                <p class="pt-2 leading-relaxed text-sm md:text-base border-t border-gray-100 mt-2 pt-4">Yes. Many of our clients use a single VA to sync inventory across Shopify and Amazon, ensuring that stock levels are accurate and branding is consistent across all platforms.</p>
+            </div>
+         </div>
+
+         <div class="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-[#0BA5DF] transition-all group">
+            <button class="faq-question w-full px-4 sm:px-8 py-4 sm:py-6 flex items-center justify-between text-left hover:bg-white/50 transition-colors">
+               <span class="font-bold text-base sm:text-lg text-[#083459] pr-4 sm:pr-8">How soon can I onboard an ecommerce VA?</span>
+               <div class="faq-icon w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all bg-gray-100 text-gray-400 font-bold text-xl group-hover:text-[#0BA5DF]">+</div>
+            </button>
+            <div class="faq-answer hidden px-4 sm:px-8 pb-6 text-[#455A64]">
+                <p class="pt-2 leading-relaxed text-sm md:text-base border-t border-gray-100 mt-2 pt-4">We can typically have a specialized e-commerce assistant ready to integrate into your workflow within 48 to 72 hours of our initial strategy call.</p>
+            </div>
+         </div>
+
+      </div>
+   </div>
+</section>
+<section class="py-10 md:py-20 px-4 sm:px-8 bg-gradient-to-br from-[#083459] via-[#0BA5DF] to-[#083459] text-white">
+   <div class="max-w-[1440px] mx-auto text-center">
+      <div style="opacity: 1; transform: none;">
+         <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">Hire Your Ecommerce Virtual Assistant</h2>
+         <p class="text-lg sm:text-xl mb-8 text-white/90 leading-relaxed max-w-3xl mx-auto">Your ecommerce brand deserves smooth operations, faster order cycles, and professional customer support — without hiring an in-house team. Let a trained Ecommerce Virtual Assistant handle the backend while you scale your brand.</p>
+         <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a class="inline-flex items-center justify-center gap-2 bg-[#FCC312] text-[#083459] px-8 py-4 rounded-lg font-bold hover:bg-[#e5af10] transition-all shadow-lg text-base sm:text-lg" href="/contact" data-discover="true">
+               Book a Free Consultation
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5">
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+               </svg>
+            </a>
+            <a class="inline-flex items-center justify-center gap-2 bg-white text-[#083459] px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-all shadow-lg text-base sm:text-lg" href="/contact" data-discover="true">Hire Your Ecommerce VA Today</a>
+         </div>
+      </div>
+   </div>
+</section>
+</div>
+    </main>
+
+    <!-- start Footer -->
+    <footer class="bg-[#083459] text-white">
+        <div class="max-w-[1440px] mx-auto px-4 md:px-8 py-12 md:py-16">
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-12 mb-8 md:mb-12">
+                <div class="md:col-span-3 lg:col-span-2"><img src="./assest/img/logo/logo.avif" alt="Ocean Clicks"
+                        class="h-8 md:h-10 mb-4 md:mb-6 brightness-0 invert">
+                    <p class="text-[#E2F4FB] mb-4 md:mb-6 leading-relaxed text-sm md:text-base">Specialized
+                        outsourcing
+                        solutions for regulated industries. We help law
+                        firms, credit repair companies, property
+                        managers, and B2B organizations scale
+                        efficiently.</p>
+                    <div class="flex gap-4"><a href="#linkedin"
+                            class="w-10 h-10 bg-[#0BA5DF] rounded-full flex items-center justify-center hover:bg-[#0991c9] transition-colors"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-linkedin w-5 h-5">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect width="4" height="12" x="2" y="9"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg></a><a href="#twitter"
+                            class="w-10 h-10 bg-[#0BA5DF] rounded-full flex items-center justify-center hover:bg-[#0991c9] transition-colors"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-twitter w-5 h-5">
+                                <path
+                                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                                </path>
+                            </svg></a><a href="#facebook"
+                            class="w-10 h-10 bg-[#0BA5DF] rounded-full flex items-center justify-center hover:bg-[#0991c9] transition-colors"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-facebook w-5 h-5">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg></a></div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-sm md:text-lg">Services</h4>
+                    <ul class="space-y-3 text-sm md:text-base">
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors"
+                                href="/credit-repair-outsourcing" data-discover="true">Credit Repair
+                                Outsourcing</a>
+                        </li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors"
+                                href="/paralegal-legal-support-outsourcing" data-discover="true">Legal Process
+                                Outsourcing</a></li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors"
+                                href="/hire-virtual-assistants.html" data-discover="true">Virtual
+                                Assistants</a></li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors"
+                                href="/property-management-outsourcing" data-discover="true">Property Management</a>
+                        </li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors"
+                                href="contact.html-center-outsourcing" data-discover="true">Contact Center</a></li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors"
+                                href="/b2b-lead-generation-services" data-discover="true">Lead
+                                Generation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-sm md:text-lg">Company</h4>
+                    <ul class="space-y-3 text-sm md:text-base">
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors" href="/about"
+                                data-discover="true">About Us</a></li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors" href="/careers"
+                                data-discover="true">Careers</a></li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors" href="/resources"
+                                data-discover="true">Resources</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-sm md:text-lg">Contact</h4>
+                    <ul class="space-y-4 text-sm md:text-base">
+                        <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-phone w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-1">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                            <div>
+                                <p class="text-[#E2F4FB]">US: +1 (631)
+                                    212-1341</p>
+                                <p class="text-[#E2F4FB]">India: +91 90853
+                                    16752</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-mail w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-1">
+                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg>
+                            <div>
+                                <p class="text-[#E2F4FB]">alex@ocean-clicks.com</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-map-pin w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-1">
+                                <path
+                                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                </path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <div>
+                                <p class="text-[#E2F4FB] text-sm">US: 66 W
+                                    Flagler St #6471<br>Miami, FL 33130</p>
+                                <p class="text-[#E2F4FB] text-sm mt-2">India:
+                                    6th Floor, 61-b, Sarkhej - Gandhinagar
+                                    Hwy<br>Ahmedabad, Gujarat 380054</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="border-t border-[#0BA5DF]/30 pt-6 md:pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-[#E2F4FB] text-xs md:text-sm text-center md:text-left">©
+                    2026 Ocean Clicks. All rights
+                    reserved.</p>
+                <div class="flex flex-wrap justify-center gap-4 md:gap-6 text-xs md:text-sm"><a
+                        class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors" href="/privacy-policy"
+                        data-discover="true">Privacy Policy</a><a
+                        class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors" href="/terms-of-service"
+                        data-discover="true">Terms of Service</a><a
+                        class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors" href="/policies-compliance"
+                        data-discover="true">Policies &amp;
+                        Compliance</a></div>
+            </div>
+        </div>
+    </footer>
+    <!-- end Footer -->
+
+   
+
+    <script src="./assest/js/dev-script.js"></script>
+</body>
+
+</html>

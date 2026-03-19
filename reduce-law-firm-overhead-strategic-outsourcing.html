@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Clicks Header</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assest/css/dev-style.css">
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Progress Bar -->
+    <div id="scrollProgress"
+        class="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#FCC312] via-[#0BA5DF] to-[#083459] origin-left z-[60] scale-x-0">
+    </div>
+    <div id="floatingButtons"
+        class="hidden lg:flex fixed bottom-8 right-8 z-40 gap-3 transition-all duration-300 opacity-0 translate-y-5">
+
+        <!-- Call Button -->
+        <a href="tel:+1234567890"
+            class="bg-white text-[#083459] p-4 rounded-full shadow-2xl border-2 border-[#0BA5DF] hover:bg-[#E2F4FB] transition-all group"
+            title="Call Us">
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 group-hover:text-[#0BA5DF] transition-colors"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+        </a>
+
+        <!-- Start Free Trial -->
+        <button
+            class="bg-gradient-to-r from-[#FCC312] to-[#e6b010] text-[#083459] px-6 py-4 rounded-full shadow-2xl hover:shadow-3xl transition-all font-bold flex items-center gap-2 group">
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path d="M8 2v4" />
+                <path d="M16 2v4" />
+                <rect width="18" height="18" x="3" y="4" rx="2" />
+                <path d="M3 10h18" />
+            </svg>
+            <span>Start Free Trial</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+            </svg>
+        </button>
+        <!-- Back To Top -->
+        <button id="backToTop"
+            class="bg-[#083459] text-white p-4 rounded-full shadow-2xl hover:bg-[#0BA5DF] transition-all"
+            title="Back to Top">
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 -rotate-90" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+            </svg>
+        </button>
+    </div>
+    <!-- start top header  -->
+    <div class="bg-[#083459] text-white py-2 px-4 md:px-8">
+        <div
+            class="max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-center gap-2 md:gap-0 text-[11px] md:text-sm">
+            <div class="flex items-center gap-4 md:gap-8">
+                <a class="hover:text-[#FCC312] transition-colors font-semibold"
+                    href="contact-center-outsourcing.html">Contact Center Outsourcing</a>
+                <a class="hover:text-[#FCC312] transition-colors font-semibold"
+                    href="b2b-lead-generation-services.html">Lead Generation Services</a>
+            </div>
+            <div class="flex items-center gap-4 md:gap-6 opacity-90">
+                <a class="hover:text-[#0BA5DF] transition-colors" href="resources.html">Resources</a>
+                <a class="hover:text-[#0BA5DF] transition-colors" href="about.html">About</a>
+                <a class="hover:text-[#0BA5DF] transition-colors" href="articles.html">Articles</a>
+                <a class="hover:text-[#0BA5DF] transition-colors hidden md:inline" href="careers.html">Careers</a>
+                <a class="hover:text-[#0BA5DF] transition-colors" href="contact-center-outsourcing.html">Reach Us</a>
+            </div>
+        </div>
+    </div>
+    <!-- end top header  -->
+
+    <!-- start nav bar  -->
+   <nav class="bg-white border-b border-gray-100 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-[1440px] mx-auto px-4 md:px-8">
+            <div class="flex items-center justify-between h-20 md:h-24">
+
+                <div class="flex items-center flex-shrink-0">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <img src="./assest/img/logo/logo.avif" alt="Ocean Clicks" class="h-10 md:h-12 w-auto">
+                    </a>
+                </div>
+
+                <div class="hidden min-[1240px]:flex items-center gap-2 xl:gap-4">
+
+                    <div class="group relative py-8">
+                        <a class="flex items-center gap-1 text-[#083459] group-hover:text-[#0BA5DF] transition-colors font-bold text-[14px]"
+                            href="credit-repair-outsourcing.html">
+                            Credit Repair Outsourcing
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3"
+                                class="mt-0.5 transition-transform group-hover:rotate-180">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg>
+                        </a>
+                        <div
+                            class="absolute top-full left-0 w-[350px] bg-[#083459] shadow-xl rounded-b-lg border-t-2 border-[#0BA5DF] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60]">
+                            <div class="py-2">
+                                <a href="full-cycle-credit-repair-processing.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Full-Cycle
+                                    Credit Repair Processing</a>
+                                <a href="credit-dispute-outsourcing.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Credit
+                                    Dispute Outsourcing</a>
+                                <a href="credit-report-audit-analysis.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Credit
+                                    Report Audit & Analysis Outsourcing</a>
+                                <a href="fcra-fdcpa-compliance-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">FCRA
+                                    & FDCPA Compliance Support Outsourcing Services</a>
+                                <a href="virtual-assistants-for-credit-repair.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Virtual
+                                    Assistants for Credit Repair Companies</a>
+                                <a href="credit-repair-fulfillment.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Credit
+                                    Repair Fulfillment Services</a>
+                                <a href="automation-workflow-outsourcing.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold">Credit
+                                    Repair Automation & Workflow Outsourcing Services</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group relative py-8">
+                        <a class="flex items-center gap-1 text-[#083459] group-hover:text-[#0BA5DF] transition-colors font-bold text-[14px]"
+                            href="paralegal-legal-support-outsourcing.html">
+                            Legal Process Outsourcing
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3"
+                                class="mt-0.5 transition-transform group-hover:rotate-180">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg>
+                        </a>
+                        <div
+                            class="absolute top-full left-0 w-[320px] bg-[#083459] shadow-xl rounded-b-lg border-t-2 border-[#0BA5DF] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60]">
+                            <div class="py-2">
+                                <a href="personal-injury-case-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Personal
+                                    Injury Case Support</a>
+                                <a href="bankruptcy-petition-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Bankruptcy
+                                    Petition Support</a>
+                                <a href="workers-comp-case-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Workers'
+                                    Compensation Case Support</a>
+                                <a href="identity-theft-case-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Identity
+                                    Theft Case Support</a>
+                                <a href="fcra-litigation-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">FCRA
+                                    Litigation Support</a>
+                                <a href="legal-research-drafting.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Legal
+                                    Research & Drafting</a>
+                                <a href="virtual-paralegal-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold">Virtual
+                                    Paralegal Assistant</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group relative py-8">
+                        <a class="flex items-center gap-1 text-[#083459] group-hover:text-[#0BA5DF] transition-colors font-bold text-[14px]"
+                            href="hire-virtual-assistants.html">
+                            Hire Virtual Assistants
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3"
+                                class="mt-0.5 transition-transform group-hover:rotate-180">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg>
+                        </a>
+                        <div
+                            class="absolute top-full left-0 w-[320px] bg-[#083459] shadow-xl rounded-b-lg border-t-2 border-[#0BA5DF] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60]">
+                            <div class="py-2">
+                                <a href="real-estate-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Real
+                                    Estate Virtual Assistant</a>
+                                <a href="ecommerce-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Ecommerce
+                                    Virtual Assistant</a>
+                                <a href="small-business-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Small
+                                    Business Virtual Assistant</a>
+                                <a href="credit-repair-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Credit
+                                    Repair Virtual Assistant</a>
+                                <a href="startup-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Startup
+                                    Virtual Assistant</a>
+                                <a href="coaches-consultants-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Coaches
+                                    & Consultants Virtual Assistant</a>
+                                <a href="law-firm-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold">Law
+                                    Firm Virtual Assistant</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group relative py-8">
+                        <a class="flex items-center gap-1 text-[#083459] group-hover:text-[#0BA5DF] transition-colors font-bold text-[14px]"
+                            href="property-management-outsourcing.html">
+                            Property Management
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3"
+                                class="mt-0.5 transition-transform group-hover:rotate-180">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg>
+                        </a>
+                        <div
+                            class="absolute top-full right-0 w-[350px] bg-[#083459] shadow-xl rounded-b-lg border-t-2 border-[#0BA5DF] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60]">
+                            <div class="py-2">
+                                <a href="tenant-screening-application-processing.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Tenant
+                                    Screening & Application Processing</a>
+                                <a href="leasing-tenant-placement.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Leasing
+                                    & Tenant Placement Support</a>
+                                <a href="property-maintenance-coordination.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Property
+                                    Maintenance & Coordination Outsourcing</a>
+                                <a href="property-accounting.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Property
+                                    Accounting & Bookkeeping Services</a>
+                                <a href="property-preservation.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Property
+                                    Preservation Processing</a>
+                                <a href="hoa-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">HOA
+                                    & Community Association Support</a>
+                                <a href="str-management.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold">Short-Term
+                                    Rental Management Support</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="bg-[#FCC312] text-[#083459] px-7 py-3 rounded-lg font-bold hover:bg-[#e5af10] transition-all transform hover:scale-105 shadow-md ml-4 whitespace-nowrap"
+                        href="contact.html">
+                        Get Started
+                    </a>
+                </div>
+
+                <div class="min-[1240px]:hidden">
+                    <button id="mobile-menu-open" class="text-[#083459] p-2" aria-label="Toggle menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="4" x2="20" y1="12" y2="12"></line>
+                            <line x1="4" x2="20" y1="6" y2="6"></line>
+                            <line x1="4" x2="20" y1="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <div id="mobile-sidebar"
+        class="fixed inset-y-0 right-0 w-full max-w-[320px] bg-[#083459] z-[100] transform translate-x-full transition-transform duration-300 ease-in-out min-[1240px]:hidden flex flex-col shadow-2xl">
+
+        <div class="flex items-center justify-between p-6 border-b border-white/10 bg-[#062846]">
+            <img src="./assest/img/logo/logo.avif" alt="Logo" class="h-8 brightness-0 invert">
+            <button id="mobile-menu-close" class="text-white p-2 text-3xl leading-none">&times;</button>
+        </div>
+
+        <div class="flex-1 overflow-y-auto py-4 px-6 custom-scrollbar">
+            <div class="space-y-1">
+
+                <div class="border-b border-white/5 py-1">
+                    <div class="flex items-center justify-between">
+                        <a href="credit-repair-outsourcing.html"
+                            class="text-white font-bold text-[15px] py-3 flex-1">Credit Repair Outsourcing</a>
+                        <button class="mobile-chevron-btn p-3 text-[#0BA5DF] transition-transform duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div
+                        class="mobile-dropdown-content hidden flex flex-col gap-4 pl-4 pt-2 pb-6 border-l border-[#0BA5DF]/30 mt-1">
+                        <a href="full-cycle-credit-repair-processing.html" class="text-white/70 text-sm">Full-Cycle
+                            Credit Repair Processing</a>
+                        <a href="credit-dispute-outsourcing.html" class="text-white/70 text-sm">Credit Dispute
+                            Outsourcing</a>
+                        <a href="credit-report-audit-analysis.html" class="text-white/70 text-sm">Credit Report Audit &
+                            Analysis</a>
+                        <a href="fcra-fdcpa-compliance-support.html" class="text-white/70 text-sm">FCRA & FDCPA
+                            Compliance Support</a>
+                        <a href="virtual-assistants-for-credit-repair.html" class="text-white/70 text-sm">VAs for Credit
+                            Repair Companies</a>
+                        <a href="credit-repair-fulfillment.html" class="text-white/70 text-sm">Credit Repair Fulfillment
+                            Services</a>
+                        <a href="automation-workflow-outsourcing.html" class="text-white/70 text-sm">Automation &
+                            Workflow Services</a>
+                    </div>
+                </div>
+
+                <div class="border-b border-white/5 py-1">
+                    <div class="flex items-center justify-between">
+                        <a href="paralegal-legal-support-outsourcing.html"
+                            class="text-white font-bold text-[15px] py-3 flex-1">Legal Process Outsourcing</a>
+                        <button class="mobile-chevron-btn p-3 text-[#0BA5DF] transition-transform duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div
+                        class="mobile-dropdown-content hidden flex flex-col gap-4 pl-4 pt-2 pb-6 border-l border-[#0BA5DF]/30 mt-1">
+                        <a href="personal-injury-case-support.html" class="text-white/70 text-sm">Personal Injury Case
+                            Support</a>
+                        <a href="bankruptcy-petition-support.html" class="text-white/70 text-sm">Bankruptcy Petition
+                            Support</a>
+                        <a href="workers-comp-case-support.html" class="text-white/70 text-sm">Workers' Comp Case
+                            Support</a>
+                        <a href="identity-theft-case-support.html" class="text-white/70 text-sm">Identity Theft Case
+                            Support</a>
+                        <a href="fcra-litigation-support.html" class="text-white/70 text-sm">FCRA Litigation Support</a>
+                        <a href="legal-research-drafting.html" class="text-white/70 text-sm">Legal Research &
+                            Drafting</a>
+                        <a href="virtual-paralegal-assistant.html" class="text-white/70 text-sm">Virtual Paralegal
+                            Assistant</a>
+                    </div>
+                </div>
+
+                <div class="border-b border-white/5 py-1">
+                    <div class="flex items-center justify-between">
+                        <a href="hire-virtual-assistants.html" class="text-white font-bold text-[15px] py-3 flex-1">Hire
+                            Virtual Assistants</a>
+                        <button class="mobile-chevron-btn p-3 text-[#0BA5DF] transition-transform duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div
+                        class="mobile-dropdown-content hidden flex flex-col gap-4 pl-4 pt-2 pb-6 border-l border-[#0BA5DF]/30 mt-1">
+                        <a href="real-estate-virtual-assistant.html" class="text-white/70 text-sm">Real Estate Virtual
+                            Assistant</a>
+                        <a href="ecommerce-virtual-assistant.html" class="text-white/70 text-sm">Ecommerce Virtual
+                            Assistant</a>
+                        <a href="small-business-virtual-assistant.html" class="text-white/70 text-sm">Small Business
+                            Virtual Assistant</a>
+                        <a href="credit-repair-virtual-assistant.html" class="text-white/70 text-sm">Credit Repair
+                            Virtual Assistant</a>
+                        <a href="startup-virtual-assistant.html" class="text-white/70 text-sm">Startup Virtual
+                            Assistant</a>
+                        <a href="coaches-consultants-virtual-assistant.html" class="text-white/70 text-sm">Coaches &
+                            Consultants VA</a>
+                        <a href="law-firm-virtual-assistant.html" class="text-white/70 text-sm">Law Firm Virtual
+                            Assistant</a>
+                    </div>
+                </div>
+
+                <div class="border-b border-white/5 py-1">
+                    <div class="flex items-center justify-between">
+                        <a href="property-management-outsourcing.html"
+                            class="text-white font-bold text-[15px] py-3 flex-1">Property Management</a>
+                        <button class="mobile-chevron-btn p-3 text-[#0BA5DF] transition-transform duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div
+                        class="mobile-dropdown-content hidden flex flex-col gap-4 pl-4 pt-2 pb-6 border-l border-[#0BA5DF]/30 mt-1">
+                        <a href="tenant-screening-application-processing.html" class="text-white/70 text-sm">Tenant
+                            Screening & Application</a>
+                        <a href="leasing-tenant-placement.html" class="text-white/70 text-sm">Leasing & Tenant
+                            Placement</a>
+                        <a href="property-maintenance-coordination.html" class="text-white/70 text-sm">Maintenance &
+                            Coordination</a>
+                        <a href="property-accounting.html" class="text-white/70 text-sm">Accounting & Bookkeeping</a>
+                        <a href="property-preservation.html" class="text-white/70 text-sm">Property Preservation
+                            Processing</a>
+                        <a href="hoa-support.html" class="text-white/70 text-sm">HOA & Community Association</a>
+                        <a href="str-management.html" class="text-white/70 text-sm">Short-Term Rental Management</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-8 mb-12">
+                <a href="contact.html"
+                    class="block w-full bg-[#FCC312] text-[#083459] text-center py-4 rounded-xl font-bold shadow-lg">Get
+                    Started</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobile-overlay"
+        class="fixed inset-0 bg-[#083459]/80 backdrop-blur-sm z-[90] opacity-0 invisible transition-all duration-300 min-[1240px]:hidden">
+    </div>
+    <!-- end nav bar  -->
+
+    <main>
+        <section class="bg-gradient-to-br from-[#083459] via-[#0BA5DF] to-[#083459] text-white py-16">
+            <div class="max-w-[1440px] mx-auto md:px-8 px-4">
+                <div class="max-w-4xl">
+                    <div class="flex items-center gap-2 text-sm text-white/80 mb-6">
+                        <a class="hover:text-white transition-colors" href="/articles" data-discover="true">Articles</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chevron-right w-4 h-4">
+                            <path d="m9 18 6-6-6-6"></path>
+                        </svg>
+                        <a class="hover:text-white transition-colors" href="/articles?category=legal-outsourcing"
+                            data-discover="true">Legal Outsourcing</a>
+                    </div>
+                    <div class="mb-6"><span
+                            class="bg-[#FCC312] text-[#083459] px-4 py-2 rounded-full text-sm font-bold shadow-md inline-block">Legal
+                            Outsourcing</span></div>
+                    <h1 class="text-2xl md:text-5xl font-bold mb-6 leading-tight">How Small Law Firms Can Reduce
+                        Overhead by 60% Through Strategic Outsourcing</h1>
+                    <div class="flex flex-wrap items-center gap-6 text-white/90">
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-user w-5 h-5">
+                                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            <div>
+                                <div class="font-semibold">Sarah Mitchell</div>
+                                <div class="text-sm text-white/70">Legal Operations Consultant</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-calendar w-5 h-5">
+                                <path d="M8 2v4"></path>
+                                <path d="M16 2v4"></path>
+                                <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                <path d="M3 10h18"></path>
+                            </svg>
+                            <span>February 20, 2026</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-clock w-5 h-5">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <span>8 min read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-16 bg-gradient-to-br from-[#F8FCFF] to-[#E8F4F8]">
+            <div class="max-w-[1440px] mx-auto md:px-8 px-4">
+                <div class="grid lg:grid-cols-3 gap-12">
+                    <div class="lg:col-span-2">
+                        <div class="rounded-2xl overflow-hidden shadow-xl mb-8"><img
+                                src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200&amp;h=600&amp;fit=crop"
+                                alt="How Small Law Firms Can Reduce Overhead by 60% Through Strategic Outsourcing"
+                                class="w-full aspect-video object-cover"></div>
+                        <div class="bg-white rounded-2xl shadow-lg p-4 md:p-8md:p-12 space-y-8">
+                            <div class="prose prose-lg max-w-none">
+                                <p class="text-lg text-[#455A64] leading-relaxed">Running a small law firm comes with
+                                    significant overhead costs—office space, full-time staff salaries, benefits,
+                                    technology infrastructure, and administrative expenses. For many solo practitioners
+                                    and small firms, these fixed costs can consume 50-70% of revenue, leaving little
+                                    room for profit or growth. Strategic outsourcing offers a proven path to
+                                    dramatically reduce these expenses while maintaining or even improving service
+                                    quality.</p>
+                            </div>
+                            <div class="space-y-8">
+                                <div>
+                                    <h2 class="text-2xl md:text-3xl font-bold text-[#083459] mb-4">Understanding the
+                                        True Cost of In-House Staff</h2>
+                                    <p class="text-lg text-[#455A64] leading-relaxed">Before exploring outsourcing
+                                        solutions, it's essential to understand the full cost of in-house employees. A
+                                        paralegal earning $50,000 annually actually costs the firm $65,000-$75,000 when
+                                        you factor in payroll taxes, benefits, office space, equipment, training, and
+                                        management overhead. For many small firms, this represents an unsustainable
+                                        burden, especially during slow periods when billable work doesn't justify
+                                        full-time positions.</p>
+                                </div>
+                                <div>
+                                    <h2 class="text-2xl md:text-3xl font-bold text-[#083459] mb-4">The $8/Hour
+                                        Advantage: Offshore Virtual Support</h2>
+                                    <p class="text-lg text-[#455A64] leading-relaxed">Ocean Clicks provides experienced
+                                        legal support professionals at $8/hour—a fraction of domestic costs. This isn't
+                                        about sacrificing quality; our team includes licensed attorneys and paralegals
+                                        in the Philippines with U.S. legal training and experience supporting American
+                                        law firms. The cost savings are transformative: what previously cost
+                                        $35-$50/hour domestically now costs $8/hour, enabling 60-80% overhead reduction
+                                        in staffing costs alone.</p>
+                                </div>
+                                <div>
+                                    <h2 class="text-2xl md:text-3xl font-bold text-[#083459] mb-4">Which Functions to
+                                        Outsource First</h2>
+                                    <p class="text-lg text-[#455A64] leading-relaxed">Start with high-volume, repeatable
+                                        tasks that don't require in-person presence: document review and summarization,
+                                        legal research and drafting, client intake and scheduling, case file
+                                        organization and management, court filing and docketing, and billing and
+                                        collections follow-up. These functions typically consume 20-30 hours weekly for
+                                        small firms—perfect candidates for offshore support that can operate during your
+                                        off-hours, effectively extending your firm's working day.</p>
+                                </div>
+                                <div>
+                                    <h2 class="text-2xl md:text-3xl font-bold text-[#083459] mb-4">Implementation: The
+                                        5-Hour Free Trial Approach</h2>
+                                    <p class="text-lg text-[#455A64] leading-relaxed">Ocean Clicks offers a 5-hour free
+                                        trial to test our services risk-free. During this trial, we recommend assigning
+                                        a specific project—perhaps a document review task or research assignment—to
+                                        evaluate quality, communication, and workflow compatibility. Most firms discover
+                                        that our team not only meets but exceeds expectations, leading to expanded
+                                        engagement. The trial period allows you to refine processes and identify
+                                        additional tasks suitable for outsourcing.</p>
+                                </div>
+                            </div>
+                            <div
+                                class="my-12 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-2xl p-4 md:p-8md:p-10 text-white">
+                                <div class="text-center">
+                                    <h3 class="text-2xl md:text-3xl font-bold mb-4">Want to Learn More About Legal
+                                        Outsourcing?</h3>
+                                    <p class="text-lg text-white/90 mb-6 max-w-2xl mx-auto">Explore our complete guide
+                                        to legal outsourcing and discover how Ocean Clicks can support your practice.
+                                    </p>
+                                    <a class="inline-flex items-center gap-2 bg-[#FCC312] text-[#083459] px-8 py-4 rounded-lg font-bold text-sm md:text-lg hover:bg-white transition-all shadow-xl"
+                                        href="/articles?category=legal-outsourcing" data-discover="true">
+                                        View All Legal Outsourcing Articles
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-arrow-right w-5 h-5">
+                                            <path d="M5 12h14"></path>
+                                            <path d="m12 5 7 7-7 7"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="space-y-8">
+                                <div>
+                                    <h2 class="text-2xl md:text-3xl font-bold text-[#083459] mb-4">Managing Quality and
+                                        Communication</h2>
+                                    <p class="text-lg text-[#455A64] leading-relaxed">Successful outsourcing requires
+                                        clear processes and communication protocols. We use secure, cloud-based practice
+                                        management systems, daily status updates via email or Slack, weekly video
+                                        check-ins to review work and provide feedback, and detailed task documentation
+                                        and standard operating procedures. Our team operates during U.S. business hours
+                                        when needed, ensuring real-time collaboration despite geographic distance.</p>
+                                </div>
+                                <div>
+                                    <h2 class="text-2xl md:text-3xl font-bold text-[#083459] mb-4">Case Study: Florida
+                                        Immigration Law Firm</h2>
+                                    <p class="text-lg text-[#455A64] leading-relaxed">A solo immigration attorney in
+                                        Miami was spending $6,500/month on a part-time paralegal and administrative
+                                        assistant, plus another $2,000 on office space to accommodate them. After
+                                        transitioning to Ocean Clicks' virtual paralegal support, monthly costs dropped
+                                        to $1,280 for 160 hours of support—a 75% reduction. The attorney redirected
+                                        savings to marketing, growing caseload by 40% within six months while actually
+                                        reducing total overhead as a percentage of revenue.</p>
+                                </div>
+                                <div>
+                                    <h2 class="text-2xl md:text-3xl font-bold text-[#083459] mb-4">Compliance and
+                                        Confidentiality Considerations</h2>
+                                    <p class="text-lg text-[#455A64] leading-relaxed">Working with offshore teams
+                                        requires attention to ethical obligations. Ocean Clicks maintains SOC 2 Type II
+                                        compliance, uses encrypted communication and file sharing, requires all team
+                                        members to sign comprehensive NDAs, provides annual ethics and confidentiality
+                                        training, and maintains professional liability insurance. We help firms satisfy
+                                        their duty to supervise non-lawyer assistants while protecting client
+                                        confidentiality.</p>
+                                </div>
+                            </div>
+                            <div class="prose prose-lg max-w-none">
+                                <p class="text-lg text-[#455A64] leading-relaxed">Strategic outsourcing isn't just about
+                                    cost reduction—it's about building a more flexible, scalable practice that can adapt
+                                    to market conditions and growth opportunities. By reducing fixed overhead and
+                                    converting staff costs to variable expenses, small firms gain financial resilience
+                                    and the ability to invest in business development. The 60% overhead reduction we've
+                                    seen across hundreds of firms translates directly to improved profitability and
+                                    sustainability. Start with our 5-hour free trial to experience the difference
+                                    firsthand.</p>
+                            </div>
+                            <div class="mt-12 pt-8 border-t-2 border-[#E0E0E0]">
+                                <div class="bg-[#E8F4F8] rounded-xl p-4 md:p-8text-center">
+                                    <h3 class="text-xl md:text-2xl font-bold text-[#083459] mb-4">Ready to Get Started?</h3>
+                                    <p class="text-lg text-[#455A64] mb-6">Start with a 5-hour free trial. No credit
+                                        card required.</p>
+                                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                                        <button data-modal="myModal"
+                                            class="openModalBtn inline-flex items-center justify-center gap-2 bg-[#0BA5DF] text-white px-8 py-4 rounded-lg font-bold hover:bg-[#083459] transition-all shadow-lg">
+                                            Start Free Trial
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-arrow-right w-5 h-5">
+                                                <path d="M5 12h14"></path>
+                                                <path d="m12 5 7 7-7 7"></path>
+                                            </svg>
+                                        </button>
+                                        <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0lKV6WgVvDlqVUMF7ud9dxcGYDL3Ow4qp44nPK2GXG0LMZv86Q5tUHIBZ09EMJhTYnyBzgwZXS"
+                                            target="_blank" rel="noopener noreferrer"
+                                            class="inline-flex items-center justify-center gap-2 bg-[#083459] text-white px-8 py-4 rounded-lg font-bold hover:bg-[#0BA5DF] transition-all shadow-lg">
+                                            Schedule Call
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-arrow-right w-5 h-5">
+                                                <path d="M5 12h14"></path>
+                                                <path d="m12 5 7 7-7 7"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-12 grid md:grid-cols-2 gap-6">
+                            <div></div>
+                            <a class="group bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all border-2 border-transparent hover:border-[#0BA5DF]"
+                                href="/articles/fcra-litigation-support-complete-guide" data-discover="true">
+                                <div
+                                    class="flex items-center justify-end gap-2 text-sm text-[#0BA5DF] font-semibold mb-3">
+                                    <span>Next Article</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4">
+                                        <path d="M5 12h14"></path>
+                                        <path d="m12 5 7 7-7 7"></path>
+                                    </svg>
+                                </div>
+                                <h3
+                                    class="text-lg font-bold text-[#083459] group-hover:text-[#0BA5DF] transition-colors line-clamp-2 text-right">
+                                    FCRA Litigation Support: Complete Guide for Consumer Rights Attorneys</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-1">
+                        <div class="sticky top-24 space-y-8">
+                            <div class="bg-white rounded-xl shadow-lg p-6">
+                                <h3 class="text-xl font-bold text-[#083459] mb-4">Get Expert Guidance</h3>
+                                <p class="text-[#455A64] mb-6">Schedule a free consultation to discuss your legal
+                                    outsourcing needs.</p>
+                                <button data-modal="myModal"
+                                    class="openModalBtn w-full bg-gradient-to-r from-[#0BA5DF] to-[#083459] text-white py-3 rounded-lg font-bold hover:shadow-xl transition-all">Request
+                                    Consultation</button>
+                                <div class="mt-4"><a href="https://calendar.app.google/hQM1wAoo1tv5R9EB8"
+                                        target="_blank" rel="noopener noreferrer"
+                                        class="block w-full bg-[#FCC312] text-[#083459] py-3 rounded-lg font-bold text-center hover:bg-[#083459] hover:text-white transition-all">Book
+                                        a Call</a></div>
+                            </div>
+                            <div class="bg-white rounded-xl shadow-lg p-6">
+                                <h3 class="text-xl font-bold text-[#083459] mb-6">Related Articles</h3>
+                                <div class="space-y-4">
+                                    <a class="group block"
+                                        href="/articles/legal-outsourcing-trends-california-texas-florida-new-york"
+                                        data-discover="true">
+                                        <div class="flex gap-4">
+                                            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200&amp;h=600&amp;fit=crop"
+                                                alt="Legal Outsourcing Trends in California, Texas, Florida, and New York"
+                                                class="w-20 h-20 object-cover rounded-lg flex-shrink-0">
+                                            <div class="flex-1 min-w-0">
+                                                <h4
+                                                    class="text-sm font-bold text-[#083459] group-hover:text-[#0BA5DF] transition-colors line-clamp-2 mb-1">
+                                                    Legal Outsourcing Trends in California, Texas, Florida, and New York
+                                                </h4>
+                                                <div class="flex items-center gap-2 text-xs text-[#455A64]">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-clock w-3 h-3">
+                                                        <circle cx="12" cy="12" r="10"></circle>
+                                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                                    </svg>
+                                                    <span>11 min read</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <a class="block mt-6 text-center text-[#0BA5DF] font-semibold hover:text-[#083459] transition-colors"
+                                    href="/articles?category=legal-outsourcing" data-discover="true">View All →</a>
+                            </div>
+                            <div
+                                class="bg-gradient-to-br from-[#083459] to-[#0BA5DF] rounded-xl shadow-lg p-6 text-white">
+                                <h3 class="text-lg font-bold mb-4">Why Ocean Clicks?</h3>
+                                <div class="space-y-3">
+                                    <div class="flex items-center gap-3">
+                                        <div
+                                            class="w-12 h-12 bg-[#FCC312] rounded-lg flex items-center justify-center text-[#083459] font-bold text-xl">
+                                            $8</div>
+                                        <div>
+                                            <div class="font-semibold">Per Hour</div>
+                                            <div class="text-sm text-white/80">Professional support</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <div
+                                            class="w-12 h-12 bg-[#FCC312] rounded-lg flex items-center justify-center text-[#083459] font-bold text-xl">
+                                            5</div>
+                                        <div>
+                                            <div class="font-semibold">Free Hours</div>
+                                            <div class="text-sm text-white/80">Risk-free trial</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <div
+                                            class="w-12 h-12 bg-[#FCC312] rounded-lg flex items-center justify-center text-[#083459] font-bold text-xl">
+                                            24</div>
+                                        <div>
+                                            <div class="font-semibold">Hour Response</div>
+                                            <div class="text-sm text-white/80">Guaranteed SLA</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-16 bg-white">
+            <div class="max-w-[1440px] mx-auto md:px-8 px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#083459] mb-4">Other Resources You Might Like</h2>
+                    <p class="text-xl text-[#455A64] max-w-3xl mx-auto">Explore our comprehensive library of guides,
+                        tools, and resources for law firms.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <a class="group bg-gradient-to-br from-[#F8FCFF] to-[#E8F4F8] rounded-xl p-6 shadow-md hover:shadow-xl transition-all border-2 border-transparent hover:border-[#0BA5DF]"
+                        href="/resources/legal-outsourcing-guide" data-discover="true">
+                        <div class="w-12 h-12 bg-[#0BA5DF] rounded-lg flex items-center justify-center text-white mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#083459] mb-2 group-hover:text-[#0BA5DF] transition-colors">
+                            Legal Outsourcing Guide</h3>
+                        <p class="text-sm text-[#455A64]">Complete guide to outsourcing for law firms</p>
+                    </a>
+                    <a class="group bg-gradient-to-br from-[#F8FCFF] to-[#E8F4F8] rounded-xl p-6 shadow-md hover:shadow-xl transition-all border-2 border-transparent hover:border-[#0BA5DF]"
+                        href="/resources/fcra-workflow-checklist" data-discover="true">
+                        <div class="w-12 h-12 bg-[#0BA5DF] rounded-lg flex items-center justify-center text-white mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#083459] mb-2 group-hover:text-[#0BA5DF] transition-colors">
+                            FCRA Workflow Checklist</h3>
+                        <p class="text-sm text-[#455A64]">Step-by-step checklist for FCRA cases</p>
+                    </a>
+                    <a class="group bg-gradient-to-br from-[#F8FCFF] to-[#E8F4F8] rounded-xl p-6 shadow-md hover:shadow-xl transition-all border-2 border-transparent hover:border-[#0BA5DF]"
+                        href="/resources/bankruptcy-playbook" data-discover="true">
+                        <div class="w-12 h-12 bg-[#0BA5DF] rounded-lg flex items-center justify-center text-white mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#083459] mb-2 group-hover:text-[#0BA5DF] transition-colors">
+                            Bankruptcy Playbook</h3>
+                        <p class="text-sm text-[#455A64]">Comprehensive bankruptcy case management</p>
+                    </a>
+                    <a class="group bg-gradient-to-br from-[#F8FCFF] to-[#E8F4F8] rounded-xl p-6 shadow-md hover:shadow-xl transition-all border-2 border-transparent hover:border-[#0BA5DF]"
+                        href="/assessment/law-firm-efficiency" data-discover="true">
+                        <div
+                            class="w-12 h-12 bg-[#FCC312] rounded-lg flex items-center justify-center text-[#083459] mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#083459] mb-2 group-hover:text-[#0BA5DF] transition-colors">
+                            Efficiency Assessment</h3>
+                        <p class="text-sm text-[#455A64]">Free assessment tool for law firms</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="py-20 bg-gradient-to-br from-[#083459] via-[#0BA5DF] to-[#083459] text-white">
+            <div class="max-w-[1440px] mx-auto md:px-8 px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Transform Your Practice with Ocean Clicks</h2>
+                    <p class="text-xl text-white/90 mb-8 leading-relaxed">Join hundreds of law firms that have reduced
+                        overhead by 60% while scaling their practices. Start with a risk-free 5-hour trial today.</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button
+                            class="inline-flex items-center justify-center gap-2 bg-[#FCC312] text-[#083459] px-8 py-4 rounded-lg font-bold text-sm md:text-lg hover:bg-white transition-all shadow-xl">
+                            Start Free Trial
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </button>
+                        <a href="https://calendar.app.google/hQM1wAoo1tv5R9EB8" target="_blank"
+                            rel="noopener noreferrer"
+                            class="inline-flex items-center justify-center gap-2 bg-white text-[#083459] px-8 py-4 rounded-lg font-bold text-sm md:text-lg hover:bg-[#E8F4F8] transition-all shadow-xl">
+                            Schedule Consultation
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- start model Ready to Get Started? -->
+    <div id="myModal" class="modal hidden fixed inset-0 z-50">  
+        <div
+            class="modalBackdrop fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 ">
+            <div class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+                <div class="sticky top-0 bg-gradient-to-r from-[#083459] to-[#0BA5DF] text-white p-6 rounded-t-2xl">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h2 class="text-2xl md:text-3xl font-bold mb-2">Start Your Free Trial</h2>
+                            <p class="text-white/90">Get 5 hours of professional legal support at no cost. Fill out the
+                                form and we'll get back to you within 24 hours.</p>
+                        </div>
+                        <button class="closeModal text-white hover:bg-white/20 p-2 rounded-lg transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-x w-6 h-6">
+                                <path d="M18 6 6 18"></path>
+                                <path d="m6 6 12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <form class="p-6 space-y-4">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div><label for="name" class="block text-sm font-semibold text-[#083459] mb-2">Full Name <span
+                                    class="text-red-500">*</span></label><input type="text" id="name" name="name"
+                                required=""
+                                class="w-full px-4 py-3 border border-[#B0BEC5] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0BA5DF] focus:border-transparent"
+                                placeholder="John Doe" value=""></div>
+                        <div><label for="email" class="block text-sm font-semibold text-[#083459] mb-2">Email Address
+                                <span class="text-red-500">*</span></label><input type="email" id="email" name="email"
+                                required=""
+                                class="w-full px-4 py-3 border border-[#B0BEC5] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0BA5DF] focus:border-transparent"
+                                placeholder="john@company.com" value=""></div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div><label for="phone" class="block text-sm font-semibold text-[#083459] mb-2">Phone
+                                Number</label><input type="tel" id="phone" name="phone"
+                                class="w-full px-4 py-3 border border-[#B0BEC5] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0BA5DF] focus:border-transparent"
+                                placeholder="(555) 123-4567" value=""></div>
+                        <div><label for="company" class="block text-sm font-semibold text-[#083459] mb-2">Company
+                                Name</label><input type="text" id="company" name="company"
+                                class="w-full px-4 py-3 border border-[#B0BEC5] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0BA5DF] focus:border-transparent"
+                                placeholder="Your Company" value=""></div>
+                    </div>
+                    <div><label for="message"
+                            class="block text-sm font-semibold text-[#083459] mb-2">Message</label><textarea
+                            id="message" name="message" rows="4"
+                            class="w-full px-4 py-3 border border-[#B0BEC5] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0BA5DF] focus:border-transparent resize-none"
+                            placeholder="Tell us about your needs..."></textarea></div>
+                    <div class="flex items-start gap-3 p-4 bg-[#E2F4FB] rounded-lg"><input type="checkbox" id="consent"
+                            name="consent" required=""
+                            class="mt-1 w-4 h-4 text-[#0BA5DF] border-[#B0BEC5] rounded focus:ring-[#0BA5DF]"><label
+                            for="consent" class="text-sm text-[#455A64]">I consent to Ocean Clicks storing my
+                            information and contacting me about their services. I understand that I can opt out at any
+                            time. <span class="text-red-500">*</span></label></div>
+                    <button type="submit"
+                        class="w-full bg-gradient-to-r from-[#0BA5DF] to-[#083459] text-white py-4 rounded-lg font-bold text-sm md:text-lg hover:shadow-xl transition-all disabled:opacity-50 disabled:cursor-not-allowed">Request
+                        Free Trial</button>
+                    <p class="text-xs text-center text-[#455A64] mt-4">Your information is secure and will never be
+                        shared with third parties. See our <a href="/privacy-policy"
+                            class="text-[#0BA5DF] hover:underline">Privacy Policy</a>.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- end model Ready to Get Started? -->
+    <!-- start Footer -->
+    <footer class="bg-[#083459] text-white">
+        <div class="max-w-[1440px] mx-auto px-4 md:px-8 py-12 md:py-16">
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-12 mb-8 md:mb-12">
+                <div class="md:col-span-3 lg:col-span-2"><img src="./assest/img/logo/logo.avif" alt="Ocean Clicks"
+                        class="h-8 md:h-10 mb-4 md:mb-6 brightness-0 invert">
+                    <p class="text-[#E2F4FB] mb-4 md:mb-6 leading-relaxed text-sm md:text-base">Specialized
+                        outsourcing
+                        solutions for regulated industries. We help law
+                        firms, credit repair companies, property
+                        managers, and B2B organizations scale
+                        efficiently.</p>
+                    <div class="flex gap-4"><a href="#linkedin"
+                            class="w-10 h-10 bg-[#0BA5DF] rounded-full flex items-center justify-center hover:bg-[#0991c9] transition-colors"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-linkedin w-5 h-5">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect width="4" height="12" x="2" y="9"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg></a><a href="#twitter"
+                            class="w-10 h-10 bg-[#0BA5DF] rounded-full flex items-center justify-center hover:bg-[#0991c9] transition-colors"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-twitter w-5 h-5">
+                                <path
+                                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                                </path>
+                            </svg></a><a href="#facebook"
+                            class="w-10 h-10 bg-[#0BA5DF] rounded-full flex items-center justify-center hover:bg-[#0991c9] transition-colors"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-facebook w-5 h-5">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg></a></div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-sm md:text-lg">Services</h4>
+                    <ul class="space-y-3 text-sm md:text-base">
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors"
+                                href="/credit-repair-outsourcing" data-discover="true">Credit Repair
+                                Outsourcing</a>
+                        </li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors"
+                                href="/paralegal-legal-support-outsourcing" data-discover="true">Legal Process
+                                Outsourcing</a></li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors"
+                                href="/hire-virtual-assistants.html" data-discover="true">Virtual
+                                Assistants</a></li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors"
+                                href="/property-management-outsourcing" data-discover="true">Property Management</a>
+                        </li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors"
+                                href="contact.html-center-outsourcing" data-discover="true">Contact Center</a></li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors"
+                                href="/b2b-lead-generation-services" data-discover="true">Lead
+                                Generation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-sm md:text-lg">Company</h4>
+                    <ul class="space-y-3 text-sm md:text-base">
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors" href="/about"
+                                data-discover="true">About Us</a></li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors" href="/careers"
+                                data-discover="true">Careers</a></li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors" href="/resources"
+                                data-discover="true">Resources</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-sm md:text-lg">Contact</h4>
+                    <ul class="space-y-4 text-sm md:text-base">
+                        <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-phone w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-1">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                            <div>
+                                <p class="text-[#E2F4FB]">US: +1 (631)
+                                    212-1341</p>
+                                <p class="text-[#E2F4FB]">India: +91 90853
+                                    16752</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-mail w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-1">
+                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg>
+                            <div>
+                                <p class="text-[#E2F4FB]">alex@ocean-clicks.com</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-map-pin w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-1">
+                                <path
+                                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                </path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <div>
+                                <p class="text-[#E2F4FB] text-sm">US: 66 W
+                                    Flagler St #6471<br>Miami, FL 33130</p>
+                                <p class="text-[#E2F4FB] text-sm mt-2">India:
+                                    6th Floor, 61-b, Sarkhej - Gandhinagar
+                                    Hwy<br>Ahmedabad, Gujarat 380054</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="border-t border-[#0BA5DF]/30 pt-6 md:pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-[#E2F4FB] text-xs md:text-sm text-center md:text-left">©
+                    2026 Ocean Clicks. All rights
+                    reserved.</p>
+                <div class="flex flex-wrap justify-center gap-4 md:gap-6 text-xs md:text-sm"><a
+                        class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors" href="/privacy-policy"
+                        data-discover="true">Privacy Policy</a><a
+                        class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors" href="/terms-of-service"
+                        data-discover="true">Terms of Service</a><a
+                        class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors" href="/policies-compliance"
+                        data-discover="true">Policies &amp;
+                        Compliance</a></div>
+            </div>
+        </div>
+    </footer>
+    <!-- end Footer -->
+
+
+
+    <script src="./assest/js/dev-script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,2024 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Clicks Header</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assest/css/dev-style.css">
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Progress Bar -->
+    <div id="scrollProgress"
+        class="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#FCC312] via-[#0BA5DF] to-[#083459] origin-left z-[60] scale-x-0">
+    </div>
+    <div id="floatingButtons"
+        class="hidden lg:flex fixed bottom-8 right-8 z-40 gap-3 transition-all duration-300 opacity-0 translate-y-5">
+
+        <!-- Call Button -->
+        <a href="tel:+1234567890"
+            class="bg-white text-[#083459] p-4 rounded-full shadow-2xl border-2 border-[#0BA5DF] hover:bg-[#E2F4FB] transition-all group"
+            title="Call Us">
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 group-hover:text-[#0BA5DF] transition-colors"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+        </a>
+
+        <!-- Start Free Trial -->
+        <button
+            class="bg-gradient-to-r from-[#FCC312] to-[#e6b010] text-[#083459] px-6 py-4 rounded-full shadow-2xl hover:shadow-3xl transition-all font-bold flex items-center gap-2 group">
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path d="M8 2v4" />
+                <path d="M16 2v4" />
+                <rect width="18" height="18" x="3" y="4" rx="2" />
+                <path d="M3 10h18" />
+            </svg>
+            <span>Start Free Trial</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+            </svg>
+        </button>
+        <!-- Back To Top -->
+        <button id="backToTop"
+            class="bg-[#083459] text-white p-4 rounded-full shadow-2xl hover:bg-[#0BA5DF] transition-all"
+            title="Back to Top">
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 -rotate-90" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+            </svg>
+        </button>
+    </div>
+    <!-- start top header  -->
+    <div class="bg-[#083459] text-white py-2 px-4 md:px-8">
+        <div
+            class="max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-center gap-2 md:gap-0 text-[11px] md:text-sm">
+            <div class="flex items-center gap-4 md:gap-8">
+                <a class="hover:text-[#FCC312] transition-colors font-semibold" href="contact-center-outsourcing.html">Contact Center Outsourcing</a>
+                <a class="hover:text-[#FCC312] transition-colors font-semibold" href="b2b-lead-generation-services.html">Lead Generation Services</a>
+            </div>
+            <div class="flex items-center gap-4 md:gap-6 opacity-90">
+                <a class="hover:text-[#0BA5DF] transition-colors" href="resources.html">Resources</a>
+                <a class="hover:text-[#0BA5DF] transition-colors" href="about.html">About</a>
+                <a class="hover:text-[#0BA5DF] transition-colors" href="articles.html">Articles</a>
+                <a class="hover:text-[#0BA5DF] transition-colors hidden md:inline" href="careers.html">Careers</a>
+                <a class="hover:text-[#0BA5DF] transition-colors" href="contact-center-outsourcing.html">Reach Us</a>
+            </div>
+        </div>
+    </div>
+    <!-- end top header  -->
+
+    <!-- start nav bar  -->
+   <nav class="bg-white border-b border-gray-100 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-[1440px] mx-auto px-4 md:px-8">
+            <div class="flex items-center justify-between h-20 md:h-24">
+
+                <div class="flex items-center flex-shrink-0">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <img src="./assest/img/logo/logo.avif" alt="Ocean Clicks" class="h-10 md:h-12 w-auto">
+                    </a>
+                </div>
+
+                <div class="hidden min-[1240px]:flex items-center gap-2 xl:gap-4">
+
+                    <div class="group relative py-8">
+                        <a class="flex items-center gap-1 text-[#083459] group-hover:text-[#0BA5DF] transition-colors font-bold text-[14px]"
+                            href="credit-repair-outsourcing.html">
+                            Credit Repair Outsourcing
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3"
+                                class="mt-0.5 transition-transform group-hover:rotate-180">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg>
+                        </a>
+                        <div
+                            class="absolute top-full left-0 w-[350px] bg-[#083459] shadow-xl rounded-b-lg border-t-2 border-[#0BA5DF] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60]">
+                            <div class="py-2">
+                                <a href="full-cycle-credit-repair-processing.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Full-Cycle
+                                    Credit Repair Processing</a>
+                                <a href="credit-dispute-outsourcing.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Credit
+                                    Dispute Outsourcing</a>
+                                <a href="credit-report-audit-analysis.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Credit
+                                    Report Audit & Analysis Outsourcing</a>
+                                <a href="fcra-fdcpa-compliance-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">FCRA
+                                    & FDCPA Compliance Support Outsourcing Services</a>
+                                <a href="virtual-assistants-for-credit-repair.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Virtual
+                                    Assistants for Credit Repair Companies</a>
+                                <a href="credit-repair-fulfillment.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Credit
+                                    Repair Fulfillment Services</a>
+                                <a href="automation-workflow-outsourcing.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold">Credit
+                                    Repair Automation & Workflow Outsourcing Services</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group relative py-8">
+                        <a class="flex items-center gap-1 text-[#083459] group-hover:text-[#0BA5DF] transition-colors font-bold text-[14px]"
+                            href="paralegal-legal-support-outsourcing.html">
+                            Legal Process Outsourcing
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3"
+                                class="mt-0.5 transition-transform group-hover:rotate-180">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg>
+                        </a>
+                        <div
+                            class="absolute top-full left-0 w-[320px] bg-[#083459] shadow-xl rounded-b-lg border-t-2 border-[#0BA5DF] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60]">
+                            <div class="py-2">
+                                <a href="personal-injury-case-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Personal
+                                    Injury Case Support</a>
+                                <a href="bankruptcy-petition-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Bankruptcy
+                                    Petition Support</a>
+                                <a href="workers-comp-case-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Workers'
+                                    Compensation Case Support</a>
+                                <a href="identity-theft-case-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Identity
+                                    Theft Case Support</a>
+                                <a href="fcra-litigation-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">FCRA
+                                    Litigation Support</a>
+                                <a href="legal-research-drafting.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Legal
+                                    Research & Drafting</a>
+                                <a href="virtual-paralegal-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold">Virtual
+                                    Paralegal Assistant</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group relative py-8">
+                        <a class="flex items-center gap-1 text-[#083459] group-hover:text-[#0BA5DF] transition-colors font-bold text-[14px]"
+                            href="hire-virtual-assistants.html">
+                            Hire Virtual Assistants
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3"
+                                class="mt-0.5 transition-transform group-hover:rotate-180">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg>
+                        </a>
+                        <div
+                            class="absolute top-full left-0 w-[320px] bg-[#083459] shadow-xl rounded-b-lg border-t-2 border-[#0BA5DF] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60]">
+                            <div class="py-2">
+                                <a href="real-estate-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Real
+                                    Estate Virtual Assistant</a>
+                                <a href="ecommerce-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Ecommerce
+                                    Virtual Assistant</a>
+                                <a href="small-business-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Small
+                                    Business Virtual Assistant</a>
+                                <a href="credit-repair-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Credit
+                                    Repair Virtual Assistant</a>
+                                <a href="startup-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Startup
+                                    Virtual Assistant</a>
+                                <a href="coaches-consultants-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Coaches
+                                    & Consultants Virtual Assistant</a>
+                                <a href="law-firm-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold">Law
+                                    Firm Virtual Assistant</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group relative py-8">
+                        <a class="flex items-center gap-1 text-[#083459] group-hover:text-[#0BA5DF] transition-colors font-bold text-[14px]"
+                            href="property-management-outsourcing.html">
+                            Property Management
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3"
+                                class="mt-0.5 transition-transform group-hover:rotate-180">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg>
+                        </a>
+                        <div
+                            class="absolute top-full right-0 w-[350px] bg-[#083459] shadow-xl rounded-b-lg border-t-2 border-[#0BA5DF] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60]">
+                            <div class="py-2">
+                                <a href="tenant-screening-application-processing.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Tenant
+                                    Screening & Application Processing</a>
+                                <a href="leasing-tenant-placement.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Leasing
+                                    & Tenant Placement Support</a>
+                                <a href="property-maintenance-coordination.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Property
+                                    Maintenance & Coordination Outsourcing</a>
+                                <a href="property-accounting.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Property
+                                    Accounting & Bookkeeping Services</a>
+                                <a href="property-preservation.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Property
+                                    Preservation Processing</a>
+                                <a href="hoa-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">HOA
+                                    & Community Association Support</a>
+                                <a href="str-management.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold">Short-Term
+                                    Rental Management Support</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="bg-[#FCC312] text-[#083459] px-7 py-3 rounded-lg font-bold hover:bg-[#e5af10] transition-all transform hover:scale-105 shadow-md ml-4 whitespace-nowrap"
+                        href="contact.html">
+                        Get Started
+                    </a>
+                </div>
+
+                <div class="min-[1240px]:hidden">
+                    <button id="mobile-menu-open" class="text-[#083459] p-2" aria-label="Toggle menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="4" x2="20" y1="12" y2="12"></line>
+                            <line x1="4" x2="20" y1="6" y2="6"></line>
+                            <line x1="4" x2="20" y1="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <div id="mobile-sidebar"
+        class="fixed inset-y-0 right-0 w-full max-w-[320px] bg-[#083459] z-[100] transform translate-x-full transition-transform duration-300 ease-in-out min-[1240px]:hidden flex flex-col shadow-2xl">
+
+        <div class="flex items-center justify-between p-6 border-b border-white/10 bg-[#062846]">
+            <img src="./assest/img/logo/logo.avif" alt="Logo" class="h-8 brightness-0 invert">
+            <button id="mobile-menu-close" class="text-white p-2 text-3xl leading-none">&times;</button>
+        </div>
+
+        <div class="flex-1 overflow-y-auto py-4 px-6 custom-scrollbar">
+            <div class="space-y-1">
+
+                <div class="border-b border-white/5 py-1">
+                    <div class="flex items-center justify-between">
+                        <a href="credit-repair-outsourcing.html"
+                            class="text-white font-bold text-[15px] py-3 flex-1">Credit Repair Outsourcing</a>
+                        <button class="mobile-chevron-btn p-3 text-[#0BA5DF] transition-transform duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div
+                        class="mobile-dropdown-content hidden flex flex-col gap-4 pl-4 pt-2 pb-6 border-l border-[#0BA5DF]/30 mt-1">
+                        <a href="full-cycle-credit-repair-processing.html" class="text-white/70 text-sm">Full-Cycle
+                            Credit Repair Processing</a>
+                        <a href="credit-dispute-outsourcing.html" class="text-white/70 text-sm">Credit Dispute
+                            Outsourcing</a>
+                        <a href="credit-report-audit-analysis.html" class="text-white/70 text-sm">Credit Report Audit &
+                            Analysis</a>
+                        <a href="fcra-fdcpa-compliance-support.html" class="text-white/70 text-sm">FCRA & FDCPA
+                            Compliance Support</a>
+                        <a href="virtual-assistants-for-credit-repair.html" class="text-white/70 text-sm">VAs for Credit
+                            Repair Companies</a>
+                        <a href="credit-repair-fulfillment.html" class="text-white/70 text-sm">Credit Repair Fulfillment
+                            Services</a>
+                        <a href="automation-workflow-outsourcing.html" class="text-white/70 text-sm">Automation &
+                            Workflow Services</a>
+                    </div>
+                </div>
+
+                <div class="border-b border-white/5 py-1">
+                    <div class="flex items-center justify-between">
+                        <a href="paralegal-legal-support-outsourcing.html"
+                            class="text-white font-bold text-[15px] py-3 flex-1">Legal Process Outsourcing</a>
+                        <button class="mobile-chevron-btn p-3 text-[#0BA5DF] transition-transform duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div
+                        class="mobile-dropdown-content hidden flex flex-col gap-4 pl-4 pt-2 pb-6 border-l border-[#0BA5DF]/30 mt-1">
+                        <a href="personal-injury-case-support.html" class="text-white/70 text-sm">Personal Injury Case
+                            Support</a>
+                        <a href="bankruptcy-petition-support.html" class="text-white/70 text-sm">Bankruptcy Petition
+                            Support</a>
+                        <a href="workers-comp-case-support.html" class="text-white/70 text-sm">Workers' Comp Case
+                            Support</a>
+                        <a href="identity-theft-case-support.html" class="text-white/70 text-sm">Identity Theft Case
+                            Support</a>
+                        <a href="fcra-litigation-support.html" class="text-white/70 text-sm">FCRA Litigation Support</a>
+                        <a href="legal-research-drafting.html" class="text-white/70 text-sm">Legal Research &
+                            Drafting</a>
+                        <a href="virtual-paralegal-assistant.html" class="text-white/70 text-sm">Virtual Paralegal
+                            Assistant</a>
+                    </div>
+                </div>
+
+                <div class="border-b border-white/5 py-1">
+                    <div class="flex items-center justify-between">
+                        <a href="hire-virtual-assistants.html" class="text-white font-bold text-[15px] py-3 flex-1">Hire
+                            Virtual Assistants</a>
+                        <button class="mobile-chevron-btn p-3 text-[#0BA5DF] transition-transform duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div
+                        class="mobile-dropdown-content hidden flex flex-col gap-4 pl-4 pt-2 pb-6 border-l border-[#0BA5DF]/30 mt-1">
+                        <a href="real-estate-virtual-assistant.html" class="text-white/70 text-sm">Real Estate Virtual
+                            Assistant</a>
+                        <a href="ecommerce-virtual-assistant.html" class="text-white/70 text-sm">Ecommerce Virtual
+                            Assistant</a>
+                        <a href="small-business-virtual-assistant.html" class="text-white/70 text-sm">Small Business
+                            Virtual Assistant</a>
+                        <a href="credit-repair-virtual-assistant.html" class="text-white/70 text-sm">Credit Repair
+                            Virtual Assistant</a>
+                        <a href="startup-virtual-assistant.html" class="text-white/70 text-sm">Startup Virtual
+                            Assistant</a>
+                        <a href="coaches-consultants-virtual-assistant.html" class="text-white/70 text-sm">Coaches &
+                            Consultants VA</a>
+                        <a href="law-firm-virtual-assistant.html" class="text-white/70 text-sm">Law Firm Virtual
+                            Assistant</a>
+                    </div>
+                </div>
+
+                <div class="border-b border-white/5 py-1">
+                    <div class="flex items-center justify-between">
+                        <a href="property-management-outsourcing.html"
+                            class="text-white font-bold text-[15px] py-3 flex-1">Property Management</a>
+                        <button class="mobile-chevron-btn p-3 text-[#0BA5DF] transition-transform duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div
+                        class="mobile-dropdown-content hidden flex flex-col gap-4 pl-4 pt-2 pb-6 border-l border-[#0BA5DF]/30 mt-1">
+                        <a href="tenant-screening-application-processing.html" class="text-white/70 text-sm">Tenant
+                            Screening & Application</a>
+                        <a href="leasing-tenant-placement.html" class="text-white/70 text-sm">Leasing & Tenant
+                            Placement</a>
+                        <a href="property-maintenance-coordination.html" class="text-white/70 text-sm">Maintenance &
+                            Coordination</a>
+                        <a href="property-accounting.html" class="text-white/70 text-sm">Accounting & Bookkeeping</a>
+                        <a href="property-preservation.html" class="text-white/70 text-sm">Property Preservation
+                            Processing</a>
+                        <a href="hoa-support.html" class="text-white/70 text-sm">HOA & Community Association</a>
+                        <a href="str-management.html" class="text-white/70 text-sm">Short-Term Rental Management</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-8 mb-12">
+                <a href="contact.html"
+                    class="block w-full bg-[#FCC312] text-[#083459] text-center py-4 rounded-xl font-bold shadow-lg">Get
+                    Started</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobile-overlay"
+        class="fixed inset-0 bg-[#083459]/80 backdrop-blur-sm z-[90] opacity-0 invisible transition-all duration-300 min-[1240px]:hidden">
+    </div>
+    <!-- end nav bar  -->
+
+    <main>
+        <!-- start hero banner -->
+       <section class="bg-gradient-to-br from-[#083459] via-[#0BA5DF] to-[#083459] text-white py-10 md:py-20 px-4 md:px-8">
+   <div class="max-w-[1440px] mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center">
+         <div>
+            <div class="inline-flex items-center gap-2 bg-[#FCC312] text-[#083459] px-4 py-2 rounded-full mb-4 md:mb-6 font-bold text-xs md:text-sm">BANKRUPTCY SUPPORT</div>
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 leading-tight">Bankruptcy Petition Support for U.S. Law Firms</h1>
+            <p class="text-base md:text-xl mb-6 md:mb-8 text-white/90 leading-relaxed">Bankruptcy law demands meticulous documentation, accurate financial classification, and flawless petition assembly. Yet attorneys and their in-house teams often operate under enormous time pressure—reviewing financial documents, preparing schedules, organizing creditor lists, and meeting tight U.S. Bankruptcy Court deadlines.</p>
+            <p class="text-sm md:text-lg mb-6 md:mb-8 text-white/90 leading-relaxed">Our Bankruptcy Petition Support services offer law firms a reliable, cost-effective way to manage Chapter 7 and Chapter 13 filings with speed and precision. We help your firm increase filing capacity, reduce turnaround time, and eliminate administrative bottlenecks—while maintaining full compliance with U.S. bankruptcy standards.</p>
+            <div class="flex flex-col sm:flex-row gap-3 md:gap-4">
+               <button data-modal="myModal"  class="openModalBtn  bg-[#FCC312] text-[#083459] px-6 md:px-8 py-3 md:py-4 rounded-lg hover:bg-[#e5af10] transition-all font-bold text-sm md:text-lg shadow-lg w-full sm:w-auto">Get Free Petition Review</button><a href="https://calendar.app.google/hQM1wAoo1tv5R9EB8" target="_blank" rel="noopener noreferrer" class="bg-white text-[#083459] px-6 md:px-8 py-3 md:py-4 rounded-lg hover:bg-gray-100 transition-all font-bold text-sm md:text-lg shadow-lg w-full sm:w-auto flex items-center justify-center">Schedule Consultation</a></div>
+         </div>
+         <div class="space-y-4 md:space-y-6">
+            <div class="bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-2xl p-5 md:p-6 hover:bg-white/20 transition-all">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text w-10 h-10 md:w-12 md:h-12 text-[#FCC312] mb-3 md:mb-4">
+                  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                  <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                  <path d="M10 9H8"></path>
+                  <path d="M16 13H8"></path>
+                  <path d="M16 17H8"></path>
+               </svg>
+               <h3 class="text-xl md:text-2xl font-bold mb-2 md:mb-3">Petition Drafting</h3>
+               <p class="text-sm md:text-base text-white/90">Complete Chapter 7 &amp; 13 petition preparation with all schedules and supporting forms.</p>
+            </div>
+            <div class="bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-2xl p-5 md:p-6 hover:bg-white/20 transition-all">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scale w-10 h-10 md:w-12 md:h-12 text-[#FCC312] mb-3 md:mb-4">
+                  <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path>
+                  <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path>
+                  <path d="M7 21h10"></path>
+                  <path d="M12 3v18"></path>
+                  <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"></path>
+               </svg>
+               <h3 class="text-xl md:text-2xl font-bold mb-2 md:mb-3">Means Test Calculations</h3>
+               <p class="text-sm md:text-base text-white/90">Accurate Forms 122A/122C preparation for eligibility and disposable income analysis.</p>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+        <!-- end hero banner -->
+
+        <!-- start blue -->
+        <div class="trialBanner relative z-10 mx-4 md:mx-8 my-12" style="opacity: 1; transform: none;">
+            <div class="max-w-5xl mx-auto rounded-2xl shadow-2xl border-4 bg-gradient-to-r from-[#0BA5DF] to-[#083459] text-white border-[#0BA5DF] p-6 md:p-8 relative overflow-hidden">
+                <div class="absolute inset-0 opacity-20" style="background: radial-gradient(circle at 65.6906% 65.6906%, rgba(255, 255, 255, 0.3) 0%, transparent 50%);">
+                </div>
+                <button onclick="closeBanner(this)" class="absolute top-4 right-4 opacity-60 hover:opacity-100 transition-opacity"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x w-5 h-5">
+                        <path d="M18 6 6 18"></path>
+                        <path d="m6 6 12 12"></path>
+                    </svg></button>
+                <div class="flex flex-col md:flex-row items-center gap-6 relative z-10">
+                    <div class="flex-shrink-0 icon-tilt">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up w-6 h-6">
+
+                            <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                            <polyline points="16 7 22 7 22 13"></polyline>
+
+                        </svg>
+                    </div>
+                    <div class="flex-1 text-center md:text-left">
+                        <h3 class="font-bold mb-2 text-[16px]">📄 Free Sample Petition Package</h3>
+                        <p class="text-sm md:text-base opacity-95">Review our Chapter 7 & 13 work before hiring</p>
+                    </div>
+                     <a href="contact.html" data-modal="trialModal" class="openModalBtn inline-flex flex-shrink-0 px-4 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 text-sm sm:text-base md:text-lg font-bold transition-all shadow-lg hover:shadow-xl active:scale-95 rounded-lg items-center justify-center gap-2 bg-[#FCC312] text-[#083459] hover:bg-[#e5af10] no-underline min-h-[44px]" tabindex="0">
+
+                        <span>Download Sample</span>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                            <path d="M5 12h14"></path>
+                            <path d="m12 5 7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <!-- end -->
+
+        <!-- start -->
+       <section class="bg-gradient-to-br from-[#E2F4FB] to-white py-12 md:py-20 px-4 md:px-8">
+   <div class="max-w-[1440px] mx-auto">
+      <div class="text-center max-w-5xl mx-auto mb-12 md:mb-16">
+         <h2 class="text-3xl md:text-4xl font-bold text-[#083459] mb-4 md:mb-6 px-4">Why Outsourcing Bankruptcy Petition Preparation Improves Case Efficiency</h2>
+         <p class="text-base md:text-xl text-[#455A64] leading-relaxed px-4">Bankruptcy preparation is heavily detail-driven. Attorneys routinely deal with incomplete client information, last-minute document submissions, and evolving financial disclosures. Every petition requires hours of data entry, organization, and verification—tasks that can overwhelm even seasoned legal teams.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-12 md:mb-16">
+         <div class="bg-white rounded-2xl p-5 md:p-6 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl hover:border-[#0BA5DF] transition-all">
+            <div class="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-3 md:mb-4">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users w-6 h-6 md:w-7 md:h-7 text-[#FCC312]">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+               </svg>
+            </div>
+            <h3 class="text-sm md:text-lg font-bold text-[#083459] mb-2">High Case Volumes</h3>
+            <p class="text-[#455A64] text-sm">In-house bandwidth challenges with multiple filings</p>
+         </div>
+         <div class="bg-white rounded-2xl p-5 md:p-6 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl hover:border-[#0BA5DF] transition-all">
+            <div class="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-3 md:mb-4">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-6 h-6 md:w-7 md:h-7 text-[#FCC312]">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+               </svg>
+            </div>
+            <h3 class="text-sm md:text-lg font-bold text-[#083459] mb-2">Time-Intensive Drafting</h3>
+            <p class="text-[#455A64] text-sm">Repetitive petition work overwhelms legal teams</p>
+         </div>
+         <div class="bg-white rounded-2xl p-5 md:p-6 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl hover:border-[#0BA5DF] transition-all">
+            <div class="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-3 md:mb-4">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert w-6 h-6 md:w-7 md:h-7 text-[#FCC312]">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" x2="12" y1="8" y2="12"></line>
+                  <line x1="12" x2="12.01" y1="16" y2="16"></line>
+               </svg>
+            </div>
+            <h3 class="text-sm md:text-lg font-bold text-[#083459] mb-2">Strict Court Deadlines</h3>
+            <p class="text-[#455A64] text-sm">Require consistent, on-time delivery of filings</p>
+         </div>
+         <div class="bg-white rounded-2xl p-5 md:p-6 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl hover:border-[#0BA5DF] transition-all">
+            <div class="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-3 md:mb-4">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-target w-6 h-6 md:w-7 md:h-7 text-[#FCC312]">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="6"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+               </svg>
+            </div>
+            <h3 class="text-sm md:text-lg font-bold text-[#083459] mb-2">Means Test Accuracy</h3>
+            <p class="text-[#455A64] text-sm">Calculations must be precise to avoid trustee objections</p>
+         </div>
+         <div class="bg-white rounded-2xl p-5 md:p-6 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl hover:border-[#0BA5DF] transition-all">
+            <div class="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-3 md:mb-4">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text w-6 h-6 md:w-7 md:h-7 text-[#FCC312]">
+                  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                  <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                  <path d="M10 9H8"></path>
+                  <path d="M16 13H8"></path>
+                  <path d="M16 17H8"></path>
+               </svg>
+            </div>
+            <h3 class="text-sm md:text-lg font-bold text-[#083459] mb-2">Schedule Complexity</h3>
+            <p class="text-[#455A64] text-sm">A–J schedules require careful classification</p>
+         </div>
+         <div class="bg-white rounded-2xl p-5 md:p-6 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl hover:border-[#0BA5DF] transition-all">
+            <div class="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-3 md:mb-4">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield w-6 h-6 md:w-7 md:h-7 text-[#FCC312]">
+                  <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+               </svg>
+            </div>
+            <h3 class="text-sm md:text-lg font-bold text-[#083459] mb-2">Deficiency Notices</h3>
+            <p class="text-[#455A64] text-sm">Court notices create rework and delay filings</p>
+         </div>
+      </div>
+      <div class="bg-gradient-to-r from-[#083459] to-[#0BA5DF] rounded-2xl p-6 md:p-12 text-white text-center">
+         <h3 class="text-2xl md:text-3xl font-bold mb-4 md:mb-6">Offshore Petition Support Enables Strategic Focus</h3>
+         <p class="text-base md:text-xl leading-relaxed max-w-4xl mx-auto">Offshore petition support enables attorneys to focus on legal strategy, client counseling, and negotiation—while trained bankruptcy specialists handle the operational and documentation workload.</p>
+      </div>
+   </div>
+</section>
+        <!-- end -->
+
+
+        <!-- start -->
+       <section class="py-16 px-4 md:px-8 bg-gradient-to-br from-[#1e3a5f] via-[#2d4a6f] to-[#1e3a5f] relative overflow-hidden">
+   <div class="absolute top-0 right-0 w-96 h-96 bg-[#C9A961]/10 rounded-full blur-3xl" style="transform: scale(1.19079);"></div>
+   <div class="absolute bottom-0 left-0 w-96 h-96 bg-[#8B1538]/10 rounded-full blur-3xl" style="transform: scale(1.09597);"></div>
+   <div class="max-w-6xl mx-auto relative z-10">
+      <div style="opacity: 1; transform: none;">
+         <h2 class="text-2xl md:text-4xl font-bold text-white text-center mb-8 md:mb-12 px-4">Chapter 7 &amp; 13 Petition Preparation Process</h2>
+         <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div class="relative group cursor-pointer">
+               <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-[#C9A961]/30">
+                  <div class="inline-block bg-gray-100 text-center align-middle w-full h-64 md:h-80 object-cover">
+                     <div class="flex items-center justify-center w-full h-full"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODgiIGhlaWdodD0iODgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlPSIjMDAwIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBvcGFjaXR5PSIuMyIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIzLjciPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjU2IiBoZWlnaHQ9IjU2IiByeD0iNiIvPjxwYXRoIGQ9Im0xNiA1OCAxNi0xOCAzMiAzMiIvPjxjaXJjbGUgY3g9IjUzIiBjeT0iMzUiIHI9IjciLz48L3N2Zz4KCg==" alt="Error loading image" data-original-url="https://source.unsplash.com/800x450/?bankruptcy%20legal%20documents%20filing"></div>
+                  </div>
+                  <div class="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/90 to-transparent"></div>
+                  <div class="absolute inset-0 flex items-center justify-center" style="transform: none;">
+                     <div class="w-20 h-20 bg-[#C9A961] rounded-full flex items-center justify-center shadow-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play w-10 h-10 text-white ml-1">
+                           <polygon points="6 3 20 12 6 21 6 3"></polygon>
+                        </svg>
+                     </div>
+                  </div>
+                  <div class="absolute bottom-4 right-4 bg-black/60 backdrop-blur-sm px-3 py-1 rounded-full flex items-center gap-2">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-4 h-4 text-white">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                     </svg>
+                     <span class="text-white text-sm font-semibold">5:20</span>
+                  </div>
+                  <div class="absolute inset-0 border-4 border-[#C9A961] rounded-2xl" ></div>
+               </div>
+            </div>
+            <div class="space-y-6">
+               <div style="opacity: 1; transform: none;">
+                  <div class="space-y-4">
+                     <div class="flex items-start gap-3" style="opacity: 1; transform: none;">
+                        <div class="w-6 h-6 bg-[#C9A961] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-white">
+                              <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                              <path d="m9 11 3 3L22 4"></path>
+                           </svg>
+                        </div>
+                        <span class="text-white text-lg">See real paralegal work in action</span>
+                     </div>
+                     <div class="flex items-start gap-3" style="opacity: 1; transform: none;">
+                        <div class="w-6 h-6 bg-[#C9A961] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-white">
+                              <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                              <path d="m9 11 3 3L22 4"></path>
+                           </svg>
+                        </div>
+                        <span class="text-white text-lg">Meet our bar-certified team</span>
+                     </div>
+                     <div class="flex items-start gap-3" style="opacity: 1; transform: none;">
+                        <div class="w-6 h-6 bg-[#C9A961] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-white">
+                              <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                              <path d="m9 11 3 3L22 4"></path>
+                           </svg>
+                        </div>
+                        <span class="text-white text-lg">Understand our quality process</span>
+                     </div>
+                     <div class="flex items-start gap-3" style="opacity: 1; transform: none;">
+                        <div class="w-6 h-6 bg-[#C9A961] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-white">
+                              <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                              <path d="m9 11 3 3L22 4"></path>
+                           </svg>
+                        </div>
+                        <span class="text-white text-lg">Learn about attorney collaboration</span>
+                     </div>
+                  </div>
+                  <button class="w-full mt-8 bg-gradient-to-r from-[#C9A961] to-[#B8944D] text-white px-8 py-5 rounded-xl font-bold text-xl shadow-xl hover:shadow-2xl transition-all flex items-center justify-center gap-3 group" tabindex="0">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play w-6 h-6 group-hover:scale-110 transition-transform">
+                        <polygon points="6 3 20 12 6 21 6 3"></polygon>
+                     </svg>
+                     Watch Process
+                  </button>
+                  <p class="text-white/80 text-center text-sm mt-4">⚖️ Trusted by <span class="font-bold text-[#C9A961]">500+</span> law firms nationwide</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+        <!-- end -->
+
+        <!-- start -->
+       <section class="bg-white py-12 md:py-20 px-4 md:px-8">
+   <div class="max-w-[1440px] mx-auto">
+      <div class="text-center max-w-5xl mx-auto mb-12 md:mb-16">
+         <h2 class="text-3xl md:text-4xl font-bold text-[#083459] mb-4 md:mb-6 px-4">End-to-End Bankruptcy Petition Support Services</h2>
+         <p class="text-base md:text-xl text-[#455A64] leading-relaxed px-4">We deliver complete, structured assistance across the full lifecycle of a bankruptcy case. Our team supports attorneys with all major drafting, organization, and petition assembly tasks required for Chapter 7 and Chapter 13 filings.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-12 md:mb-16">
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl hover:-translate-y-1 transition-all">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-folder-open w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                  <path d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2"></path>
+               </svg>
+            </div>
+            <h3 class="text-base md:text-xl  font-bold text-[#083459] mb-3 md:mb-4">Case Intake &amp; File Organization</h3>
+            <p class="text-sm md:text-base text-[#455A64] leading-relaxed">We structure client-provided documents, intake forms, and financial records into court-ready formats.</p>
+         </div>
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl hover:-translate-y-1 transition-all">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                  <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                  <path d="M10 9H8"></path>
+                  <path d="M16 13H8"></path>
+                  <path d="M16 17H8"></path>
+               </svg>
+            </div>
+            <h3 class="text-base md:text-xl  font-bold text-[#083459] mb-3 md:mb-4">Petition Drafting</h3>
+            <p class="text-sm md:text-base text-[#455A64] leading-relaxed">Drafting the Voluntary Petition and all required forms based on client information and attorney direction.</p>
+         </div>
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl hover:-translate-y-1 transition-all">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calculator w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                  <rect width="16" height="20" x="4" y="2" rx="2"></rect>
+                  <line x1="8" x2="16" y1="6" y2="6"></line>
+                  <line x1="16" x2="16" y1="14" y2="18"></line>
+                  <path d="M16 10h.01"></path>
+                  <path d="M12 10h.01"></path>
+                  <path d="M8 10h.01"></path>
+                  <path d="M12 14h.01"></path>
+                  <path d="M8 14h.01"></path>
+                  <path d="M12 18h.01"></path>
+                  <path d="M8 18h.01"></path>
+               </svg>
+            </div>
+            <h3 class="text-base md:text-xl  font-bold text-[#083459] mb-3 md:mb-4">Bankruptcy Schedules (A–J) Preparation</h3>
+            <p class="text-sm md:text-base text-[#455A64] leading-relaxed">Accurate categorization of assets, liabilities, income, expenses, and exemptions.</p>
+         </div>
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl hover:-translate-y-1 transition-all">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-files w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                  <path d="M20 7h-3a2 2 0 0 1-2-2V2"></path>
+                  <path d="M9 18a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h7l4 4v10a2 2 0 0 1-2 2Z"></path>
+                  <path d="M3 7.6v12.8A1.6 1.6 0 0 0 4.6 22h9.8"></path>
+               </svg>
+            </div>
+            <h3 class="text-base md:text-xl  font-bold text-[#083459] mb-3 md:mb-4">Statement of Financial Affairs (SOFA)</h3>
+            <p class="text-sm md:text-base text-[#455A64] leading-relaxed">Clear summaries of transfers, payments, employment history, and financial activity.</p>
+         </div>
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl hover:-translate-y-1 transition-all">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calculator w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                  <rect width="16" height="20" x="4" y="2" rx="2"></rect>
+                  <line x1="8" x2="16" y1="6" y2="6"></line>
+                  <line x1="16" x2="16" y1="14" y2="18"></line>
+                  <path d="M16 10h.01"></path>
+                  <path d="M12 10h.01"></path>
+                  <path d="M8 10h.01"></path>
+                  <path d="M12 14h.01"></path>
+                  <path d="M8 14h.01"></path>
+                  <path d="M12 18h.01"></path>
+                  <path d="M8 18h.01"></path>
+               </svg>
+            </div>
+            <h3 class="text-base md:text-xl  font-bold text-[#083459] mb-3 md:mb-4">Means Test Calculations (Form 122A/122C)</h3>
+            <p class="text-sm md:text-base text-[#455A64] leading-relaxed">Precise determination of eligibility through median income calculations for Chapter 7 and disposable income analysis for Chapter 13.</p>
+         </div>
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl hover:-translate-y-1 transition-all">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+               </svg>
+            </div>
+            <h3 class="text-base md:text-xl  font-bold text-[#083459] mb-3 md:mb-4">Creditor Matrix Compilation</h3>
+            <p class="text-sm md:text-base text-[#455A64] leading-relaxed">Organized, formatted creditor lists ready for electronic filing.</p>
+         </div>
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl hover:-translate-y-1 transition-all">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-folder-open w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                  <path d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2"></path>
+               </svg>
+            </div>
+            <h3 class="text-base md:text-xl  font-bold text-[#083459] mb-3 md:mb-4">Supporting Exhibits &amp; Evidence Organization</h3>
+            <p class="text-sm md:text-base text-[#455A64] leading-relaxed">Bank statements, pay stubs, tax returns, and loan documents are indexed for quick reference.</p>
+         </div>
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl hover:-translate-y-1 transition-all">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-triangle-alert w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                  <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path>
+                  <path d="M12 9v4"></path>
+                  <path d="M12 17h.01"></path>
+               </svg>
+            </div>
+            <h3 class="text-base md:text-xl  font-bold text-[#083459] mb-3 md:mb-4">Deficiency Correction &amp; Petition Amendments</h3>
+            <p class="text-sm md:text-base text-[#455A64] leading-relaxed">We help attorneys correct trustee-requested revisions, missing schedules, or incomplete disclosures.</p>
+         </div>
+      </div>
+      <div class="bg-gradient-to-br from-[#083459] to-[#0BA5DF] rounded-xl p-6 md:p-8 text-center text-white">
+         <p class="text-base md:text-xl font-semibold">With this structured support, law firms minimize clerical workload and maintain consistent accuracy across high-volume filings.</p>
+      </div>
+   </div>
+</section>
+        <!-- end -->
+
+         <!-- start dark brown -->
+        <div class="trialBanner relative z-10 mx-4 md:mx-8 my-12" style="opacity: 1; transform: none;">
+            <div class="max-w-5xl mx-auto rounded-2xl shadow-2xl border-4 bg-gradient-to-r from-[#8B1538] to-[#6B1028] text-white border-[#8B1538] p-6 md:p-8 relative overflow-hidden">
+                <div class="absolute inset-0 opacity-20" style="background: radial-gradient(circle at 65.6906% 65.6906%, rgba(255, 255, 255, 0.3) 0%, transparent 50%);">
+                </div>
+                <button onclick="closeBanner(this)" class="absolute top-4 right-4 opacity-60 hover:opacity-100 transition-opacity"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x w-5 h-5">
+                        <path d="M18 6 6 18"></path>
+                        <path d="m6 6 12 12"></path>
+                    </svg></button>
+                <div class="flex flex-col md:flex-row items-center gap-6 relative z-10">
+                    <div class="flex-shrink-0 icon-tilt">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scale w-6 h-6"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path><path d="M7 21h10"></path><path d="M12 3v18"></path><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"></path></svg>                    </div>
+                    <div class="flex-1 text-center md:text-left">
+                        <h3 class="font-bold mb-2 text-[16px]">⚡ 24-Hour Petition Turnaround</h3>
+                        <p class="text-sm md:text-base opacity-95">Rush filings handled for urgent cases</p>
+                    </div>
+                     <a href="contact.html" data-modal="trialModal" class="openModalBtn inline-flex flex-shrink-0 px-4 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 text-sm sm:text-base md:text-lg font-bold transition-all shadow-lg hover:shadow-xl active:scale-95 rounded-lg items-center justify-center gap-2 bg-white text-[#1e3a5f] hover:bg-white no-underline min-h-[44px]" tabindex="0">
+
+                        <span>Learn About Rush Service</span>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                            <path d="M5 12h14"></path>
+                            <path d="m12 5 7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <!-- end -->
+
+
+        <!-- start -->
+       <section class="bg-gradient-to-br from-[#E2F4FB] to-white py-12 md:py-20 px-4 md:px-8">
+   <div class="max-w-[1440px] mx-auto">
+      <div class="text-center max-w-5xl mx-auto mb-12 md:mb-16">
+         <h2 class="text-3xl md:text-4xl font-bold text-[#083459] mb-4 md:mb-6 px-4">Chapter 7 &amp; Chapter 13 Case Preparation</h2>
+         <p class="text-base md:text-xl text-[#455A64] leading-relaxed px-4">Each bankruptcy chapter has unique documentation demands. We support attorneys with accurate, timely drafting across both major filing types.</p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
+         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl transition-all">
+            <div class="flex items-center gap-4 mb-6 md:mb-8">
+               <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-down w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                     <polyline points="22 17 13.5 8.5 8.5 13.5 2 7"></polyline>
+                     <polyline points="16 17 22 17 22 11"></polyline>
+                  </svg>
+               </div>
+               <div>
+                  <h3 class="text-xl md:text-2xl font-bold text-[#083459]">Chapter 7</h3>
+                  <p class="text-sm md:text-base text-[#455A64]">Liquidation Cases</p>
+               </div>
+            </div>
+            <ul class="space-y-3">
+               <li class="flex items-start gap-3">
+                  <div class="w-2 h-2 bg-[#0BA5DF] rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-sm md:text-base text-[#455A64]">Eligibility evaluation support through median income analysis</span>
+               </li>
+               <li class="flex items-start gap-3">
+                  <div class="w-2 h-2 bg-[#0BA5DF] rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-sm md:text-base text-[#455A64]">Completion of Form 122A means test</span>
+               </li>
+               <li class="flex items-start gap-3">
+                  <div class="w-2 h-2 bg-[#0BA5DF] rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-sm md:text-base text-[#455A64]">Preparation of Schedules A–J</span>
+               </li>
+               <li class="flex items-start gap-3">
+                  <div class="w-2 h-2 bg-[#0BA5DF] rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-sm md:text-base text-[#455A64]">Identification and documentation of exempt vs. non-exempt assets</span>
+               </li>
+               <li class="flex items-start gap-3">
+                  <div class="w-2 h-2 bg-[#0BA5DF] rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-sm md:text-base text-[#455A64]">Compilation of unsecured debt lists</span>
+               </li>
+               <li class="flex items-start gap-3">
+                  <div class="w-2 h-2 bg-[#0BA5DF] rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-sm md:text-base text-[#455A64]">Organization of supporting financial documentation</span>
+               </li>
+               <li class="flex items-start gap-3">
+                  <div class="w-2 h-2 bg-[#0BA5DF] rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-sm md:text-base text-[#455A64]">Drafting of SOFA and petition components under attorney supervision</span>
+               </li>
+            </ul>
+         </div>
+         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl transition-all">
+            <div class="flex items-center gap-4 mb-6 md:mb-8">
+               <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                     <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                     <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                     <path d="M10 9H8"></path>
+                     <path d="M16 13H8"></path>
+                     <path d="M16 17H8"></path>
+                  </svg>
+               </div>
+               <div>
+                  <h3 class="text-xl md:text-2xl font-bold text-[#083459]">Chapter 13</h3>
+                  <p class="text-sm md:text-base text-[#455A64]">Wage Earner Plans</p>
+               </div>
+            </div>
+            <ul class="space-y-3">
+               <li class="flex items-start gap-3">
+                  <div class="w-2 h-2 bg-[#0BA5DF] rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-sm md:text-base text-[#455A64]">Disposable income determination (Form 122C)</span>
+               </li>
+               <li class="flex items-start gap-3">
+                  <div class="w-2 h-2 bg-[#0BA5DF] rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-sm md:text-base text-[#455A64]">Budget analysis and repayment feasibility</span>
+               </li>
+               <li class="flex items-start gap-3">
+                  <div class="w-2 h-2 bg-[#0BA5DF] rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-sm md:text-base text-[#455A64]">Schedule drafting with long-term restructuring considerations</span>
+               </li>
+               <li class="flex items-start gap-3">
+                  <div class="w-2 h-2 bg-[#0BA5DF] rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-sm md:text-base text-[#455A64]">Assistance with preliminary Chapter 13 plan inputs</span>
+               </li>
+               <li class="flex items-start gap-3">
+                  <div class="w-2 h-2 bg-[#0BA5DF] rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-sm md:text-base text-[#455A64]">Creditor categorization (priority, secured, unsecured)</span>
+               </li>
+               <li class="flex items-start gap-3">
+                  <div class="w-2 h-2 bg-[#0BA5DF] rounded-full flex-shrink-0 mt-2"></div>
+                  <span class="text-sm md:text-base text-[#455A64]">Income verification and expense analysis</span>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="mt-12 md:mt-16 bg-gradient-to-r from-[#083459] to-[#0BA5DF] rounded-2xl p-6 md:p-8 text-center text-white">
+         <p class="text-base md:text-xl font-semibold">By outsourcing Chapter 7 and Chapter 13 petition preparation, firms can improve efficiency, reduce backlog, and ensure compliance with U.S. Trustee guidelines.</p>
+      </div>
+   </div>
+</section>
+        <!-- end -->
+
+        <!-- start -->
+       <section class="bg-white py-12 md:py-20 px-4 md:px-8">
+   <div class="max-w-[1440px] mx-auto">
+      <div class="text-center max-w-5xl mx-auto mb-12 md:mb-16">
+         <h2 class="text-3xl md:text-4xl font-bold text-[#083459] mb-4 md:mb-6 px-4">Financial Data Review, Analysis &amp; Categorization</h2>
+         <p class="text-base md:text-xl text-[#455A64] leading-relaxed px-4">Accurate financial review is the foundation of every bankruptcy petition. Our team assists with comprehensive analysis to ensure every number aligns with the appropriate schedule—reducing deficiencies and facilitating smoother trustee review.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl hover:-translate-y-1 transition-all">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                  <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                  <path d="M10 9H8"></path>
+                  <path d="M16 13H8"></path>
+                  <path d="M16 17H8"></path>
+               </svg>
+            </div>
+            <p class="text-sm md:text-base text-[#455A64] leading-relaxed font-semibold">Analysis of income documents: pay stubs, W-2s, 1099s</p>
+         </div>
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl hover:-translate-y-1 transition-all">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-receipt w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                  <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"></path>
+                  <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path>
+                  <path d="M12 17.5v-11"></path>
+               </svg>
+            </div>
+            <p class="text-sm md:text-base text-[#455A64] leading-relaxed font-semibold">Review of tax returns for the prior two years</p>
+         </div>
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl hover:-translate-y-1 transition-all">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-credit-card w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                  <rect width="20" height="14" x="2" y="5" rx="2"></rect>
+                  <line x1="2" x2="22" y1="10" y2="10"></line>
+               </svg>
+            </div>
+            <p class="text-sm md:text-base text-[#455A64] leading-relaxed font-semibold">Bank statement examination to identify recurring transactions</p>
+         </div>
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl hover:-translate-y-1 transition-all">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                  <line x1="12" x2="12" y1="2" y2="22"></line>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+               </svg>
+            </div>
+            <p class="text-sm md:text-base text-[#455A64] leading-relaxed font-semibold">Debt verification and categorization</p>
+         </div>
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl hover:-translate-y-1 transition-all">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                  <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
+                  <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+               </svg>
+            </div>
+            <p class="text-sm md:text-base text-[#455A64] leading-relaxed font-semibold">Asset inventory and valuation organization</p>
+         </div>
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl hover:-translate-y-1 transition-all">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                  <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                  <polyline points="16 7 22 7 22 13"></polyline>
+               </svg>
+            </div>
+            <p class="text-sm md:text-base text-[#455A64] leading-relaxed font-semibold">Expense classification to support accurate budget schedules</p>
+         </div>
+      </div>
+   </div>
+</section>
+        <!-- end -->
+         
+        <!-- start blue -->
+        <div class="trialBanner relative z-10 mx-4 md:mx-8 my-12" style="opacity: 1; transform: none;">
+            <div class="max-w-5xl mx-auto rounded-2xl shadow-2xl border-4 bg-gradient-to-r from-[#0BA5DF] to-[#083459] text-white border-[#0BA5DF] p-6 md:p-8 relative overflow-hidden">
+                <div class="absolute inset-0 opacity-20" style="background: radial-gradient(circle at 65.6906% 65.6906%, rgba(255, 255, 255, 0.3) 0%, transparent 50%);">
+                </div>
+                <button onclick="closeBanner(this)" class="absolute top-4 right-4 opacity-60 hover:opacity-100 transition-opacity"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x w-5 h-5">
+                        <path d="M18 6 6 18"></path>
+                        <path d="m6 6 12 12"></path>
+                    </svg></button>
+                <div class="flex flex-col md:flex-row items-center gap-6 relative z-10">
+                    <div class="flex-shrink-0 icon-tilt">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up w-6 h-6">
+
+                            <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                            <polyline points="16 7 22 7 22 13"></polyline>
+
+                        </svg>
+                    </div>
+                    <div class="flex-1 text-center md:text-left">
+                        <h3 class="font-bold mb-2 text-[16px]">💰 60% Lower Cost</h3>
+                        <p class="text-sm md:text-base opacity-95">vs. in-house bankruptcy paralegals</p>
+                    </div>
+                     <a href="contact.html" data-modal="trialModal" class="openModalBtn inline-flex flex-shrink-0 px-4 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 text-sm sm:text-base md:text-lg font-bold transition-all shadow-lg hover:shadow-xl active:scale-95 rounded-lg items-center justify-center gap-2 bg-[#FCC312] text-[#083459] hover:bg-[#e5af10] no-underline min-h-[44px]" tabindex="0">
+
+                        <span>See Cost Comparison</span>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                            <path d="M5 12h14"></path>
+                            <path d="m12 5 7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <!-- end -->
+
+        <!-- start -->
+       <section class="bg-gradient-to-br from-[#E2F4FB] to-white py-12 md:py-20 px-4 md:px-8">
+   <div class="max-w-[1440px] mx-auto">
+      <div class="text-center max-w-5xl mx-auto mb-12 md:mb-16">
+         <h2 class="text-3xl md:text-4xl font-bold text-[#083459] mb-4 md:mb-6 px-4">Accuracy, Compliance &amp; U.S. Bankruptcy Court Standards</h2>
+         <p class="text-base md:text-xl text-[#455A64] leading-relaxed px-4">Bankruptcy courts require exact formatting, consistent disclosures, and precise categorization. Errors lead to delays, deficiencies, or case dismissal. We maintain rigorous compliance protocols to ensure petitions are court-ready, complete, and thoroughly reviewed before attorney filing.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl transition-all text-center">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mx-auto mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-check w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                  <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                  <path d="m9 15 2 2 4-4"></path>
+               </svg>
+            </div>
+            <h3 class="text-base md:text-xl  font-bold text-[#083459] mb-3">U.S. Bankruptcy Court Formatting</h3>
+            <p class="text-sm md:text-base text-[#455A64]">Strict adherence to court standards</p>
+         </div>
+         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl transition-all text-center">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mx-auto mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                  <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                  <path d="m9 11 3 3L22 4"></path>
+               </svg>
+            </div>
+            <h3 class="text-base md:text-xl  font-bold text-[#083459] mb-3">Clean Categorization</h3>
+            <p class="text-sm md:text-base text-[#455A64]">Accurate classification of assets and liabilities</p>
+         </div>
+         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl transition-all text-center">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mx-auto mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+               </svg>
+            </div>
+            <h3 class="text-base md:text-xl  font-bold text-[#083459] mb-3">Correct Creditor Naming</h3>
+            <p class="text-sm md:text-base text-[#455A64]">Accurate naming conventions for creditors</p>
+         </div>
+         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl transition-all text-center">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mx-auto mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-target w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="6"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+               </svg>
+            </div>
+            <h3 class="text-base md:text-xl  font-bold text-[#083459] mb-3">District-Specific Forms</h3>
+            <p class="text-sm md:text-base text-[#455A64]">Correct forms for each district and chapter</p>
+         </div>
+         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl transition-all text-center">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mx-auto mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                  <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+               </svg>
+            </div>
+            <h3 class="text-base md:text-xl  font-bold text-[#083459] mb-3">Confidentiality Protocols</h3>
+            <p class="text-sm md:text-base text-[#455A64]">Secure data-handling procedures</p>
+         </div>
+         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl transition-all text-center">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mx-auto mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                  <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+               </svg>
+            </div>
+            <h3 class="text-base md:text-xl  font-bold text-[#083459] mb-3">Attorney Supervision</h3>
+            <p class="text-sm md:text-base text-[#455A64]">All materials reviewed under attorney direction</p>
+         </div>
+      </div>
+      <div class="mt-12 md:mt-16 bg-gradient-to-r from-[#083459] to-[#0BA5DF] rounded-2xl p-6 md:p-8 text-center text-white">
+         <h3 class="text-2xl md:text-3xl font-bold mb-4">Court-Ready, Complete, Thoroughly Reviewed</h3>
+         <p class="text-sm md:text-lg leading-relaxed max-w-3xl mx-auto">Our quality control process ensures that petitions are court-ready, complete, and thoroughly reviewed before attorney filing.</p>
+      </div>
+   </div>
+</section>
+        <!-- end -->
+         
+        <!-- start -->
+       <section class="py-16 px-4 md:px-8 bg-gradient-to-br from-[#1e3a5f] via-[#2d4a6f] to-[#1e3a5f] relative overflow-hidden">
+   <div class="absolute top-0 right-0 w-96 h-96 bg-[#C9A961]/10 rounded-full blur-3xl" style="transform: scale(1.1311);"></div>
+   <div class="absolute bottom-0 left-0 w-96 h-96 bg-[#8B1538]/10 rounded-full blur-3xl" style="transform: scale(1.01995);"></div>
+   <div class="max-w-6xl mx-auto relative z-10">
+      <div style="opacity: 1; transform: none;">
+         <h2 class="text-2xl md:text-4xl font-bold text-white text-center mb-8 md:mb-12 px-4">Quality Control: Our Triple-Check System</h2>
+         <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div class="relative group cursor-pointer">
+               <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-[#C9A961]/30">
+                  <div class="inline-block bg-gray-100 text-center align-middle w-full h-64 md:h-80 object-cover">
+                     <div class="flex items-center justify-center w-full h-full"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODgiIGhlaWdodD0iODgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlPSIjMDAwIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBvcGFjaXR5PSIuMyIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIzLjciPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjU2IiBoZWlnaHQ9IjU2IiByeD0iNiIvPjxwYXRoIGQ9Im0xNiA1OCAxNi0xOCAzMiAzMiIvPjxjaXJjbGUgY3g9IjUzIiBjeT0iMzUiIHI9IjciLz48L3N2Zz4KCg==" alt="Error loading image" data-original-url="https://source.unsplash.com/800x450/?legal%20quality%20control%20review"></div>
+                  </div>
+                  <div class="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/90 to-transparent"></div>
+                  <div class="absolute inset-0 flex items-center justify-center" style="transform: none;">
+                     <div class="w-20 h-20 bg-[#C9A961] rounded-full flex items-center justify-center shadow-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play w-10 h-10 text-white ml-1">
+                           <polygon points="6 3 20 12 6 21 6 3"></polygon>
+                        </svg>
+                     </div>
+                  </div>
+                  <div class="absolute bottom-4 right-4 bg-black/60 backdrop-blur-sm px-3 py-1 rounded-full flex items-center gap-2">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-4 h-4 text-white">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                     </svg>
+                     <span class="text-white text-sm font-semibold">3:15</span>
+                  </div>
+                  <div class="absolute inset-0 border-4 border-[#C9A961] rounded-2xl" ></div>
+               </div>
+            </div>
+            <div class="space-y-6">
+               <div style="opacity: 1; transform: none;">
+                  <div class="space-y-4">
+                     <div class="flex items-start gap-3" style="opacity: 1; transform: none;">
+                        <div class="w-6 h-6 bg-[#C9A961] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-white">
+                              <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                              <path d="m9 11 3 3L22 4"></path>
+                           </svg>
+                        </div>
+                        <span class="text-white text-lg">See real paralegal work in action</span>
+                     </div>
+                     <div class="flex items-start gap-3" style="opacity: 1; transform: none;">
+                        <div class="w-6 h-6 bg-[#C9A961] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-white">
+                              <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                              <path d="m9 11 3 3L22 4"></path>
+                           </svg>
+                        </div>
+                        <span class="text-white text-lg">Meet our bar-certified team</span>
+                     </div>
+                     <div class="flex items-start gap-3" style="opacity: 1; transform: none;">
+                        <div class="w-6 h-6 bg-[#C9A961] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-white">
+                              <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                              <path d="m9 11 3 3L22 4"></path>
+                           </svg>
+                        </div>
+                        <span class="text-white text-lg">Understand our quality process</span>
+                     </div>
+                     <div class="flex items-start gap-3" style="opacity: 1; transform: none;">
+                        <div class="w-6 h-6 bg-[#C9A961] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-white">
+                              <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                              <path d="m9 11 3 3L22 4"></path>
+                           </svg>
+                        </div>
+                        <span class="text-white text-lg">Learn about attorney collaboration</span>
+                     </div>
+                  </div>
+                  <button class="w-full mt-8 bg-gradient-to-r from-[#C9A961] to-[#B8944D] text-white px-8 py-5 rounded-xl font-bold text-xl shadow-xl hover:shadow-2xl transition-all flex items-center justify-center gap-3 group" tabindex="0">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play w-6 h-6 group-hover:scale-110 transition-transform">
+                        <polygon points="6 3 20 12 6 21 6 3"></polygon>
+                     </svg>
+                     See Our QC Process
+                  </button>
+                  <p class="text-white/80 text-center text-sm mt-4">⚖️ Trusted by <span class="font-bold text-[#C9A961]">500+</span> law firms nationwide</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+        <!-- end -->
+
+        <!-- start -->
+       <section class="bg-white py-12 md:py-20 px-4 md:px-8">
+   <div class="max-w-[1440px] mx-auto">
+      <div class="text-center max-w-5xl mx-auto mb-12 md:mb-16">
+         <h2 class="text-3xl md:text-4xl font-bold text-[#083459] mb-4 md:mb-6 px-4">How Our Bankruptcy Support Workflow Integrates with Your Firm</h2>
+         <p class="text-base md:text-xl text-[#455A64] leading-relaxed px-4">Our workflow blends seamlessly with your existing bankruptcy practice. This structure keeps your bankruptcy pipeline running smoothly even during peak filing seasons.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl hover:-translate-y-1 transition-all">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                  <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path>
+                  <path d="m21.854 2.147-10.94 10.939"></path>
+               </svg>
+            </div>
+            <h3 class="text-base md:text-xl  font-bold text-[#083459] mb-3 md:mb-4">Task Assignment</h3>
+            <p class="text-sm md:text-base text-[#455A64] leading-relaxed">Through your preferred system (Clio, NextChapter, BestCase, MyCase, email, or portal)</p>
+         </div>
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl hover:-translate-y-1 transition-all">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-up w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                  <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                  <path d="M12 12v6"></path>
+                  <path d="m15 15-3-3-3 3"></path>
+               </svg>
+            </div>
+            <h3 class="text-base md:text-xl  font-bold text-[#083459] mb-3 md:mb-4">Document Upload</h3>
+            <p class="text-sm md:text-base text-[#455A64] leading-relaxed">Via secure encrypted channels</p>
+         </div>
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl hover:-translate-y-1 transition-all">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                  <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                  <path d="M10 9H8"></path>
+                  <path d="M16 13H8"></path>
+                  <path d="M16 17H8"></path>
+               </svg>
+            </div>
+            <h3 class="text-base md:text-xl  font-bold text-[#083459] mb-3 md:mb-4">Draft Petition Preparation</h3>
+            <p class="text-sm md:text-base text-[#455A64] leading-relaxed">With schedules, SOFA, and means test ready for review</p>
+         </div>
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl hover:-translate-y-1 transition-all">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                  <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                  <path d="m9 11 3 3L22 4"></path>
+               </svg>
+            </div>
+            <h3 class="text-base md:text-xl  font-bold text-[#083459] mb-3 md:mb-4">Internal QA</h3>
+            <p class="text-sm md:text-base text-[#455A64] leading-relaxed">Ensuring accuracy across financial categories and disclosures</p>
+         </div>
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl hover:-translate-y-1 transition-all">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                  <path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+               </svg>
+            </div>
+            <h3 class="text-base md:text-xl  font-bold text-[#083459] mb-3 md:mb-4">Attorney Review</h3>
+            <p class="text-sm md:text-base text-[#455A64] leading-relaxed">And adjustments before filing</p>
+         </div>
+         <div class="bg-gradient-to-br from-[#E2F4FB] to-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl hover:-translate-y-1 transition-all">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-refresh-cw w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                  <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path>
+                  <path d="M21 3v5h-5"></path>
+                  <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path>
+                  <path d="M8 16H3v5"></path>
+               </svg>
+            </div>
+            <h3 class="text-base md:text-xl  font-bold text-[#083459] mb-3 md:mb-4">Amendment Support</h3>
+            <p class="text-sm md:text-base text-[#455A64] leading-relaxed">If trustees require corrections</p>
+         </div>
+      </div>
+   </div>
+</section>
+        <!-- end -->
+
+        <!-- start -->
+       <section class="bg-gradient-to-br from-[#E2F4FB] to-white py-12 md:py-20 px-4 md:px-8">
+   <div class="max-w-[1440px] mx-auto">
+      <div class="text-center max-w-5xl mx-auto mb-12 md:mb-16">
+         <h2 class="text-3xl md:text-4xl font-bold text-[#083459] mb-4 md:mb-6 px-4">Advantages of Offshore Bankruptcy Paralegal Support</h2>
+         <p class="text-base md:text-xl text-[#455A64] leading-relaxed px-4">Law firms choose offshore bankruptcy petition support for the clear operational and financial advantages. Outsourcing is no longer a back-office shortcut—it's a strategic advantage for firms looking to expand bankruptcy operations.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl hover:-translate-y-1 transition-all">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                  <line x1="12" x2="12" y1="2" y2="22"></line>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+               </svg>
+            </div>
+            <h3 class="text-base md:text-xl  font-bold text-[#083459] mb-3 md:mb-4">40–60% Cost Savings</h3>
+            <p class="text-sm md:text-base text-[#455A64] leading-relaxed">Compared to in-house hires</p>
+         </div>
+         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl hover:-translate-y-1 transition-all">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+               </svg>
+            </div>
+            <h3 class="text-base md:text-xl  font-bold text-[#083459] mb-3 md:mb-4">Faster Turnaround Times</h3>
+            <p class="text-sm md:text-base text-[#455A64] leading-relaxed">For Chapter 7 and 13 petitions</p>
+         </div>
+         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl hover:-translate-y-1 transition-all">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                  <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                  <polyline points="16 7 22 7 22 13"></polyline>
+               </svg>
+            </div>
+            <h3 class="text-base md:text-xl  font-bold text-[#083459] mb-3 md:mb-4">Increased Filing Capacity</h3>
+            <p class="text-sm md:text-base text-[#455A64] leading-relaxed">Without expanding staff</p>
+         </div>
+         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl hover:-translate-y-1 transition-all">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+               </svg>
+            </div>
+            <h3 class="text-base md:text-xl  font-bold text-[#083459] mb-3 md:mb-4">Reduced Attorney Workload</h3>
+            <p class="text-sm md:text-base text-[#455A64] leading-relaxed">More time for client counseling</p>
+         </div>
+         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl hover:-translate-y-1 transition-all">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-target w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="6"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+               </svg>
+            </div>
+            <h3 class="text-base md:text-xl  font-bold text-[#083459] mb-3 md:mb-4">Lower Error Rates</h3>
+            <p class="text-sm md:text-base text-[#455A64] leading-relaxed">Through dedicated QC workflows</p>
+         </div>
+         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl hover:-translate-y-1 transition-all">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layers w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                  <path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path>
+                  <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path>
+                  <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path>
+               </svg>
+            </div>
+            <h3 class="text-base md:text-xl  font-bold text-[#083459] mb-3 md:mb-4">Flexible Scalability</h3>
+            <p class="text-sm md:text-base text-[#455A64] leading-relaxed">During seasonal filing surges</p>
+         </div>
+         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#0BA5DF]/20 hover:shadow-2xl hover:-translate-y-1 transition-all">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+                  <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  <rect width="20" height="14" x="2" y="6" rx="2"></rect>
+               </svg>
+            </div>
+            <h3 class="text-base md:text-xl  font-bold text-[#083459] mb-3 md:mb-4">Improved Cash Flow</h3>
+            <p class="text-sm md:text-base text-[#455A64] leading-relaxed">Through efficient case processing</p>
+         </div>
+      </div>
+   </div>
+</section>
+        <!-- end -->
+
+        <!-- start -->
+       <section class="bg-white py-12 md:py-20 px-4 md:px-8 border-t-4 border-[#0BA5DF]">
+   <div class="max-w-[1440px] mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold text-[#083459] mb-3 md:mb-4 px-4">The OC Advantage</h2>
+      <p class="text-base md:text-xl text-[#455A64] mb-8 md:mb-12 italic px-4">How the OC Team Delivers End-to-End Legal Process Outsourcing at Scale</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+         <div class="flex items-start gap-4 md:gap-6 bg-gradient-to-br from-[#E2F4FB] to-white p-6 md:p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+            <div class="w-12 h-12 md:w-14 md:h-14 bg-[#083459] rounded-full flex items-center justify-center flex-shrink-0">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up w-6 h-6 md:w-7 md:h-7 text-[#FCC312]">
+                  <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                  <polyline points="16 7 22 7 22 13"></polyline>
+               </svg>
+            </div>
+            <div>
+               <h3 class="text-base md:text-xl  font-bold text-[#083459] mb-2 md:mb-3">Integrated legal operations model</h3>
+               <p class="text-sm md:text-base text-[#455A64] leading-relaxed">We manage the complete legal support lifecycle—from case intake and document drafting to discovery management and trial prep—under a single, structured operational framework.</p>
+            </div>
+         </div>
+         <div class="flex items-start gap-4 md:gap-6 bg-gradient-to-br from-[#E2F4FB] to-white p-6 md:p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+            <div class="w-12 h-12 md:w-14 md:h-14 bg-[#083459] rounded-full flex items-center justify-center flex-shrink-0">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield w-6 h-6 md:w-7 md:h-7 text-[#FCC312]">
+                  <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+               </svg>
+            </div>
+            <div>
+               <h3 class="text-base md:text-xl  font-bold text-[#083459] mb-2 md:mb-3">Compliance-first execution</h3>
+               <p class="text-sm md:text-base text-[#455A64] leading-relaxed">Every workflow is aligned with state bar requirements, ethical guidelines, and attorney-client privilege protocols, ensuring consistency, confidentiality, and reduced malpractice risk.</p>
+            </div>
+         </div>
+         <div class="flex items-start gap-4 md:gap-6 bg-gradient-to-br from-[#E2F4FB] to-white p-6 md:p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+            <div class="w-12 h-12 md:w-14 md:h-14 bg-[#083459] rounded-full flex items-center justify-center flex-shrink-0">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-6 h-6 md:w-7 md:h-7 text-[#FCC312]">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path>
+               </svg>
+            </div>
+            <div>
+               <h3 class="text-base md:text-xl  font-bold text-[#083459] mb-2 md:mb-3">Scalable back-office support</h3>
+               <p class="text-sm md:text-base text-[#455A64] leading-relaxed">Our delivery model is designed to scale seamlessly as your caseload grows, without compromising turnaround times or quality standards—from 10 cases to 10,000.</p>
+            </div>
+         </div>
+         <div class="flex items-start gap-4 md:gap-6 bg-gradient-to-br from-[#E2F4FB] to-white p-6 md:p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+            <div class="w-12 h-12 md:w-14 md:h-14 bg-[#083459] rounded-full flex items-center justify-center flex-shrink-0">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users w-6 h-6 md:w-7 md:h-7 text-[#FCC312]">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+               </svg>
+            </div>
+            <div>
+               <h3 class="text-base md:text-xl  font-bold text-[#083459] mb-2 md:mb-3">Dedicated, trained legal specialists</h3>
+               <p class="text-sm md:text-base text-[#455A64] leading-relaxed">The OC Team functions as an extension of your law firm, not a disconnected vendor. Our paralegals integrate into your practice management systems and communicate directly with your attorneys.</p>
+            </div>
+         </div>
+      </div>
+      <div class="mt-8 md:mt-12 bg-gradient-to-r from-[#083459] to-[#0BA5DF] rounded-xl p-6 md:p-8 text-center">
+         <h3 class="text-xl md:text-2xl font-bold text-white mb-3 md:mb-4">Experience the OC Advantage for Your Law Firm</h3>
+         <p class="text-sm md:text-base text-white/90 mb-6 max-w-2xl mx-auto">Get started with our free case review or schedule a strategy call to see how our integrated legal operations model can transform your practice workflow.</p>
+         <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center"><button class="bg-[#FCC312] text-[#083459] px-6 md:px-8 py-3 md:py-4 rounded-lg hover:bg-[#e5af10] transition-colors font-semibold text-sm md:text-base">Schedule Strategy Call</button><button class="bg-white text-[#083459] px-6 md:px-8 py-3 md:py-4 rounded-lg hover:bg-gray-100 transition-colors font-semibold text-sm md:text-base">Request Free Case Review</button></div>
+      </div>
+   </div>
+</section>
+        <!-- end -->
+
+        <!-- start -->
+       <section class="bg-white py-12 md:py-20 px-4 md:px-8">
+   <div class="max-w-[1440px] mx-auto">
+      <div class="text-center max-w-5xl mx-auto mb-12 md:mb-16">
+         <h2 class="text-3xl md:text-4xl font-bold text-[#083459] mb-4 md:mb-6 px-4">Engagement Models for Bankruptcy Law Firms</h2>
+         <p class="text-base md:text-xl text-[#455A64] leading-relaxed px-4">We offer several engagement structures to support different types of bankruptcy practices. Every engagement model is designed to reduce attorney workload and improve operational efficiency.</p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
+         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg border-2 transition-all border-[#FCC312] ring-4 ring-[#FCC312]/20 hover:shadow-2xl">
+            <div class="flex items-start justify-between mb-4 md:mb-6">
+               <div class="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gift w-6 h-6 md:w-7 md:h-7 text-[#FCC312]">
+                     <rect x="3" y="8" width="18" height="4" rx="1"></rect>
+                     <path d="M12 8v13"></path>
+                     <path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"></path>
+                     <path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"></path>
+                  </svg>
+               </div>
+               <span class="px-3 py-1 rounded-full text-xs md:text-sm font-bold bg-[#FCC312] text-[#083459]">START HERE</span>
+            </div>
+            <h3 class="text-xl md:text-2xl font-bold text-[#083459] mb-3 md:mb-4">Free Trial</h3>
+            <p class="text-sm md:text-base text-[#455A64] mb-4 md:mb-6 leading-relaxed">Try our bankruptcy support with 5 hours of complimentary paralegal work</p>
+            <ul class="space-y-3 mb-6 md:mb-8">
+               <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm md:text-base text-[#455A64]">5 hours of bankruptcy paralegal support</span>
+               </li>
+               <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm md:text-base text-[#455A64]">Sample petition or schedule preparation</span>
+               </li>
+               <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm md:text-base text-[#455A64]">No credit card required</span>
+               </li>
+               <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm md:text-base text-[#455A64]">Full access to our team</span>
+               </li>
+            </ul>
+            <button class="w-full py-3 md:py-4 rounded-lg font-bold text-sm md:text-lg transition-all bg-[#FCC312] text-[#083459] hover:bg-[#e5af10]">Start Free Trial</button>
+         </div>
+         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg border-2 transition-all border-[#0BA5DF]/20 hover:border-[#0BA5DF] hover:shadow-2xl">
+            <div class="flex items-start justify-between mb-4 md:mb-6">
+               <div class="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text w-6 h-6 md:w-7 md:h-7 text-[#FCC312]">
+                     <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                     <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                     <path d="M10 9H8"></path>
+                     <path d="M16 13H8"></path>
+                     <path d="M16 17H8"></path>
+                  </svg>
+               </div>
+               <span class="px-3 py-1 rounded-full text-xs md:text-sm font-bold bg-[#0BA5DF] text-white">FLEXIBLE</span>
+            </div>
+            <h3 class="text-xl md:text-2xl font-bold text-[#083459] mb-3 md:mb-4">Per-Petition Support</h3>
+            <p class="text-sm md:text-base text-[#455A64] mb-4 md:mb-6 leading-relaxed">Ideal for firms that need help drafting occasional cases or overflow work</p>
+            <ul class="space-y-3 mb-6 md:mb-8">
+               <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm md:text-base text-[#455A64]">Pay per completed petition</span>
+               </li>
+               <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm md:text-base text-[#455A64]">No monthly commitments</span>
+               </li>
+               <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm md:text-base text-[#455A64]">Perfect for low-volume firms</span>
+               </li>
+               <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm md:text-base text-[#455A64]">Quick turnaround available</span>
+               </li>
+            </ul>
+            <button class="w-full py-3 md:py-4 rounded-lg font-bold text-sm md:text-lg transition-all bg-[#0BA5DF] text-white hover:bg-[#083459]">Learn More</button>
+         </div>
+         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg border-2 transition-all border-[#0BA5DF]/20 hover:border-[#0BA5DF] hover:shadow-2xl">
+            <div class="flex items-start justify-between mb-4 md:mb-6">
+               <div class="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-6 h-6 md:w-7 md:h-7 text-[#FCC312]">
+                     <path d="M8 2v4"></path>
+                     <path d="M16 2v4"></path>
+                     <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                     <path d="M3 10h18"></path>
+                  </svg>
+               </div>
+               <span class="px-3 py-1 rounded-full text-xs md:text-sm font-bold bg-[#0BA5DF] text-white">POPULAR</span>
+            </div>
+            <h3 class="text-xl md:text-2xl font-bold text-[#083459] mb-3 md:mb-4">Monthly Volume Packages</h3>
+            <p class="text-sm md:text-base text-[#455A64] mb-4 md:mb-6 leading-relaxed">Predictable pricing based on consistent filing volume</p>
+            <ul class="space-y-3 mb-6 md:mb-8">
+               <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm md:text-base text-[#455A64]">Fixed monthly cost structure</span>
+               </li>
+               <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm md:text-base text-[#455A64]">Volume-based discounts</span>
+               </li>
+               <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm md:text-base text-[#455A64]">Priority turnaround</span>
+               </li>
+               <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm md:text-base text-[#455A64]">Dedicated support team</span>
+               </li>
+            </ul>
+            <button class="w-full py-3 md:py-4 rounded-lg font-bold text-sm md:text-lg transition-all bg-[#0BA5DF] text-white hover:bg-[#083459]">Learn More</button>
+         </div>
+         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg border-2 transition-all border-[#0BA5DF]/20 hover:border-[#0BA5DF] hover:shadow-2xl">
+            <div class="flex items-start justify-between mb-4 md:mb-6">
+               <div class="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users w-6 h-6 md:w-7 md:h-7 text-[#FCC312]">
+                     <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                     <circle cx="9" cy="7" r="4"></circle>
+                     <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                     <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+               </div>
+               <span class="px-3 py-1 rounded-full text-xs md:text-sm font-bold bg-[#0BA5DF] text-white">HIGH VOLUME</span>
+            </div>
+            <h3 class="text-xl md:text-2xl font-bold text-[#083459] mb-3 md:mb-4">Dedicated Bankruptcy Paralegal</h3>
+            <p class="text-sm md:text-base text-[#455A64] mb-4 md:mb-6 leading-relaxed">A full-time offshore resource trained specifically for your workflows</p>
+            <ul class="space-y-3 mb-6 md:mb-8">
+               <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm md:text-base text-[#455A64]">Exclusive paralegal for your firm</span>
+               </li>
+               <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm md:text-base text-[#455A64]">Learns your court district requirements</span>
+               </li>
+               <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm md:text-base text-[#455A64]">Follows your templates</span>
+               </li>
+               <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm md:text-base text-[#455A64]">Maximum consistency</span>
+               </li>
+            </ul>
+            <button class="w-full py-3 md:py-4 rounded-lg font-bold text-sm md:text-lg transition-all bg-[#0BA5DF] text-white hover:bg-[#083459]">Learn More</button>
+         </div>
+         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg border-2 transition-all border-[#0BA5DF]/20 hover:border-[#0BA5DF] hover:shadow-2xl">
+            <div class="flex items-start justify-between mb-4 md:mb-6">
+               <div class="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layers w-6 h-6 md:w-7 md:h-7 text-[#FCC312]">
+                     <path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path>
+                     <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path>
+                     <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path>
+                  </svg>
+               </div>
+               <span class="px-3 py-1 rounded-full text-xs md:text-sm font-bold bg-[#0BA5DF] text-white">SCALABLE</span>
+            </div>
+            <h3 class="text-xl md:text-2xl font-bold text-[#083459] mb-3 md:mb-4">Hybrid Support Model</h3>
+            <p class="text-sm md:text-base text-[#455A64] mb-4 md:mb-6 leading-relaxed">Combines a dedicated specialist with additional on-demand support</p>
+            <ul class="space-y-3 mb-6 md:mb-8">
+               <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm md:text-base text-[#455A64]">Base dedicated paralegal</span>
+               </li>
+               <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm md:text-base text-[#455A64]">Additional overflow support</span>
+               </li>
+               <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm md:text-base text-[#455A64]">Scale during volume peaks</span>
+               </li>
+               <li class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                     <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <span class="text-sm md:text-base text-[#455A64]">Cost-effective flexibility</span>
+               </li>
+            </ul>
+            <button class="w-full py-3 md:py-4 rounded-lg font-bold text-sm md:text-lg transition-all bg-[#0BA5DF] text-white hover:bg-[#083459]">Learn More</button>
+         </div>
+      </div>
+   </div>
+</section>
+        <!-- end -->
+
+         <!-- start dark brown -->
+        <div class="trialBanner relative z-10 mx-4 md:mx-8 my-12" style="opacity: 1; transform: none;">
+            <div class="max-w-5xl mx-auto rounded-2xl shadow-2xl border-4 bg-gradient-to-r from-[#8B1538] to-[#6B1028] text-white border-[#8B1538] p-6 md:p-8 relative overflow-hidden">
+                <div class="absolute inset-0 opacity-20" style="background: radial-gradient(circle at 65.6906% 65.6906%, rgba(255, 255, 255, 0.3) 0%, transparent 50%);">
+                </div>
+                <button onclick="closeBanner(this)" class="absolute top-4 right-4 opacity-60 hover:opacity-100 transition-opacity"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x w-5 h-5">
+                        <path d="M18 6 6 18"></path>
+                        <path d="m6 6 12 12"></path>
+                    </svg></button>
+                <div class="flex flex-col md:flex-row items-center gap-6 relative z-10">
+                    <div class="flex-shrink-0 icon-tilt">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scale w-6 h-6"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path><path d="M7 21h10"></path><path d="M12 3v18"></path><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"></path></svg>                    </div>
+                    <div class="flex-1 text-center md:text-left">
+                        <h3 class="font-bold mb-2 text-[16px]">🚀 Start with Free Trial</h3>
+                        <p class="text-sm md:text-base opacity-95">40 hours of bankruptcy paralegal support - no commitment/p>
+                    </div>
+                     <a href="contact.html" data-modal="trialModal" class="openModalBtn inline-flex flex-shrink-0 px-4 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 text-sm sm:text-base md:text-lg font-bold transition-all shadow-lg hover:shadow-xl active:scale-95 rounded-lg items-center justify-center gap-2 bg-white text-[#1e3a5f] hover:bg-white no-underline min-h-[44px]" tabindex="0">
+
+                        <span>Claim Free Trial</span>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                            <path d="M5 12h14"></path>
+                            <path d="m12 5 7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <!-- end -->
+
+
+        <!-- start -->
+       <section class="bg-gradient-to-br from-[#E2F4FB] to-white py-12 md:py-20 px-4 md:px-8">
+   <div class="max-w-[1440px] mx-auto">
+      <div class="text-center max-w-5xl mx-auto mb-12 md:mb-16">
+         <div class="inline-flex items-center justify-center w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-full mb-4 md:mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-help w-7 h-7 md:w-8 md:h-8 text-[#FCC312]">
+               <circle cx="12" cy="12" r="10"></circle>
+               <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+               <path d="M12 17h.01"></path>
+            </svg>
+         </div>
+         <h2 class="text-3xl md:text-4xl font-bold text-[#083459] mb-4 md:mb-6 px-4">Frequently Asked Questions</h2>
+         <p class="text-base md:text-xl text-[#455A64] px-4">Common questions about our Bankruptcy Petition Support services</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-12 md:mb-16 items-start">
+    
+    <div class="bg-white rounded-2xl shadow-lg border-2 border-[#0BA5DF]/20 overflow-hidden hover:shadow-xl transition-all">
+        <button class="faq-question w-full p-5 md:p-6 text-left flex items-start justify-between gap-4 hover:bg-[#E2F4FB]/30 transition-colors">
+            <div class="flex items-start gap-3 md:gap-4 flex-1">
+                <div class="w-7 h-7 md:w-8 md:h-8 bg-[#0BA5DF] text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm md:text-base mt-0.5">1</div>
+                <span class="font-bold text-[#083459] text-sm md:text-lg leading-snug">Do you prepare all forms required for Chapter 7 and Chapter 13 filings?</span>
+            </div>
+            <div class="faq-icon w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all bg-[#E2F4FB] text-[#0BA5DF] font-bold text-xl">+</div>
+        </button>
+        <div class="faq-answer hidden p-6 pt-0 text-[#455A64] border-t border-slate-100">
+            <p class="pt-4 leading-relaxed">Yes. We handle the full petition package, including Schedules A-J, the Statement of Financial Affairs, and Chapter 13 plans tailored to your specific district requirements.</p>
+        </div>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-lg border-2 border-[#0BA5DF]/20 overflow-hidden hover:shadow-xl transition-all">
+        <button class="faq-question w-full p-5 md:p-6 text-left flex items-start justify-between gap-4 hover:bg-[#E2F4FB]/30 transition-colors">
+            <div class="flex items-start gap-3 md:gap-4 flex-1">
+                <div class="w-7 h-7 md:w-8 md:h-8 bg-[#0BA5DF] text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm md:text-base mt-0.5">2</div>
+                <span class="font-bold text-[#083459] text-sm md:text-lg leading-snug">Can you handle urgent filings or last-minute corrections?</span>
+            </div>
+            <div class="faq-icon w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all bg-[#E2F4FB] text-[#0BA5DF] font-bold text-xl">+</div>
+        </button>
+        <div class="faq-answer hidden p-6 pt-0 text-[#455A64] border-t border-slate-100">
+            <p class="pt-4 leading-relaxed">We prioritize emergency filings. Our team is equipped to handle expedited petitions to stop foreclosures or wage garnishments with high accuracy under tight deadlines.</p>
+        </div>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-lg border-2 border-[#0BA5DF]/20 overflow-hidden hover:shadow-xl transition-all">
+        <button class="faq-question w-full p-5 md:p-6 text-left flex items-start justify-between gap-4 hover:bg-[#E2F4FB]/30 transition-colors">
+            <div class="flex items-start gap-3 md:gap-4 flex-1">
+                <div class="w-7 h-7 md:w-8 md:h-8 bg-[#0BA5DF] text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm md:text-base mt-0.5">3</div>
+                <span class="font-bold text-[#083459] text-sm md:text-lg leading-snug">What documents do you need to begin preparing a petition?</span>
+            </div>
+            <div class="faq-icon w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all bg-[#E2F4FB] text-[#0BA5DF] font-bold text-xl">+</div>
+        </button>
+        <div class="faq-answer hidden p-6 pt-0 text-[#455A64] border-t border-slate-100">
+            <p class="pt-4 leading-relaxed">Typically, we require the client’s intake form, 6 months of paystubs, 2 years of tax returns, and their credit report to ensure a complete and accurate draft.</p>
+        </div>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-lg border-2 border-[#0BA5DF]/20 overflow-hidden hover:shadow-xl transition-all">
+        <button class="faq-question w-full p-5 md:p-6 text-left flex items-start justify-between gap-4 hover:bg-[#E2F4FB]/30 transition-colors">
+            <div class="flex items-start gap-3 md:gap-4 flex-1">
+                <div class="w-7 h-7 md:w-8 md:h-8 bg-[#0BA5DF] text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm md:text-base mt-0.5">4</div>
+                <span class="font-bold text-[#083459] text-sm md:text-lg leading-snug">Do you assist with means test calculations?</span>
+            </div>
+            <div class="faq-icon w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all bg-[#E2F4FB] text-[#0BA5DF] font-bold text-xl">+</div>
+        </button>
+        <div class="faq-answer hidden p-6 pt-0 text-[#455A64] border-t border-slate-100">
+            <p class="pt-4 leading-relaxed">Yes. We perform detailed means testing (Form 122A/C) to determine Chapter 7 eligibility or the required plan duration and payment for Chapter 13 cases.</p>
+        </div>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-lg border-2 border-[#0BA5DF]/20 overflow-hidden hover:shadow-xl transition-all">
+        <button class="faq-question w-full p-5 md:p-6 text-left flex items-start justify-between gap-4 hover:bg-[#E2F4FB]/30 transition-colors">
+            <div class="flex items-start gap-3 md:gap-4 flex-1">
+                <div class="w-7 h-7 md:w-8 md:h-8 bg-[#0BA5DF] text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm md:text-base mt-0.5">5</div>
+                <span class="font-bold text-[#083459] text-sm md:text-lg leading-snug">How do you ensure confidentiality and data security?</span>
+            </div>
+            <div class="faq-icon w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all bg-[#E2F4FB] text-[#0BA5DF] font-bold text-xl">+</div>
+        </button>
+        <div class="faq-answer hidden p-6 pt-0 text-[#455A64] border-t border-slate-100">
+            <p class="pt-4 leading-relaxed">We use enterprise-grade encryption and work directly within your secure bankruptcy software or cloud environment to ensure no sensitive PII ever leaves your ecosystem.</p>
+        </div>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-lg border-2 border-[#0BA5DF]/20 overflow-hidden hover:shadow-xl transition-all">
+        <button class="faq-question w-full p-5 md:p-6 text-left flex items-start justify-between gap-4 hover:bg-[#E2F4FB]/30 transition-colors">
+            <div class="flex items-start gap-3 md:gap-4 flex-1">
+                <div class="w-7 h-7 md:w-8 md:h-8 bg-[#0BA5DF] text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm md:text-base mt-0.5">6</div>
+                <span class="font-bold text-[#083459] text-sm md:text-lg leading-snug">Which bankruptcy software systems do you work with?</span>
+            </div>
+            <div class="faq-icon w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all bg-[#E2F4FB] text-[#0BA5DF] font-bold text-xl">+</div>
+        </button>
+        <div class="faq-answer hidden p-6 pt-0 text-[#455A64] border-t border-slate-100">
+            <p class="pt-4 leading-relaxed">Our team is proficient in Best Case, Jubilee, NextChapter, and CINcompass, allowing us to integrate seamlessly into your current workflow.</p>
+        </div>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-lg border-2 border-[#0BA5DF]/20 overflow-hidden hover:shadow-xl transition-all">
+        <button class="faq-question w-full p-5 md:p-6 text-left flex items-start justify-between gap-4 hover:bg-[#E2F4FB]/30 transition-colors">
+            <div class="flex items-start gap-3 md:gap-4 flex-1">
+                <div class="w-7 h-7 md:w-8 md:h-8 bg-[#0BA5DF] text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm md:text-base mt-0.5">7</div>
+                <span class="font-bold text-[#083459] text-sm md:text-lg leading-snug">Can you work with our existing templates and formatting?</span>
+            </div>
+            <div class="faq-icon w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all bg-[#E2F4FB] text-[#0BA5DF] font-bold text-xl">+</div>
+        </button>
+        <div class="faq-answer hidden p-6 pt-0 text-[#455A64] border-t border-slate-100">
+            <p class="pt-4 leading-relaxed">Yes. We adapt to your firm’s specific styles for Chapter 13 plans and local jurisdiction formatting to ensure consistency across all your filings.</p>
+        </div>
+    </div>
+
+</div>
+      <div class="bg-gradient-to-r from-[#083459] to-[#0BA5DF] rounded-2xl p-6 md:p-8 text-center text-white">
+         <h3 class="text-2xl md:text-3xl font-bold mb-4">Have More Questions?</h3>
+         <p class="text-sm md:text-lg mb-6 md:mb-8 max-w-3xl mx-auto">Schedule a consultation to discuss your bankruptcy practice needs</p>
+         <button class="bg-[#FCC312] text-[#083459] px-6 md:px-8 py-3 md:py-4 rounded-lg hover:bg-[#e5af10] transition-all font-bold text-sm md:text-lg shadow-lg">Schedule Call</button>
+      </div>
+   </div>
+</section>
+        <!-- end -->
+
+        <!-- start -->
+       <section class="bg-gradient-to-br from-[#083459] via-[#0BA5DF] to-[#083459] text-white py-12 md:py-20 px-4 md:px-8">
+   <div class="max-w-[1440px] mx-auto">
+      <div class="text-center mb-8 md:mb-12">
+         <h2 class="text-3xl md:text-4xl font-bold mb-4 md:mb-6 px-4">Get Started with Bankruptcy Petition Support</h2>
+         <p class="text-base md:text-xl text-white/90 max-w-4xl mx-auto leading-relaxed px-4">Streamline your bankruptcy practice with accurate, attorney-ready petition drafting, schedule preparation, means test analysis, and creditor list organization. Whether your firm handles a handful of cases or processes dozens of filings each month, our offshore bankruptcy paralegals deliver consistent, high-quality support that strengthens your workflow and reduces administrative burden.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-8 md:mb-12">
+         <div class="bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-2xl p-6 md:p-8 hover:bg-white/20 transition-all text-center">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-[#FCC312] rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-7 h-7 md:w-8 md:h-8 text-[#083459]">
+                  <path d="M8 2v4"></path>
+                  <path d="M16 2v4"></path>
+                  <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                  <path d="M3 10h18"></path>
+               </svg>
+            </div>
+            <h3 class="text-xl md:text-2xl font-bold mb-3 md:mb-4">Schedule Consultation</h3>
+            <p class="text-sm md:text-base text-white/90 mb-4 md:mb-6">Discuss your bankruptcy case volume and find the right support model</p>
+            <button class="bg-[#FCC312] text-[#083459] px-6 py-3 rounded-lg hover:bg-[#e5af10] transition-all font-bold w-full text-sm md:text-base">Book a Call</button>
+         </div>
+         <div class="bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-2xl p-6 md:p-8 hover:bg-white/20 transition-all text-center">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-[#FCC312] rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail w-7 h-7 md:w-8 md:h-8 text-[#083459]">
+                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+               </svg>
+            </div>
+            <h3 class="text-xl md:text-2xl font-bold mb-3 md:mb-4">Request Free Petition Review</h3>
+            <p class="text-sm md:text-base text-white/90 mb-4 md:mb-6">Send us a sample case and see our quality in action</p>
+            <button class="bg-white text-[#083459] px-6 py-3 rounded-lg hover:bg-gray-100 transition-all font-bold w-full text-sm md:text-base">Submit Case</button>
+         </div>
+         <div class="bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-2xl p-6 md:p-8 hover:bg-white/20 transition-all text-center">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-[#FCC312] rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-7 h-7 md:w-8 md:h-8 text-[#083459]">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+               </svg>
+            </div>
+            <h3 class="text-xl md:text-2xl font-bold mb-3 md:mb-4">Contact Us Directly</h3>
+            <p class="text-sm md:text-base text-white/90 mb-4 md:mb-6">Speak with our bankruptcy support specialists</p>
+            <div class="space-y-2 text-xs md:text-sm">
+               <p class="font-semibold">US: +1 (631) 212-1341</p>
+               <p class="font-semibold">alex@ocean-clicks.com</p>
+            </div>
+         </div>
+      </div>
+      <div class="bg-[#FCC312] text-[#083459] rounded-2xl p-6 md:p-8 text-center">
+         <p class="text-lg md:text-2xl font-bold">Connect with us to get a customized Bankruptcy Petition Support plan for your firm.</p>
+      </div>
+   </div>
+</section>
+        <!-- end -->
+         
+    </main>
+
+    <!-- start Footer -->
+    <footer class="bg-[#083459] text-white">
+        <div class="max-w-[1440px] mx-auto px-4 md:px-8 py-12 md:py-16">
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-12 mb-8 md:mb-12">
+                <div class="md:col-span-3 lg:col-span-2"><img src="./assest/img/logo/logo.avif" alt="Ocean Clicks"
+                        class="h-8 md:h-10 mb-4 md:mb-6 brightness-0 invert">
+                    <p class="text-[#E2F4FB] mb-4 md:mb-6 leading-relaxed text-sm md:text-base">Specialized
+                        outsourcing
+                        solutions for regulated industries. We help law
+                        firms, credit repair companies, property
+                        managers, and B2B organizations scale
+                        efficiently.</p>
+                    <div class="flex gap-4"><a href="#linkedin"
+                            class="w-10 h-10 bg-[#0BA5DF] rounded-full flex items-center justify-center hover:bg-[#0991c9] transition-colors"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-linkedin w-5 h-5">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect width="4" height="12" x="2" y="9"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg></a><a href="#twitter"
+                            class="w-10 h-10 bg-[#0BA5DF] rounded-full flex items-center justify-center hover:bg-[#0991c9] transition-colors"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-twitter w-5 h-5">
+                                <path
+                                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                                </path>
+                            </svg></a><a href="#facebook"
+                            class="w-10 h-10 bg-[#0BA5DF] rounded-full flex items-center justify-center hover:bg-[#0991c9] transition-colors"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-facebook w-5 h-5">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg></a></div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-sm md:text-lg">Services</h4>
+                    <ul class="space-y-3 text-sm md:text-base">
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors"
+                                href="/credit-repair-outsourcing" data-discover="true">Credit Repair
+                                Outsourcing</a>
+                        </li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors"
+                                href="/paralegal-legal-support-outsourcing" data-discover="true">Legal Process
+                                Outsourcing</a></li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors"
+                                href="/hire-virtual-assistants.html" data-discover="true">Virtual
+                                Assistants</a></li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors"
+                                href="/property-management-outsourcing" data-discover="true">Property Management</a>
+                        </li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors"
+                                href="contact.html-center-outsourcing" data-discover="true">Contact Center</a></li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors"
+                                href="/b2b-lead-generation-services" data-discover="true">Lead
+                                Generation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-sm md:text-lg">Company</h4>
+                    <ul class="space-y-3 text-sm md:text-base">
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors" href="/about"
+                                data-discover="true">About Us</a></li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors" href="/careers"
+                                data-discover="true">Careers</a></li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors" href="/resources"
+                                data-discover="true">Resources</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-sm md:text-lg">Contact</h4>
+                    <ul class="space-y-4 text-sm md:text-base">
+                        <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-phone w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-1">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                            <div>
+                                <p class="text-[#E2F4FB]">US: +1 (631)
+                                    212-1341</p>
+                                <p class="text-[#E2F4FB]">India: +91 90853
+                                    16752</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-mail w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-1">
+                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg>
+                            <div>
+                                <p class="text-[#E2F4FB]">alex@ocean-clicks.com</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-map-pin w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-1">
+                                <path
+                                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                </path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <div>
+                                <p class="text-[#E2F4FB] text-sm">US: 66 W
+                                    Flagler St #6471<br>Miami, FL 33130</p>
+                                <p class="text-[#E2F4FB] text-sm mt-2">India:
+                                    6th Floor, 61-b, Sarkhej - Gandhinagar
+                                    Hwy<br>Ahmedabad, Gujarat 380054</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="border-t border-[#0BA5DF]/30 pt-6 md:pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-[#E2F4FB] text-xs md:text-sm text-center md:text-left">©
+                    2026 Ocean Clicks. All rights
+                    reserved.</p>
+                <div class="flex flex-wrap justify-center gap-4 md:gap-6 text-xs md:text-sm"><a
+                        class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors" href="/privacy-policy"
+                        data-discover="true">Privacy Policy</a><a
+                        class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors" href="/terms-of-service"
+                        data-discover="true">Terms of Service</a><a
+                        class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors" href="/policies-compliance"
+                        data-discover="true">Policies &amp;
+                        Compliance</a></div>
+            </div>
+        </div>
+    </footer>
+    <!-- end Footer -->
+
+   <!-- model FREE 5-HOUR TRIAL-->
+      <div id="myModal" class="modal hidden fixed inset-0 z-50">
+     <div class="modalBackdrop fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 ">
+    
+    <div class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+   <div class="sticky top-0 bg-gradient-to-r from-[#083459] to-[#0BA5DF] text-white p-6 rounded-t-2xl">
+      <div class="flex justify-between items-start">
+         <div>
+            <h2 class="text-2xl md:text-3xl font-bold mb-2">Request Sample Demo</h2>
+            <p class="text-white/90">Get a sample credit report audit to see our process in action.</p>
+         </div>
+         <button class="text-white hover:bg-white/20 p-2 rounded-lg transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x w-6 h-6">
+               <path d="M18 6 6 18"></path>
+               <path d="m6 6 12 12"></path>
+            </svg>
+         </button>
+      </div>
+   </div>
+   <form class="p-6 space-y-4">
+      <div class="grid md:grid-cols-2 gap-4">
+         <div><label for="name" class="block text-sm font-semibold text-[#083459] mb-2">Full Name <span class="text-red-500">*</span></label><input type="text" id="name" name="name" required="" class="w-full px-4 py-3 border border-[#B0BEC5] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0BA5DF] focus:border-transparent" placeholder="John Doe" value=""></div>
+         <div><label for="email" class="block text-sm font-semibold text-[#083459] mb-2">Email Address <span class="text-red-500">*</span></label><input type="email" id="email" name="email" required="" class="w-full px-4 py-3 border border-[#B0BEC5] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0BA5DF] focus:border-transparent" placeholder="john@company.com" value=""></div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-4">
+         <div><label for="phone" class="block text-sm font-semibold text-[#083459] mb-2">Phone Number</label><input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-[#B0BEC5] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0BA5DF] focus:border-transparent" placeholder="(555) 123-4567" value=""></div>
+         <div><label for="company" class="block text-sm font-semibold text-[#083459] mb-2">Company Name</label><input type="text" id="company" name="company" class="w-full px-4 py-3 border border-[#B0BEC5] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0BA5DF] focus:border-transparent" placeholder="Your Company" value=""></div>
+      </div>
+      <div><label for="message" class="block text-sm font-semibold text-[#083459] mb-2">Message</label><textarea id="message" name="message" rows="4" class="w-full px-4 py-3 border border-[#B0BEC5] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0BA5DF] focus:border-transparent resize-none" placeholder="Tell us about your needs..."></textarea></div>
+      <div class="flex items-start gap-3 p-4 bg-[#E2F4FB] rounded-lg"><input type="checkbox" id="consent" name="consent" required="" class="mt-1 w-4 h-4 text-[#0BA5DF] border-[#B0BEC5] rounded focus:ring-[#0BA5DF]"><label for="consent" class="text-sm text-[#455A64]">I consent to Ocean Clicks storing my information and contacting me about their services. I understand that I can opt out at any time. <span class="text-red-500">*</span></label></div>
+      <button type="submit" class="w-full bg-gradient-to-r from-[#0BA5DF] to-[#083459] text-white py-4 rounded-lg font-bold text-sm md:text-lg hover:shadow-xl transition-all disabled:opacity-50 disabled:cursor-not-allowed">Request Sample</button>
+      <p class="text-xs text-center text-[#455A64] mt-4">Your information is secure and will never be shared with third parties. See our <a href="/privacy-policy" class="text-[#0BA5DF] hover:underline">Privacy Policy</a>.</p>
+   </form>
+</div>
+</div>
+ </div>  
+
+    <script src="./assest/js/dev-script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Clicks Header</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assest/css/dev-style.css">
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Progress Bar -->
+    <div id="scrollProgress"
+        class="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#FCC312] via-[#0BA5DF] to-[#083459] origin-left z-[60] scale-x-0">
+    </div>
+    <div id="floatingButtons"
+        class="hidden lg:flex fixed bottom-8 right-8 z-40 gap-3 transition-all duration-300 opacity-0 translate-y-5">
+
+        <!-- Call Button -->
+        <a href="tel:+1234567890"
+            class="bg-white text-[#083459] p-4 rounded-full shadow-2xl border-2 border-[#0BA5DF] hover:bg-[#E2F4FB] transition-all group"
+            title="Call Us">
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 group-hover:text-[#0BA5DF] transition-colors"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+        </a>
+
+        <!-- Start Free Trial -->
+        <button
+            class="bg-gradient-to-r from-[#FCC312] to-[#e6b010] text-[#083459] px-6 py-4 rounded-full shadow-2xl hover:shadow-3xl transition-all font-bold flex items-center gap-2 group">
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path d="M8 2v4" />
+                <path d="M16 2v4" />
+                <rect width="18" height="18" x="3" y="4" rx="2" />
+                <path d="M3 10h18" />
+            </svg>
+            <span>Start Free Trial</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+            </svg>
+        </button>
+        <!-- Back To Top -->
+        <button id="backToTop"
+            class="bg-[#083459] text-white p-4 rounded-full shadow-2xl hover:bg-[#0BA5DF] transition-all"
+            title="Back to Top">
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 -rotate-90" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+            </svg>
+        </button>
+    </div>
+    <!-- start top header  -->
+    <div class="bg-[#083459] text-white py-2 px-4 md:px-8">
+        <div
+            class="max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-center gap-2 md:gap-0 text-[11px] md:text-sm">
+            <div class="flex items-center gap-4 md:gap-8">
+                <a class="hover:text-[#FCC312] transition-colors font-semibold" href="contact-center-outsourcing.html">Contact Center Outsourcing</a>
+                <a class="hover:text-[#FCC312] transition-colors font-semibold" href="b2b-lead-generation-services.html">Lead Generation Services</a>
+            </div>
+            <div class="flex items-center gap-4 md:gap-6 opacity-90">
+                <a class="hover:text-[#0BA5DF] transition-colors" href="resources.html">Resources</a>
+                <a class="hover:text-[#0BA5DF] transition-colors" href="about.html">About</a>
+                <a class="hover:text-[#0BA5DF] transition-colors" href="articles.html">Articles</a>
+                <a class="hover:text-[#0BA5DF] transition-colors hidden md:inline" href="careers.html">Careers</a>
+                <a class="hover:text-[#0BA5DF] transition-colors" href="contact-center-outsourcing.html">Reach Us</a>
+            </div>
+        </div>
+    </div>
+    <!-- end top header  -->
+
+    <!-- start nav bar  -->
+   <nav class="bg-white border-b border-gray-100 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-[1440px] mx-auto px-4 md:px-8">
+            <div class="flex items-center justify-between h-20 md:h-24">
+
+                <div class="flex items-center flex-shrink-0">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <img src="./assest/img/logo/logo.avif" alt="Ocean Clicks" class="h-10 md:h-12 w-auto">
+                    </a>
+                </div>
+
+                <div class="hidden min-[1240px]:flex items-center gap-2 xl:gap-4">
+
+                    <div class="group relative py-8">
+                        <a class="flex items-center gap-1 text-[#083459] group-hover:text-[#0BA5DF] transition-colors font-bold text-[14px]"
+                            href="credit-repair-outsourcing.html">
+                            Credit Repair Outsourcing
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3"
+                                class="mt-0.5 transition-transform group-hover:rotate-180">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg>
+                        </a>
+                        <div
+                            class="absolute top-full left-0 w-[350px] bg-[#083459] shadow-xl rounded-b-lg border-t-2 border-[#0BA5DF] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60]">
+                            <div class="py-2">
+                                <a href="full-cycle-credit-repair-processing.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Full-Cycle
+                                    Credit Repair Processing</a>
+                                <a href="credit-dispute-outsourcing.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Credit
+                                    Dispute Outsourcing</a>
+                                <a href="credit-report-audit-analysis.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Credit
+                                    Report Audit & Analysis Outsourcing</a>
+                                <a href="fcra-fdcpa-compliance-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">FCRA
+                                    & FDCPA Compliance Support Outsourcing Services</a>
+                                <a href="virtual-assistants-for-credit-repair.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Virtual
+                                    Assistants for Credit Repair Companies</a>
+                                <a href="credit-repair-fulfillment.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Credit
+                                    Repair Fulfillment Services</a>
+                                <a href="automation-workflow-outsourcing.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold">Credit
+                                    Repair Automation & Workflow Outsourcing Services</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group relative py-8">
+                        <a class="flex items-center gap-1 text-[#083459] group-hover:text-[#0BA5DF] transition-colors font-bold text-[14px]"
+                            href="paralegal-legal-support-outsourcing.html">
+                            Legal Process Outsourcing
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3"
+                                class="mt-0.5 transition-transform group-hover:rotate-180">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg>
+                        </a>
+                        <div
+                            class="absolute top-full left-0 w-[320px] bg-[#083459] shadow-xl rounded-b-lg border-t-2 border-[#0BA5DF] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60]">
+                            <div class="py-2">
+                                <a href="personal-injury-case-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Personal
+                                    Injury Case Support</a>
+                                <a href="bankruptcy-petition-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Bankruptcy
+                                    Petition Support</a>
+                                <a href="workers-comp-case-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Workers'
+                                    Compensation Case Support</a>
+                                <a href="identity-theft-case-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Identity
+                                    Theft Case Support</a>
+                                <a href="fcra-litigation-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">FCRA
+                                    Litigation Support</a>
+                                <a href="legal-research-drafting.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Legal
+                                    Research & Drafting</a>
+                                <a href="virtual-paralegal-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold">Virtual
+                                    Paralegal Assistant</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group relative py-8">
+                        <a class="flex items-center gap-1 text-[#083459] group-hover:text-[#0BA5DF] transition-colors font-bold text-[14px]"
+                            href="hire-virtual-assistants.html">
+                            Hire Virtual Assistants
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3"
+                                class="mt-0.5 transition-transform group-hover:rotate-180">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg>
+                        </a>
+                        <div
+                            class="absolute top-full left-0 w-[320px] bg-[#083459] shadow-xl rounded-b-lg border-t-2 border-[#0BA5DF] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60]">
+                            <div class="py-2">
+                                <a href="real-estate-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Real
+                                    Estate Virtual Assistant</a>
+                                <a href="ecommerce-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Ecommerce
+                                    Virtual Assistant</a>
+                                <a href="small-business-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Small
+                                    Business Virtual Assistant</a>
+                                <a href="credit-repair-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Credit
+                                    Repair Virtual Assistant</a>
+                                <a href="startup-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Startup
+                                    Virtual Assistant</a>
+                                <a href="coaches-consultants-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Coaches
+                                    & Consultants Virtual Assistant</a>
+                                <a href="law-firm-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold">Law
+                                    Firm Virtual Assistant</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group relative py-8">
+                        <a class="flex items-center gap-1 text-[#083459] group-hover:text-[#0BA5DF] transition-colors font-bold text-[14px]"
+                            href="property-management-outsourcing.html">
+                            Property Management
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3"
+                                class="mt-0.5 transition-transform group-hover:rotate-180">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg>
+                        </a>
+                        <div
+                            class="absolute top-full right-0 w-[350px] bg-[#083459] shadow-xl rounded-b-lg border-t-2 border-[#0BA5DF] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60]">
+                            <div class="py-2">
+                                <a href="tenant-screening-application-processing.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Tenant
+                                    Screening & Application Processing</a>
+                                <a href="leasing-tenant-placement.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Leasing
+                                    & Tenant Placement Support</a>
+                                <a href="property-maintenance-coordination.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Property
+                                    Maintenance & Coordination Outsourcing</a>
+                                <a href="property-accounting.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Property
+                                    Accounting & Bookkeeping Services</a>
+                                <a href="property-preservation.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Property
+                                    Preservation Processing</a>
+                                <a href="hoa-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">HOA
+                                    & Community Association Support</a>
+                                <a href="str-management.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold">Short-Term
+                                    Rental Management Support</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="bg-[#FCC312] text-[#083459] px-7 py-3 rounded-lg font-bold hover:bg-[#e5af10] transition-all transform hover:scale-105 shadow-md ml-4 whitespace-nowrap"
+                        href="contact.html">
+                        Get Started
+                    </a>
+                </div>
+
+                <div class="min-[1240px]:hidden">
+                    <button id="mobile-menu-open" class="text-[#083459] p-2" aria-label="Toggle menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="4" x2="20" y1="12" y2="12"></line>
+                            <line x1="4" x2="20" y1="6" y2="6"></line>
+                            <line x1="4" x2="20" y1="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <div id="mobile-sidebar"
+        class="fixed inset-y-0 right-0 w-full max-w-[320px] bg-[#083459] z-[100] transform translate-x-full transition-transform duration-300 ease-in-out min-[1240px]:hidden flex flex-col shadow-2xl">
+
+        <div class="flex items-center justify-between p-6 border-b border-white/10 bg-[#062846]">
+            <img src="./assest/img/logo/logo.avif" alt="Logo" class="h-8 brightness-0 invert">
+            <button id="mobile-menu-close" class="text-white p-2 text-3xl leading-none">&times;</button>
+        </div>
+
+        <div class="flex-1 overflow-y-auto py-4 px-6 custom-scrollbar">
+            <div class="space-y-1">
+
+                <div class="border-b border-white/5 py-1">
+                    <div class="flex items-center justify-between">
+                        <a href="credit-repair-outsourcing.html"
+                            class="text-white font-bold text-[15px] py-3 flex-1">Credit Repair Outsourcing</a>
+                        <button class="mobile-chevron-btn p-3 text-[#0BA5DF] transition-transform duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div
+                        class="mobile-dropdown-content hidden flex flex-col gap-4 pl-4 pt-2 pb-6 border-l border-[#0BA5DF]/30 mt-1">
+                        <a href="full-cycle-credit-repair-processing.html" class="text-white/70 text-sm">Full-Cycle
+                            Credit Repair Processing</a>
+                        <a href="credit-dispute-outsourcing.html" class="text-white/70 text-sm">Credit Dispute
+                            Outsourcing</a>
+                        <a href="credit-report-audit-analysis.html" class="text-white/70 text-sm">Credit Report Audit &
+                            Analysis</a>
+                        <a href="fcra-fdcpa-compliance-support.html" class="text-white/70 text-sm">FCRA & FDCPA
+                            Compliance Support</a>
+                        <a href="virtual-assistants-for-credit-repair.html" class="text-white/70 text-sm">VAs for Credit
+                            Repair Companies</a>
+                        <a href="credit-repair-fulfillment.html" class="text-white/70 text-sm">Credit Repair Fulfillment
+                            Services</a>
+                        <a href="automation-workflow-outsourcing.html" class="text-white/70 text-sm">Automation &
+                            Workflow Services</a>
+                    </div>
+                </div>
+
+                <div class="border-b border-white/5 py-1">
+                    <div class="flex items-center justify-between">
+                        <a href="paralegal-legal-support-outsourcing.html"
+                            class="text-white font-bold text-[15px] py-3 flex-1">Legal Process Outsourcing</a>
+                        <button class="mobile-chevron-btn p-3 text-[#0BA5DF] transition-transform duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div
+                        class="mobile-dropdown-content hidden flex flex-col gap-4 pl-4 pt-2 pb-6 border-l border-[#0BA5DF]/30 mt-1">
+                        <a href="personal-injury-case-support.html" class="text-white/70 text-sm">Personal Injury Case
+                            Support</a>
+                        <a href="bankruptcy-petition-support.html" class="text-white/70 text-sm">Bankruptcy Petition
+                            Support</a>
+                        <a href="workers-comp-case-support.html" class="text-white/70 text-sm">Workers' Comp Case
+                            Support</a>
+                        <a href="identity-theft-case-support.html" class="text-white/70 text-sm">Identity Theft Case
+                            Support</a>
+                        <a href="fcra-litigation-support.html" class="text-white/70 text-sm">FCRA Litigation Support</a>
+                        <a href="legal-research-drafting.html" class="text-white/70 text-sm">Legal Research &
+                            Drafting</a>
+                        <a href="virtual-paralegal-assistant.html" class="text-white/70 text-sm">Virtual Paralegal
+                            Assistant</a>
+                    </div>
+                </div>
+
+                <div class="border-b border-white/5 py-1">
+                    <div class="flex items-center justify-between">
+                        <a href="hire-virtual-assistants.html" class="text-white font-bold text-[15px] py-3 flex-1">Hire
+                            Virtual Assistants</a>
+                        <button class="mobile-chevron-btn p-3 text-[#0BA5DF] transition-transform duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div
+                        class="mobile-dropdown-content hidden flex flex-col gap-4 pl-4 pt-2 pb-6 border-l border-[#0BA5DF]/30 mt-1">
+                        <a href="real-estate-virtual-assistant.html" class="text-white/70 text-sm">Real Estate Virtual
+                            Assistant</a>
+                        <a href="ecommerce-virtual-assistant.html" class="text-white/70 text-sm">Ecommerce Virtual
+                            Assistant</a>
+                        <a href="small-business-virtual-assistant.html" class="text-white/70 text-sm">Small Business
+                            Virtual Assistant</a>
+                        <a href="credit-repair-virtual-assistant.html" class="text-white/70 text-sm">Credit Repair
+                            Virtual Assistant</a>
+                        <a href="startup-virtual-assistant.html" class="text-white/70 text-sm">Startup Virtual
+                            Assistant</a>
+                        <a href="coaches-consultants-virtual-assistant.html" class="text-white/70 text-sm">Coaches &
+                            Consultants VA</a>
+                        <a href="law-firm-virtual-assistant.html" class="text-white/70 text-sm">Law Firm Virtual
+                            Assistant</a>
+                    </div>
+                </div>
+
+                <div class="border-b border-white/5 py-1">
+                    <div class="flex items-center justify-between">
+                        <a href="property-management-outsourcing.html"
+                            class="text-white font-bold text-[15px] py-3 flex-1">Property Management</a>
+                        <button class="mobile-chevron-btn p-3 text-[#0BA5DF] transition-transform duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div
+                        class="mobile-dropdown-content hidden flex flex-col gap-4 pl-4 pt-2 pb-6 border-l border-[#0BA5DF]/30 mt-1">
+                        <a href="tenant-screening-application-processing.html" class="text-white/70 text-sm">Tenant
+                            Screening & Application</a>
+                        <a href="leasing-tenant-placement.html" class="text-white/70 text-sm">Leasing & Tenant
+                            Placement</a>
+                        <a href="property-maintenance-coordination.html" class="text-white/70 text-sm">Maintenance &
+                            Coordination</a>
+                        <a href="property-accounting.html" class="text-white/70 text-sm">Accounting & Bookkeeping</a>
+                        <a href="property-preservation.html" class="text-white/70 text-sm">Property Preservation
+                            Processing</a>
+                        <a href="hoa-support.html" class="text-white/70 text-sm">HOA & Community Association</a>
+                        <a href="str-management.html" class="text-white/70 text-sm">Short-Term Rental Management</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-8 mb-12">
+                <a href="contact.html"
+                    class="block w-full bg-[#FCC312] text-[#083459] text-center py-4 rounded-xl font-bold shadow-lg">Get
+                    Started</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobile-overlay"
+        class="fixed inset-0 bg-[#083459]/80 backdrop-blur-sm z-[90] opacity-0 invisible transition-all duration-300 min-[1240px]:hidden">
+    </div>
+    <!-- end nav bar  -->
+
+    <main>
+        <div class=" bg-white relative overflow-hidden">
+   <section class="py-10 md:py-20 px-4 sm:px-8 bg-gradient-to-br from-[#083459] via-[#0a3d66] to-[#083459] text-white relative overflow-hidden z-10">
+      <div class="absolute inset-0 opacity-10">
+         <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0px); background-size: 40px 40px;"></div>
+      </div>
+      <div class="max-w-[1440px] mx-auto relative z-10">
+         <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div style="opacity: 1; transform: none;">
+               <div class="inline-block bg-[#FCC312] text-[#083459] px-4 py-2 rounded-full font-bold text-sm mb-6">PROPERTY ACCOUNTING SERVICES</div>
+               <h1 class="text-3xl md:text-6xl font-bold mb-6 leading-tight">Accurate, Reliable Accounting Support for Property Managers &amp; Owners</h1>
+               <p class="text-xl mb-6 text-gray-200 leading-relaxed">Property management accounting is unique — it requires precision, compliance, and an understanding of trust accounting, rent schedules, owner reporting, and tenant ledgers. Small errors can escalate into owner disputes, compliance risks, and operational delays.</p>
+               <p class="text-lg mb-8 text-gray-200 leading-relaxed">Ocean Clicks provides specialized Property Accounting &amp; Bookkeeping Services designed specifically for property management companies of all sizes. Our trained accounting support teams manage rent rolls, AR/AP workflows, reconciliations, owner statements, ledger accuracy, and financial reporting to ensure your books stay clean, compliant, and audit-ready.</p>
+               <div class="flex flex-col sm:flex-row gap-4">
+                  <a class="inline-flex items-center justify-center bg-[#FCC312] text-[#083459] px-8 py-4 rounded-lg font-bold hover:bg-[#fdd347] transition-all text-lg group" href="contact.html" data-discover="true">
+                     Get Started Today
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-2 group-hover:translate-x-1 transition-transform">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path>
+                     </svg>
+                  </a>
+                  <a class="inline-flex items-center justify-center border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-[#083459] transition-all text-lg" href="contact.html" data-discover="true">Book a Consultation</a>
+               </div>
+            </div>
+            <div class="relative" style="opacity: 1; transform: none;">
+               <div class="bg-white/10 backdrop-blur-sm p-4 md:p-8rounded-2xl border border-white/20">
+                  <h3 class="text-2xl font-bold mb-6">What We Handle</h3>
+                  <div class="space-y-4">
+                     <div class="flex items-start gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-6 h-6 text-[#FCC312] flex-shrink-0 mt-0.5">
+                           <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                           <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                        <span class="text-lg">Rent roll management &amp; payment tracking</span>
+                     </div>
+                     <div class="flex items-start gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-6 h-6 text-[#FCC312] flex-shrink-0 mt-0.5">
+                           <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                           <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                        <span class="text-lg">Accounts receivable &amp; accounts payable</span>
+                     </div>
+                     <div class="flex items-start gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-6 h-6 text-[#FCC312] flex-shrink-0 mt-0.5">
+                           <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                           <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                        <span class="text-lg">Bank reconciliation &amp; trust accounting</span>
+                     </div>
+                     <div class="flex items-start gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-6 h-6 text-[#FCC312] flex-shrink-0 mt-0.5">
+                           <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                           <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                        <span class="text-lg">Owner statements &amp; financial reporting</span>
+                     </div>
+                     <div class="flex items-start gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-6 h-6 text-[#FCC312] flex-shrink-0 mt-0.5">
+                           <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                           <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                        <span class="text-lg">Vendor invoice processing &amp; verification</span>
+                     </div>
+                     <div class="flex items-start gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-6 h-6 text-[#FCC312] flex-shrink-0 mt-0.5">
+                           <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                           <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                        <span class="text-lg">Security deposit tracking &amp; compliance</span>
+                     </div>
+                     <div class="flex items-start gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-6 h-6 text-[#FCC312] flex-shrink-0 mt-0.5">
+                           <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                           <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                        <span class="text-lg">Ledger audits &amp; cleanup</span>
+                     </div>
+                     <div class="flex items-start gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-6 h-6 text-[#FCC312] flex-shrink-0 mt-0.5">
+                           <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                           <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                        <span class="text-lg">Month-end close support</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="py-10 md:py-20 px-4 sm:px-8 bg-gray-50">
+      <div class="max-w-[1440px] mx-auto">
+         <div class="text-center mb-16" >
+            <h2 class="text-2xl md:text-5xl font-bold mb-6 text-[#083459]">Why Property Management Companies Outsource Accounting &amp; Bookkeeping</h2>
+            <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">Property management accounting differs from standard bookkeeping — it deals with trust accounts, security deposits, owner disbursements, tenant charges and ledgers, vendor payments, rent roll accuracy, delinquency tracking, and month-end closing tasks.</p>
+         </div>
+         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-white p-6 rounded-2xl border-2 border-gray-200 hover:border-[#0BA5DF] transition-all hover:shadow-lg" >
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert w-12 h-12 text-[#0BA5DF] mb-4">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" x2="12" y1="8" y2="12"></line>
+                  <line x1="12" x2="12.01" y1="16" y2="16"></line>
+               </svg>
+               <h3 class="text-xl font-bold mb-3 text-[#083459]">Complex PM Accounting</h3>
+               <p class="text-gray-600">Trust accounts, owner disbursements, tenant ledgers, and rent roll accuracy require specialized knowledge beyond standard bookkeeping.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border-2 border-gray-200 hover:border-[#0BA5DF] transition-all hover:shadow-lg" >
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users w-12 h-12 text-[#0BA5DF] mb-4">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+               </svg>
+               <h3 class="text-xl font-bold mb-3 text-[#083459]">Overloaded Internal Teams</h3>
+               <p class="text-gray-600">Property managers are stretched thin managing units. Accounting errors accumulate when teams lack dedicated support.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border-2 border-gray-200 hover:border-[#0BA5DF] transition-all hover:shadow-lg" >
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-12 h-12 text-[#0BA5DF] mb-4">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+               </svg>
+               <h3 class="text-xl font-bold mb-3 text-[#083459]">Slow Month-End Close</h3>
+               <p class="text-gray-600">Manual processes delay financial reporting. Late owner statements damage trust and slow business decisions.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border-2 border-gray-200 hover:border-[#0BA5DF] transition-all hover:shadow-lg" >
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign w-12 h-12 text-[#0BA5DF] mb-4">
+                  <line x1="12" x2="12" y1="2" y2="22"></line>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+               </svg>
+               <h3 class="text-xl font-bold mb-3 text-[#083459]">High Cost of PM Accountants</h3>
+               <p class="text-gray-600">Experienced property management accountants command $50-70K+ salaries. Outsourcing provides expertise at 60-70% lower cost.</p>
+            </div>
+         </div>
+         <div class="mt-12 text-center bg-gradient-to-br from-[#083459] to-[#0BA5DF] text-white p-4 md:p-8rounded-2xl" >
+            <p class="text-xl leading-relaxed"><strong>Outsourcing ensures accuracy, reliability, and structured financial processes without increasing overhead.</strong></p>
+         </div>
+      </div>
+   </section>
+   <section class="py-10 md:py-20 px-4 sm:px-8 bg-white">
+      <div class="max-w-[1440px] mx-auto">
+         <div class="text-center mb-16" >
+            <h2 class="text-2xl md:text-5xl font-bold mb-6 text-[#083459]">Our Property Accounting &amp; Bookkeeping Capabilities</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Ocean Clicks manages the complete set of PM accounting workflows. We integrate seamlessly into your financial operations as an extension of your accounting team.</p>
+         </div>
+         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-gradient-to-br from-gray-50 to-white p-6 rounded-2xl border-2 border-gray-200 hover:border-[#0BA5DF] transition-all hover:shadow-lg" >
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calculator w-10 h-10 text-[#0BA5DF] mb-4">
+                  <rect width="16" height="20" x="4" y="2" rx="2"></rect>
+                  <line x1="8" x2="16" y1="6" y2="6"></line>
+                  <line x1="16" x2="16" y1="14" y2="18"></line>
+                  <path d="M16 10h.01"></path>
+                  <path d="M12 10h.01"></path>
+                  <path d="M8 10h.01"></path>
+                  <path d="M12 14h.01"></path>
+                  <path d="M8 14h.01"></path>
+                  <path d="M12 18h.01"></path>
+                  <path d="M8 18h.01"></path>
+               </svg>
+               <h3 class="text-xl font-bold mb-4 text-[#083459]">Rent Roll Management</h3>
+               <ul class="space-y-2">
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Payment posting and tracking</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Delinquency monitoring</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Tenant ledger updates</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Late fee postings</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Auto-pay tracking</span>
+                  </li>
+               </ul>
+            </div>
+            <div class="bg-gradient-to-br from-gray-50 to-white p-6 rounded-2xl border-2 border-gray-200 hover:border-[#0BA5DF] transition-all hover:shadow-lg" >
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wallet w-10 h-10 text-[#0BA5DF] mb-4">
+                  <path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"></path>
+                  <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"></path>
+               </svg>
+               <h3 class="text-xl font-bold mb-4 text-[#083459]">Accounts Receivable &amp; Payable</h3>
+               <ul class="space-y-2">
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Tenant payment processing</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Outstanding balance tracking</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Vendor invoice processing</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Payment approvals</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Recurring charge verification</span>
+                  </li>
+               </ul>
+            </div>
+            <div class="bg-gradient-to-br from-gray-50 to-white p-6 rounded-2xl border-2 border-gray-200 hover:border-[#0BA5DF] transition-all hover:shadow-lg" >
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-check w-10 h-10 text-[#0BA5DF] mb-4">
+                  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                  <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                  <path d="m9 15 2 2 4-4"></path>
+               </svg>
+               <h3 class="text-xl font-bold mb-4 text-[#083459]">Bank Reconciliation</h3>
+               <ul class="space-y-2">
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Daily/weekly/monthly reconciliation</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Deposit and withdrawal matching</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Discrepancy identification</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Trust account alignment</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Exception reporting</span>
+                  </li>
+               </ul>
+            </div>
+            <div class="bg-gradient-to-br from-gray-50 to-white p-6 rounded-2xl border-2 border-gray-200 hover:border-[#0BA5DF] transition-all hover:shadow-lg" >
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text w-10 h-10 text-[#0BA5DF] mb-4">
+                  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                  <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                  <path d="M10 9H8"></path>
+                  <path d="M16 13H8"></path>
+                  <path d="M16 17H8"></path>
+               </svg>
+               <h3 class="text-xl font-bold mb-4 text-[#083459]">Owner Statements &amp; Reporting</h3>
+               <ul class="space-y-2">
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Monthly owner statements</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Supporting documentation</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Income/expense categorization</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Month-end close support</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Financial performance reports</span>
+                  </li>
+               </ul>
+            </div>
+            <div class="bg-gradient-to-br from-gray-50 to-white p-6 rounded-2xl border-2 border-gray-200 hover:border-[#0BA5DF] transition-all hover:shadow-lg" >
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-receipt w-10 h-10 text-[#0BA5DF] mb-4">
+                  <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"></path>
+                  <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path>
+                  <path d="M12 17.5v-11"></path>
+               </svg>
+               <h3 class="text-xl font-bold mb-4 text-[#083459]">Vendor Invoice Management</h3>
+               <ul class="space-y-2">
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Invoice accuracy review</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Work order matching</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Estimate verification</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Vendor record updates</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Discrepancy escalation</span>
+                  </li>
+               </ul>
+            </div>
+            <div class="bg-gradient-to-br from-gray-50 to-white p-6 rounded-2xl border-2 border-gray-200 hover:border-[#0BA5DF] transition-all hover:shadow-lg" >
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock w-10 h-10 text-[#0BA5DF] mb-4">
+                  <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+               </svg>
+               <h3 class="text-xl font-bold mb-4 text-[#083459]">Security Deposit Tracking</h3>
+               <ul class="space-y-2">
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Move-in deposit posting</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Move-out reconciliations</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Deduction documentation</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Compliance timeline tracking</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Damage charge logging</span>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="py-10 md:py-20 px-4 sm:px-8 bg-gray-50">
+      <div class="max-w-[1440px] mx-auto">
+         <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div >
+               <div class="flex items-center gap-3 mb-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calculator w-12 h-12 text-[#0BA5DF]">
+                     <rect width="16" height="20" x="4" y="2" rx="2"></rect>
+                     <line x1="8" x2="16" y1="6" y2="6"></line>
+                     <line x1="16" x2="16" y1="14" y2="18"></line>
+                     <path d="M16 10h.01"></path>
+                     <path d="M12 10h.01"></path>
+                     <path d="M8 10h.01"></path>
+                     <path d="M12 14h.01"></path>
+                     <path d="M8 14h.01"></path>
+                     <path d="M12 18h.01"></path>
+                     <path d="M8 18h.01"></path>
+                  </svg>
+                  <h2 class="text-3xl md:text-4xl font-bold text-[#083459]">Rent Roll Management &amp; Payment Tracking</h2>
+               </div>
+               <p class="text-xl text-gray-600 mb-6 leading-relaxed">Rent roll health determines cash flow for every property management company. We manage payment posting, delinquency tracking, tenant ledger updates, late fee application, auto-pay monitoring, and rent roll summaries.</p>
+               <p class="text-lg text-gray-600"><strong>Accurate rent roll management prevents discrepancies and improves financial reporting.</strong></p>
+            </div>
+            <div class="bg-white p-4 md:p-8rounded-2xl border-2 border-gray-200" >
+               <h3 class="text-xl font-bold mb-6 text-[#083459]">What We Track</h3>
+               <div class="space-y-4">
+                  <div class="flex gap-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-6 h-6 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <div>
+                        <div class="font-bold text-[#083459]">Payment Posting</div>
+                        <div class="text-sm text-gray-600">Daily rent and fee postings across all units</div>
+                     </div>
+                  </div>
+                  <div class="flex gap-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-6 h-6 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <div>
+                        <div class="font-bold text-[#083459]">Delinquency Tracking</div>
+                        <div class="text-sm text-gray-600">Outstanding balance monitoring and alerts</div>
+                     </div>
+                  </div>
+                  <div class="flex gap-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-6 h-6 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <div>
+                        <div class="font-bold text-[#083459]">Tenant Ledgers</div>
+                        <div class="text-sm text-gray-600">Real-time ledger accuracy for every tenant</div>
+                     </div>
+                  </div>
+                  <div class="flex gap-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-6 h-6 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <div>
+                        <div class="font-bold text-[#083459]">Late Fee Application</div>
+                        <div class="text-sm text-gray-600">Automatic late fee calculations and postings</div>
+                     </div>
+                  </div>
+                  <div class="flex gap-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-6 h-6 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <div>
+                        <div class="font-bold text-[#083459]">Auto-Pay Monitoring</div>
+                        <div class="text-sm text-gray-600">Recurring payment verification and exceptions</div>
+                     </div>
+                  </div>
+                  <div class="flex gap-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-6 h-6 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <div>
+                        <div class="font-bold text-[#083459]">Rent Roll Summaries</div>
+                        <div class="text-sm text-gray-600">Weekly/monthly reports for management review</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="py-10 md:py-20 px-4 sm:px-8 bg-white">
+      <div class="max-w-[1440px] mx-auto">
+         <div class="text-center mb-16" >
+            <h2 class="text-2xl md:text-5xl font-bold mb-6 text-[#083459]">Accounts Receivable (AR) &amp; Accounts Payable (AP) Support</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">We ensure that all accounts flow smoothly across your PM software.</p>
+         </div>
+         <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-gradient-to-br from-blue-50 to-white p-4 md:p-8rounded-2xl border-2 border-gray-200" >
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wallet w-12 h-12 text-[#0BA5DF] mb-4">
+                  <path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"></path>
+                  <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"></path>
+               </svg>
+               <h3 class="text-2xl font-bold mb-6 text-[#083459]">AR Workflows</h3>
+               <ul class="space-y-3">
+                  <li class="flex items-start gap-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span class="text-gray-700">Posting tenant payments</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span class="text-gray-700">Tracking outstanding balances</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span class="text-gray-700">Applying appropriate charges</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span class="text-gray-700">Coordinating with leasing and maintenance teams</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span class="text-gray-700">Sending payment reminders (per your guidelines)</span>
+                  </li>
+               </ul>
+            </div>
+            <div class="bg-gradient-to-br from-yellow-50 to-white p-4 md:p-8rounded-2xl border-2 border-gray-200" >
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-credit-card w-12 h-12 text-[#FCC312] mb-4">
+                  <rect width="20" height="14" x="2" y="5" rx="2"></rect>
+                  <line x1="2" x2="22" y1="10" y2="10"></line>
+               </svg>
+               <h3 class="text-2xl font-bold mb-6 text-[#083459]">AP Workflows</h3>
+               <ul class="space-y-3">
+                  <li class="flex items-start gap-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#FCC312] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span class="text-gray-700">Processing vendor invoices</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#FCC312] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span class="text-gray-700">Matching invoices with approved estimates</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#FCC312] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span class="text-gray-700">Coding expenses properly</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#FCC312] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span class="text-gray-700">Submitting payments for approval</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#FCC312] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span class="text-gray-700">Verifying recurring vendor charges</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#FCC312] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span class="text-gray-700">Logging invoice details for audits</span>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="py-10 md:py-20 px-4 sm:px-8 bg-gray-50">
+      <div class="max-w-[1440px] mx-auto">
+         <div class="max-w-4xl mx-auto" >
+            <div class="bg-white p-4 md:p-8md:p-12 rounded-2xl border-2 border-[#0BA5DF] shadow-xl">
+               <div class="flex items-center gap-4 mb-6">
+                  <div class="p-3 bg-[#0BA5DF] rounded-xl">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield w-10 h-10 text-white">
+                        <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                     </svg>
+                  </div>
+                  <h2 class="text-3xl md:text-4xl font-bold text-[#083459]">Bank Reconciliation &amp; Financial Accuracy Controls</h2>
+               </div>
+               <p class="text-xl text-gray-600 mb-8 leading-relaxed">Bank reconciliation is critical for trust accounting compliance. We handle daily, weekly, or monthly reconciliation, matching deposits/transfers/withdrawals, identifying discrepancies, communicating exceptions, and ensuring tenant and owner ledgers align with bank statements.</p>
+               <div class="bg-gradient-to-br from-[#083459] to-[#0BA5DF] text-white p-6 rounded-xl">
+                  <p class="text-lg font-bold">Accurate reconciliation protects your company from compliance issues and financial inconsistencies.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="py-10 md:py-20 px-4 sm:px-8 bg-white">
+      <div class="max-w-[1440px] mx-auto">
+         <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div >
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text w-12 h-12 text-[#0BA5DF] mb-6">
+                  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                  <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                  <path d="M10 9H8"></path>
+                  <path d="M16 13H8"></path>
+                  <path d="M16 17H8"></path>
+               </svg>
+               <h2 class="text-2xl md:text-4xl font-bold mb-6 text-[#083459]">Owner Statements, Reporting &amp; Monthly Close Assistance</h2>
+               <p class="text-xl text-gray-600 mb-6 leading-relaxed">Owners expect transparency and accuracy in their statements. We help PM companies deliver clear, error-free owner communication.</p>
+            </div>
+            <div class="bg-gradient-to-br from-gray-50 to-white p-4 md:p-8rounded-2xl border-2 border-gray-200" >
+               <h3 class="text-xl font-bold mb-6 text-[#083459]">What We Support</h3>
+               <div class="space-y-4">
+                  <div class="flex items-start gap-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span class="text-gray-700">Preparing owner statements</span>
+                  </div>
+                  <div class="flex items-start gap-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span class="text-gray-700">Attaching necessary documents and invoices</span>
+                  </div>
+                  <div class="flex items-start gap-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span class="text-gray-700">Ensuring correct income and expense categories</span>
+                  </div>
+                  <div class="flex items-start gap-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span class="text-gray-700">Custom summary preparation</span>
+                  </div>
+                  <div class="flex items-start gap-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span class="text-gray-700">Month-end closing tasks</span>
+                  </div>
+                  <div class="flex items-start gap-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span class="text-gray-700">Audit logs and transaction verification</span>
+                  </div>
+                  <div class="flex items-start gap-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span class="text-gray-700">Financial performance reports</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="py-10 md:py-20 px-4 sm:px-8 bg-gray-50">
+      <div class="max-w-[1440px] mx-auto">
+         <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-4 md:p-8rounded-2xl border-2 border-gray-200" >
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-receipt w-12 h-12 text-[#0BA5DF] mb-4">
+                  <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"></path>
+                  <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path>
+                  <path d="M12 17.5v-11"></path>
+               </svg>
+               <h3 class="text-2xl font-bold mb-4 text-[#083459]">Vendor Invoice Management &amp; Expense Verification</h3>
+               <p class="text-gray-600 mb-6">Vendors often submit incomplete or mismatched invoices. We ensure full transparency and protect your financial integrity.</p>
+               <ul class="space-y-3">
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Reviewing invoices for accuracy</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Matching with completed work orders</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Checking against approved estimates or bids</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Updating vendor records</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Escalating discrepancies</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Processing approved payments</span>
+                  </li>
+               </ul>
+            </div>
+            <div class="bg-white p-4 md:p-8rounded-2xl border-2 border-gray-200" >
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock w-12 h-12 text-[#FCC312] mb-4">
+                  <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+               </svg>
+               <h3 class="text-2xl font-bold mb-4 text-[#083459]">Security Deposit Tracking &amp; Compliance</h3>
+               <p class="text-gray-600 mb-6">Security deposits are a major compliance area, especially in regulated states. Proper deposit handling reduces legal exposure and tenant disputes.</p>
+               <ul class="space-y-3">
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#FCC312] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Move-in deposit posting</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#FCC312] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Move-out reconciliations</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#FCC312] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Deduction documentation</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#FCC312] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Returning deposits in compliance with mandated timelines</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-600">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-4 h-4 text-[#FCC312] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span>Logging damage charges and matching with work orders</span>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="py-10 md:py-20 px-4 sm:px-8 bg-white">
+      <div class="max-w-[1440px] mx-auto">
+         <div class="text-center mb-16" >
+            <h2 class="text-2xl md:text-5xl font-bold mb-6 text-[#083459]">Software We Work With</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Our accounting teams are experienced with all major property management and accounting platforms. We work within your existing systems — no new tools required.</p>
+         </div>
+         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-gradient-to-br from-gray-50 to-white p-6 rounded-2xl border-2 border-gray-200" >
+               <h3 class="text-lg font-bold mb-4 text-[#083459]">Property Management Systems</h3>
+               <div class="space-y-2">
+                  <div class="text-sm text-gray-700 py-2 px-3 bg-white rounded-lg border border-gray-200">AppFolio Accounting Suite</div>
+                  <div class="text-sm text-gray-700 py-2 px-3 bg-white rounded-lg border border-gray-200">Buildium Financial Module</div>
+                  <div class="text-sm text-gray-700 py-2 px-3 bg-white rounded-lg border border-gray-200">Yardi Breeze &amp; Yardi Voyager</div>
+                  <div class="text-sm text-gray-700 py-2 px-3 bg-white rounded-lg border border-gray-200">Rent Manager</div>
+                  <div class="text-sm text-gray-700 py-2 px-3 bg-white rounded-lg border border-gray-200">PropertyWare</div>
+               </div>
+            </div>
+            <div class="bg-gradient-to-br from-gray-50 to-white p-6 rounded-2xl border-2 border-gray-200" >
+               <h3 class="text-lg font-bold mb-4 text-[#083459]">Accounting Software</h3>
+               <div class="space-y-2">
+                  <div class="text-sm text-gray-700 py-2 px-3 bg-white rounded-lg border border-gray-200">QuickBooks Online</div>
+                  <div class="text-sm text-gray-700 py-2 px-3 bg-white rounded-lg border border-gray-200">QuickBooks Desktop</div>
+                  <div class="text-sm text-gray-700 py-2 px-3 bg-white rounded-lg border border-gray-200">Xero</div>
+                  <div class="text-sm text-gray-700 py-2 px-3 bg-white rounded-lg border border-gray-200">FreshBooks</div>
+                  <div class="text-sm text-gray-700 py-2 px-3 bg-white rounded-lg border border-gray-200">Wave</div>
+               </div>
+            </div>
+            <div class="bg-gradient-to-br from-gray-50 to-white p-6 rounded-2xl border-2 border-gray-200" >
+               <h3 class="text-lg font-bold mb-4 text-[#083459]">Banking &amp; Reconciliation</h3>
+               <div class="space-y-2">
+                  <div class="text-sm text-gray-700 py-2 px-3 bg-white rounded-lg border border-gray-200">Bank of America</div>
+                  <div class="text-sm text-gray-700 py-2 px-3 bg-white rounded-lg border border-gray-200">Chase Business Banking</div>
+                  <div class="text-sm text-gray-700 py-2 px-3 bg-white rounded-lg border border-gray-200">Wells Fargo</div>
+                  <div class="text-sm text-gray-700 py-2 px-3 bg-white rounded-lg border border-gray-200">Regional banks</div>
+                  <div class="text-sm text-gray-700 py-2 px-3 bg-white rounded-lg border border-gray-200">Online banking portals</div>
+               </div>
+            </div>
+            <div class="bg-gradient-to-br from-gray-50 to-white p-6 rounded-2xl border-2 border-gray-200" >
+               <h3 class="text-lg font-bold mb-4 text-[#083459]">Reporting Tools</h3>
+               <div class="space-y-2">
+                  <div class="text-sm text-gray-700 py-2 px-3 bg-white rounded-lg border border-gray-200">Microsoft Excel</div>
+                  <div class="text-sm text-gray-700 py-2 px-3 bg-white rounded-lg border border-gray-200">Google Sheets</div>
+                  <div class="text-sm text-gray-700 py-2 px-3 bg-white rounded-lg border border-gray-200">Custom PM dashboards</div>
+                  <div class="text-sm text-gray-700 py-2 px-3 bg-white rounded-lg border border-gray-200">Owner portal systems</div>
+                  <div class="text-sm text-gray-700 py-2 px-3 bg-white rounded-lg border border-gray-200">Financial analytics tools</div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="py-10 md:py-20 px-4 sm:px-8 bg-gradient-to-br from-[#083459] to-[#0BA5DF] text-white">
+      <div class="max-w-[1440px] mx-auto">
+         <div class="text-center mb-16" >
+            <h2 class="text-2xl md:text-5xl font-bold mb-6">Benefits of Outsourcing Property Accounting Functions</h2>
+            <p class="text-xl text-gray-200 max-w-3xl mx-auto">Outsourcing PM accounting creates a stable financial backbone for your operations.</p>
+         </div>
+         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20 text-center" >
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-12 h-12 mx-auto mb-4">
+                  <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                  <path d="m9 11 3 3L22 4"></path>
+               </svg>
+               <div class="text-3xl  md:text-4xl font-bold mb-2 text-[#FCC312]">99.8%</div>
+               <h3 class="text-lg font-bold mb-2">Accurate Ledgers</h3>
+               <p class="text-sm text-gray-200">Maintain precision across all unit and owner accounts</p>
+            </div>
+            <div class="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20 text-center" >
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-12 h-12 mx-auto mb-4">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+               </svg>
+               <div class="text-3xl  md:text-4xl font-bold mb-2 text-[#FCC312]">40-60%</div>
+               <h3 class="text-lg font-bold mb-2">Faster Month-End</h3>
+               <p class="text-sm text-gray-200">Speed up closing cycles by 40-60%</p>
+            </div>
+            <div class="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20 text-center" >
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign w-12 h-12 mx-auto mb-4">
+                  <line x1="12" x2="12" y1="2" y2="22"></line>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+               </svg>
+               <div class="text-3xl  md:text-4xl font-bold mb-2 text-[#FCC312]">60-70%</div>
+               <h3 class="text-lg font-bold mb-2">Cost Savings</h3>
+               <p class="text-sm text-gray-200">Save 60-70% vs. full-time PM accountant</p>
+            </div>
+            <div class="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20 text-center" >
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up w-12 h-12 mx-auto mb-4">
+                  <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                  <polyline points="16 7 22 7 22 13"></polyline>
+               </svg>
+               <div class="text-3xl  md:text-4xl font-bold mb-2 text-[#FCC312]">Unlimited</div>
+               <h3 class="text-lg font-bold mb-2">Scalable Growth</h3>
+               <p class="text-sm text-gray-200">Add units without adding accounting headcount</p>
+            </div>
+         </div>
+         <div class="mt-12 text-center" >
+            <div class="inline-block bg-white/20 backdrop-blur-sm px-8 py-6 rounded-2xl border border-white/30">
+               <p class="text-lg leading-relaxed"><strong>Additional Benefits:</strong> Maintain accurate ledgers across all units • Reduce financial errors and discrepancies • Deliver on-time owner statements • Speed up month-end close cycles • Improve cash flow visibility • Maintain trust accounting integrity • Reduce the workload on property managers • Scale portfolios without hiring additional in-house accountants</p>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="py-10 md:py-20 px-4 sm:px-8 bg-white">
+      <div class="max-w-[1440px] mx-auto">
+         <div class="text-center mb-16" >
+            <h2 class="text-2xl md:text-5xl font-bold mb-6 text-[#083459]">Property Types Supported Across Accounting Workflows</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Accounting workflows vary by asset type — our team adjusts accordingly.</p>
+         </div>
+         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-gradient-to-br from-gray-50 to-white p-6 rounded-2xl border-2 border-gray-200 hover:border-[#0BA5DF] transition-all hover:shadow-lg text-center" >
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house w-12 h-12 text-[#0BA5DF] mx-auto mb-4">
+                  <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
+                  <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+               </svg>
+               <h3 class="text-xl font-bold mb-2 text-[#083459]">Single-Family Rentals</h3>
+               <p class="text-sm text-gray-600">SFR portfolios with distributed ownership and rent schedules</p>
+            </div>
+            <div class="bg-gradient-to-br from-gray-50 to-white p-6 rounded-2xl border-2 border-gray-200 hover:border-[#0BA5DF] transition-all hover:shadow-lg text-center" >
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2 lucide-building-2 w-12 h-12 text-[#0BA5DF] mx-auto mb-4">
+                  <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path>
+                  <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path>
+                  <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path>
+                  <path d="M10 6h4"></path>
+                  <path d="M10 10h4"></path>
+                  <path d="M10 14h4"></path>
+                  <path d="M10 18h4"></path>
+               </svg>
+               <h3 class="text-xl font-bold mb-2 text-[#083459]">Multifamily Communities</h3>
+               <p class="text-sm text-gray-600">Apartment complexes with centralized accounting and unit-level tracking</p>
+            </div>
+            <div class="bg-gradient-to-br from-gray-50 to-white p-6 rounded-2xl border-2 border-gray-200 hover:border-[#0BA5DF] transition-all hover:shadow-lg text-center" >
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users w-12 h-12 text-[#0BA5DF] mx-auto mb-4">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+               </svg>
+               <h3 class="text-xl font-bold mb-2 text-[#083459]">HOA/COA Communities</h3>
+               <p class="text-sm text-gray-600">Association accounting with dues, assessments, and reserve management</p>
+            </div>
+            <div class="bg-gradient-to-br from-gray-50 to-white p-6 rounded-2xl border-2 border-gray-200 hover:border-[#0BA5DF] transition-all hover:shadow-lg text-center" >
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-target w-12 h-12 text-[#0BA5DF] mx-auto mb-4">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="6"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+               </svg>
+               <h3 class="text-xl font-bold mb-2 text-[#083459]">Build-to-Rent</h3>
+               <p class="text-sm text-gray-600">Institutional BTR portfolios with investor-grade reporting standards</p>
+            </div>
+            <div class="bg-gradient-to-br from-gray-50 to-white p-6 rounded-2xl border-2 border-gray-200 hover:border-[#0BA5DF] transition-all hover:shadow-lg text-center" >
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-pie w-12 h-12 text-[#0BA5DF] mx-auto mb-4">
+                  <path d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8a1 1 0 0 0 1 1z"></path>
+                  <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+               </svg>
+               <h3 class="text-xl font-bold mb-2 text-[#083459]">Student Housing</h3>
+               <p class="text-sm text-gray-600">Per-bed leasing with roommate splits and parent billing</p>
+            </div>
+            <div class="bg-gradient-to-br from-gray-50 to-white p-6 rounded-2xl border-2 border-gray-200 hover:border-[#0BA5DF] transition-all hover:shadow-lg text-center" >
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-12 h-12 text-[#0BA5DF] mx-auto mb-4">
+                  <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+               </svg>
+               <h3 class="text-xl font-bold mb-2 text-[#083459]">Short-Term Rentals</h3>
+               <p class="text-sm text-gray-600">STR portfolios with daily rate accounting and platform reconciliation</p>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="py-10 md:py-20 px-4 sm:px-8 bg-gray-50">
+      <div class="max-w-[1440px] mx-auto">
+         <div class="text-center mb-16" >
+            <h2 class="text-2xl md:text-5xl font-bold mb-6 text-[#083459]">Why Choose Ocean Clicks for Property Accounting Support</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Property management firms choose Ocean Clicks because we deliver the financial clarity needed to grow confidently.</p>
+         </div>
+         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+            <div class="bg-white p-6 rounded-2xl border-2 border-gray-200 hover:border-[#0BA5DF] transition-all hover:shadow-lg text-center" >
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award w-12 h-12 text-[#0BA5DF] mx-auto mb-4">
+                  <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
+                  <circle cx="12" cy="8" r="6"></circle>
+               </svg>
+               <h3 class="text-lg font-bold mb-2 text-[#083459]">PM Accounting Specialists</h3>
+               <p class="text-sm text-gray-600">Our team is trained specifically in property management accounting workflows, trust accounting, and PM software.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border-2 border-gray-200 hover:border-[#0BA5DF] transition-all hover:shadow-lg text-center" >
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield w-12 h-12 text-[#0BA5DF] mx-auto mb-4">
+                  <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+               </svg>
+               <h3 class="text-lg font-bold mb-2 text-[#083459]">Consistent Accuracy</h3>
+               <p class="text-sm text-gray-600">Rigorous quality controls ensure error-free ledgers, reconciliations, and owner statements.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border-2 border-gray-200 hover:border-[#0BA5DF] transition-all hover:shadow-lg text-center" >
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings w-12 h-12 text-[#0BA5DF] mx-auto mb-4">
+                  <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+               </svg>
+               <h3 class="text-lg font-bold mb-2 text-[#083459]">Flexible Engagement</h3>
+               <p class="text-sm text-gray-600">Part-time, full-time, or project-based support. Scale up or down based on portfolio size.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border-2 border-gray-200 hover:border-[#0BA5DF] transition-all hover:shadow-lg text-center" >
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users w-12 h-12 text-[#0BA5DF] mx-auto mb-4">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+               </svg>
+               <h3 class="text-lg font-bold mb-2 text-[#083459]">Transparent Extension</h3>
+               <p class="text-sm text-gray-600">We operate as part of your team with full visibility into processes, timelines, and performance.</p>
+            </div>
+         </div>
+         <div class="bg-white p-4 md:p-8rounded-2xl border-2 border-[#0BA5DF] shadow-lg" >
+            <div class="max-w-4xl mx-auto">
+               <h3 class="text-2xl font-bold mb-6 text-center text-[#083459]">Additional Advantages</h3>
+               <div class="grid md:grid-cols-2 gap-4">
+                  <div class="flex items-start gap-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-6 h-6 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span class="text-gray-700">We help eliminate financial bottlenecks and errors</span>
+                  </div>
+                  <div class="flex items-start gap-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-6 h-6 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span class="text-gray-700">We support scaling without adding payroll burden</span>
+                  </div>
+                  <div class="flex items-start gap-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-6 h-6 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span class="text-gray-700">We provide flexible engagement models</span>
+                  </div>
+                  <div class="flex items-start gap-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-6 h-6 text-[#0BA5DF] flex-shrink-0 mt-0.5">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                     </svg>
+                     <span class="text-gray-700">We operate as a transparent extension of your team</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="py-10 md:py-20 px-4 sm:px-8 bg-white">
+      <div class="max-w-4xl mx-auto">
+         <div class="text-center mb-12 sm:mb-16" >
+            <h2 class="text-2xl md:text-5xl font-bold mb-4 sm:mb-6 text-[#083459]">Frequently Asked Questions</h2>
+            <p class="text-lg sm:text-xl text-gray-600">Everything you need to know about Property Accounting &amp; Bookkeeping Services.</p>
+         </div>
+       <div class="space-y-4">
+    <div class="bg-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-[#0BA5DF] transition-all group">
+        <button class="faq-question w-full px-4 sm:px-8 py-4 sm:py-6 flex items-center justify-between text-left hover:bg-gray-50 transition-colors">
+            <span class="font-bold text-base sm:text-lg text-[#083459] pr-4 sm:pr-8">Do you manage trust accounting tasks?</span>
+            <div class="faq-icon w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all bg-gray-100 text-gray-400 font-bold text-xl group-hover:text-[#0BA5DF]">+</div>
+        </button>
+        <div class="faq-answer hidden px-4 sm:px-8 pb-6 text-[#455A64]">
+            <p class="pt-2 leading-relaxed text-sm md:text-base border-t border-gray-100 mt-2 pt-4">Yes. Our accounting VAs are trained in the strict principles of trust accounting, ensuring that tenant and owner funds are never commingled and that all ledger entries are audit-ready.</p>
+        </div>
+    </div>
+
+    <div class="bg-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-[#0BA5DF] transition-all group">
+        <button class="faq-question w-full px-4 sm:px-8 py-4 sm:py-6 flex items-center justify-between text-left hover:bg-gray-50 transition-colors">
+            <span class="font-bold text-base sm:text-lg text-[#083459] pr-4 sm:pr-8">Can you work directly inside AppFolio, Buildium, or Yardi?</span>
+            <div class="faq-icon w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all bg-gray-100 text-gray-400 font-bold text-xl group-hover:text-[#0BA5DF]">+</div>
+        </button>
+        <div class="faq-answer hidden px-4 sm:px-8 pb-6 text-[#455A64]">
+            <p class="pt-2 leading-relaxed text-sm md:text-base border-t border-gray-100 mt-2 pt-4">Absolutely. We operate directly within your existing property management ecosystem to handle bank reconciliations, accounts payable, and rent processing in real-time.</p>
+        </div>
+    </div>
+
+    <div class="bg-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-[#0BA5DF] transition-all group">
+        <button class="faq-question w-full px-4 sm:px-8 py-4 sm:py-6 flex items-center justify-between text-left hover:bg-gray-50 transition-colors">
+            <span class="font-bold text-base sm:text-lg text-[#083459] pr-4 sm:pr-8">Do you prepare owner statements?</span>
+            <div class="faq-icon w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all bg-gray-100 text-gray-400 font-bold text-xl group-hover:text-[#0BA5DF]">+</div>
+        </button>
+        <div class="faq-answer hidden px-4 sm:px-8 pb-6 text-[#455A64]">
+            <p class="pt-2 leading-relaxed text-sm md:text-base border-t border-gray-100 mt-2 pt-4">Yes. We ensure all expenses are correctly coded and matched to properties so that monthly owner statements are accurate, professional, and delivered on time.</p>
+        </div>
+    </div>
+
+    <div class="bg-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-[#0BA5DF] transition-all group">
+        <button class="faq-question w-full px-4 sm:px-8 py-4 sm:py-6 flex items-center justify-between text-left hover:bg-gray-50 transition-colors">
+            <span class="font-bold text-base sm:text-lg text-[#083459] pr-4 sm:pr-8">Can you help with delinquency tracking?</span>
+            <div class="faq-icon w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all bg-gray-100 text-gray-400 font-bold text-xl group-hover:text-[#0BA5DF]">+</div>
+        </button>
+        <div class="faq-answer hidden px-4 sm:px-8 pb-6 text-[#455A64]">
+            <p class="pt-2 leading-relaxed text-sm md:text-base border-t border-gray-100 mt-2 pt-4">We actively monitor aging reports and delinquent ledgers, applying late fees according to your policy and drafting notices for tenants who have missed payment deadlines.</p>
+        </div>
+    </div>
+
+    <div class="bg-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-[#0BA5DF] transition-all group">
+        <button class="faq-question w-full px-4 sm:px-8 py-4 sm:py-6 flex items-center justify-between text-left hover:bg-gray-50 transition-colors">
+            <span class="font-bold text-base sm:text-lg text-[#083459] pr-4 sm:pr-8">Do you verify vendor invoices?</span>
+            <div class="faq-icon w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all bg-gray-100 text-gray-400 font-bold text-xl group-hover:text-[#0BA5DF]">+</div>
+        </button>
+        <div class="faq-answer hidden px-4 sm:px-8 pb-6 text-[#455A64]">
+            <p class="pt-2 leading-relaxed text-sm md:text-base border-t border-gray-100 mt-2 pt-4">Yes. We perform a three-way match between the work order, the completed service, and the vendor invoice to ensure you only pay for verified, authorized work.</p>
+        </div>
+    </div>
+
+    <div class="bg-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-[#0BA5DF] transition-all group">
+        <button class="faq-question w-full px-4 sm:px-8 py-4 sm:py-6 flex items-center justify-between text-left hover:bg-gray-50 transition-colors">
+            <span class="font-bold text-base sm:text-lg text-[#083459] pr-4 sm:pr-8">What about complex month-end workflows?</span>
+            <div class="faq-icon w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all bg-gray-100 text-gray-400 font-bold text-xl group-hover:text-[#0BA5DF]">+</div>
+        </button>
+        <div class="faq-answer hidden px-4 sm:px-8 pb-6 text-[#455A64]">
+            <p class="pt-2 leading-relaxed text-sm md:text-base border-t border-gray-100 mt-2 pt-4">Our VAs handle the heavy lifting of month-end close, including bank reconciliations, management fee calculations, and preparing the final trial balance for your review.</p>
+        </div>
+    </div>
+
+    <div class="bg-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-[#0BA5DF] transition-all group">
+        <button class="faq-question w-full px-4 sm:px-8 py-4 sm:py-6 flex items-center justify-between text-left hover:bg-gray-50 transition-colors">
+            <span class="font-bold text-base sm:text-lg text-[#083459] pr-4 sm:pr-8">How do you handle security deposit compliance?</span>
+            <div class="faq-icon w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all bg-gray-100 text-gray-400 font-bold text-xl group-hover:text-[#0BA5DF]">+</div>
+        </button>
+        <div class="faq-answer hidden px-4 sm:px-8 pb-6 text-[#455A64]">
+            <p class="pt-2 leading-relaxed text-sm md:text-base border-t border-gray-100 mt-2 pt-4">We manage the security deposit disposition process, ensuring that move-out charges are calculated accurately and refunds are processed within state-mandated legal timeframes.</p>
+        </div>
+    </div>
+
+    <div class="bg-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-[#0BA5DF] transition-all group">
+        <button class="faq-question w-full px-4 sm:px-8 py-4 sm:py-6 flex items-center justify-between text-left hover:bg-gray-50 transition-colors">
+            <span class="font-bold text-base sm:text-lg text-[#083459] pr-4 sm:pr-8">Can you support multiple property types in one portfolio?</span>
+            <div class="faq-icon w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all bg-gray-100 text-gray-400 font-bold text-xl group-hover:text-[#0BA5DF]">+</div>
+        </button>
+        <div class="faq-answer hidden px-4 sm:px-8 pb-6 text-[#455A64]">
+            <p class="pt-2 leading-relaxed text-sm md:text-base border-t border-gray-100 mt-2 pt-4">Yes. Whether your portfolio includes single-family homes, multi-family units, or commercial spaces, we adapt our accounting workflows to meet the specific reporting needs of each asset class.</p>
+        </div>
+    </div>
+
+    <div class="bg-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-[#0BA5DF] transition-all group">
+        <button class="faq-question w-full px-4 sm:px-8 py-4 sm:py-6 flex items-center justify-between text-left hover:bg-gray-50 transition-colors">
+            <span class="font-bold text-base sm:text-lg text-[#083459] pr-4 sm:pr-8">Do you provide backup coverage if our assigned accountant is unavailable?</span>
+            <div class="faq-icon w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all bg-gray-100 text-gray-400 font-bold text-xl group-hover:text-[#0BA5DF]">+</div>
+        </button>
+        <div class="faq-answer hidden px-4 sm:px-8 pb-6 text-[#455A64]">
+            <p class="pt-2 leading-relaxed text-sm md:text-base border-t border-gray-100 mt-2 pt-4">Yes. We cross-train our accounting teams on your specific SOPs, so there is always a qualified backup ready to ensure your month-end and owner draws are never delayed.</p>
+        </div>
+    </div>
+
+    <div class="bg-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-[#0BA5DF] transition-all group">
+        <button class="faq-question w-full px-4 sm:px-8 py-4 sm:py-6 flex items-center justify-between text-left hover:bg-gray-50 transition-colors">
+            <span class="font-bold text-base sm:text-lg text-[#083459] pr-4 sm:pr-8">How quickly can we get started?</span>
+            <div class="faq-icon w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all bg-gray-100 text-gray-400 font-bold text-xl group-hover:text-[#0BA5DF]">+</div>
+        </button>
+        <div class="faq-answer hidden px-4 sm:px-8 pb-6 text-[#455A64]">
+            <p class="pt-2 leading-relaxed text-sm md:text-base border-t border-gray-100 mt-2 pt-4">We can begin the integration process within 48 hours. This includes establishing secure software access and reviewing your chart of accounts and specific accounting policies.</p>
+        </div>
+    </div>
+</div>
+      </div>
+   </section>
+   <section class="py-10 md:py-20 px-4 sm:px-8 bg-gradient-to-br from-[#083459] via-[#0BA5DF] to-[#083459] text-white">
+      <div class="max-w-4xl mx-auto text-center">
+         <div >
+            <h2 class="text-2xl md:text-5xl font-bold mb-6">Strengthen Your Financial Operations with Trained PM Accountants</h2>
+            <p class="text-xl mb-8 text-gray-200">Financial accuracy is the cornerstone of property management success. With Ocean Clicks, you gain disciplined accounting processes, accurate books, and timely reporting — without the cost and complexity of hiring in-house.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+               <a class="inline-flex items-center justify-center bg-[#FCC312] text-[#083459] px-8 py-4 rounded-lg font-bold hover:bg-[#fdd347] transition-all text-lg group" href="contact.html" data-discover="true">
+                  Enhance Your Financial Operations
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-2 group-hover:translate-x-1 transition-transform">
+                     <path d="M5 12h14"></path>
+                     <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+               </a>
+               <a class="inline-flex items-center justify-center border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-[#083459] transition-all text-lg" href="contact.html" data-discover="true">Book a Consultation</a>
+            </div>
+         </div>
+      </div>
+   </section>
+</div>
+    </main>
+
+    <!-- start Footer -->
+    <footer class="bg-[#083459] text-white">
+        <div class="max-w-[1440px] mx-auto px-4 md:px-8 py-12 md:py-16">
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-12 mb-8 md:mb-12">
+                <div class="md:col-span-3 lg:col-span-2"><img src="./assest/img/logo/logo.avif" alt="Ocean Clicks"
+                        class="h-8 md:h-10 mb-4 md:mb-6 brightness-0 invert">
+                    <p class="text-[#E2F4FB] mb-4 md:mb-6 leading-relaxed text-sm md:text-base">Specialized
+                        outsourcing
+                        solutions for regulated industries. We help law
+                        firms, credit repair companies, property
+                        managers, and B2B organizations scale
+                        efficiently.</p>
+                    <div class="flex gap-4"><a href="#linkedin"
+                            class="w-10 h-10 bg-[#0BA5DF] rounded-full flex items-center justify-center hover:bg-[#0991c9] transition-colors"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-linkedin w-5 h-5">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect width="4" height="12" x="2" y="9"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg></a><a href="#twitter"
+                            class="w-10 h-10 bg-[#0BA5DF] rounded-full flex items-center justify-center hover:bg-[#0991c9] transition-colors"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-twitter w-5 h-5">
+                                <path
+                                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                                </path>
+                            </svg></a><a href="#facebook"
+                            class="w-10 h-10 bg-[#0BA5DF] rounded-full flex items-center justify-center hover:bg-[#0991c9] transition-colors"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-facebook w-5 h-5">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg></a></div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-sm md:text-lg">Services</h4>
+                    <ul class="space-y-3 text-sm md:text-base">
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors"
+                                href="/credit-repair-outsourcing" data-discover="true">Credit Repair
+                                Outsourcing</a>
+                        </li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors"
+                                href="/paralegal-legal-support-outsourcing" data-discover="true">Legal Process
+                                Outsourcing</a></li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors"
+                                href="/hire-virtual-assistants.html" data-discover="true">Virtual
+                                Assistants</a></li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors"
+                                href="/property-management-outsourcing" data-discover="true">Property Management</a>
+                        </li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors"
+                                href="contact.html-center-outsourcing" data-discover="true">Contact Center</a></li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors"
+                                href="/b2b-lead-generation-services" data-discover="true">Lead
+                                Generation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-sm md:text-lg">Company</h4>
+                    <ul class="space-y-3 text-sm md:text-base">
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors" href="/about"
+                                data-discover="true">About Us</a></li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors" href="/careers"
+                                data-discover="true">Careers</a></li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors" href="/resources"
+                                data-discover="true">Resources</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-sm md:text-lg">Contact</h4>
+                    <ul class="space-y-4 text-sm md:text-base">
+                        <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-phone w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-1">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                            <div>
+                                <p class="text-[#E2F4FB]">US: +1 (631)
+                                    212-1341</p>
+                                <p class="text-[#E2F4FB]">India: +91 90853
+                                    16752</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-mail w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-1">
+                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg>
+                            <div>
+                                <p class="text-[#E2F4FB]">alex@ocean-clicks.com</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-map-pin w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-1">
+                                <path
+                                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                </path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <div>
+                                <p class="text-[#E2F4FB] text-sm">US: 66 W
+                                    Flagler St #6471<br>Miami, FL 33130</p>
+                                <p class="text-[#E2F4FB] text-sm mt-2">India:
+                                    6th Floor, 61-b, Sarkhej - Gandhinagar
+                                    Hwy<br>Ahmedabad, Gujarat 380054</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="border-t border-[#0BA5DF]/30 pt-6 md:pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-[#E2F4FB] text-xs md:text-sm text-center md:text-left">©
+                    2026 Ocean Clicks. All rights
+                    reserved.</p>
+                <div class="flex flex-wrap justify-center gap-4 md:gap-6 text-xs md:text-sm"><a
+                        class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors" href="/privacy-policy"
+                        data-discover="true">Privacy Policy</a><a
+                        class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors" href="/terms-of-service"
+                        data-discover="true">Terms of Service</a><a
+                        class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors" href="/policies-compliance"
+                        data-discover="true">Policies &amp;
+                        Compliance</a></div>
+            </div>
+        </div>
+    </footer>
+    <!-- end Footer -->
+
+   
+
+    <script src="./assest/js/dev-script.js"></script>
+</body>
+
+</html>

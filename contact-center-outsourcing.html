@@ -1,0 +1,2570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Clicks Header</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assest/css/dev-style.css">
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Progress Bar -->
+    <div id="scrollProgress"
+        class="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#FCC312] via-[#0BA5DF] to-[#083459] origin-left z-[60] scale-x-0">
+    </div>
+    <div id="floatingButtons"
+        class="hidden lg:flex fixed bottom-8 right-8 z-40 gap-3 transition-all duration-300 opacity-0 translate-y-5">
+
+        <!-- Call Button -->
+        <a href="tel:+1234567890"
+            class="bg-white text-[#083459] p-4 rounded-full shadow-2xl border-2 border-[#0BA5DF] hover:bg-[#E2F4FB] transition-all group"
+            title="Call Us">
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 group-hover:text-[#0BA5DF] transition-colors"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+        </a>
+
+        <!-- Start Free Trial -->
+        <button
+            class="bg-gradient-to-r from-[#FCC312] to-[#e6b010] text-[#083459] px-6 py-4 rounded-full shadow-2xl hover:shadow-3xl transition-all font-bold flex items-center gap-2 group">
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path d="M8 2v4" />
+                <path d="M16 2v4" />
+                <rect width="18" height="18" x="3" y="4" rx="2" />
+                <path d="M3 10h18" />
+            </svg>
+            <span>Start Free Trial</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+            </svg>
+        </button>
+        <!-- Back To Top -->
+        <button id="backToTop"
+            class="bg-[#083459] text-white p-4 rounded-full shadow-2xl hover:bg-[#0BA5DF] transition-all"
+            title="Back to Top">
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 -rotate-90" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+            </svg>
+        </button>
+    </div>
+    <!-- start top header  -->
+    <div class="bg-[#083459] text-white py-2 px-4 md:px-8">
+        <div
+            class="max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-center gap-2 md:gap-0 text-[11px] md:text-sm">
+            <div class="flex items-center gap-4 md:gap-8">
+                <a class="hover:text-[#FCC312] transition-colors font-semibold" href="contact-center-outsourcing.html">Contact Center Outsourcing</a>
+                <a class="hover:text-[#FCC312] transition-colors font-semibold" href="b2b-lead-generation-services.html">Lead Generation Services</a>
+            </div>
+            <div class="flex items-center gap-4 md:gap-6 opacity-90">
+                <a class="hover:text-[#0BA5DF] transition-colors" href="resources.html">Resources</a>
+                <a class="hover:text-[#0BA5DF] transition-colors" href="about.html">About</a>
+                <a class="hover:text-[#0BA5DF] transition-colors" href="articles.html">Articles</a>
+                <a class="hover:text-[#0BA5DF] transition-colors hidden md:inline" href="careers.html">Careers</a>
+                <a class="hover:text-[#0BA5DF] transition-colors" href="contact-center-outsourcing.html">Reach Us</a>
+            </div>
+        </div>
+    </div>
+    <!-- end top header  -->
+
+    <!-- start nav bar  -->
+   <nav class="bg-white border-b border-gray-100 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-[1440px] mx-auto px-4 md:px-8">
+            <div class="flex items-center justify-between h-20 md:h-24">
+
+                <div class="flex items-center flex-shrink-0">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <img src="./assest/img/logo/logo.avif" alt="Ocean Clicks" class="h-10 md:h-12 w-auto">
+                    </a>
+                </div>
+
+                <div class="hidden min-[1240px]:flex items-center gap-2 xl:gap-4">
+
+                    <div class="group relative py-8">
+                        <a class="flex items-center gap-1 text-[#083459] group-hover:text-[#0BA5DF] transition-colors font-bold text-[14px]"
+                            href="credit-repair-outsourcing.html">
+                            Credit Repair Outsourcing
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3"
+                                class="mt-0.5 transition-transform group-hover:rotate-180">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg>
+                        </a>
+                        <div
+                            class="absolute top-full left-0 w-[350px] bg-[#083459] shadow-xl rounded-b-lg border-t-2 border-[#0BA5DF] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60]">
+                            <div class="py-2">
+                                <a href="full-cycle-credit-repair-processing.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Full-Cycle
+                                    Credit Repair Processing</a>
+                                <a href="credit-dispute-outsourcing.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Credit
+                                    Dispute Outsourcing</a>
+                                <a href="credit-report-audit-analysis.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Credit
+                                    Report Audit & Analysis Outsourcing</a>
+                                <a href="fcra-fdcpa-compliance-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">FCRA
+                                    & FDCPA Compliance Support Outsourcing Services</a>
+                                <a href="virtual-assistants-for-credit-repair.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Virtual
+                                    Assistants for Credit Repair Companies</a>
+                                <a href="credit-repair-fulfillment.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Credit
+                                    Repair Fulfillment Services</a>
+                                <a href="automation-workflow-outsourcing.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold">Credit
+                                    Repair Automation & Workflow Outsourcing Services</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group relative py-8">
+                        <a class="flex items-center gap-1 text-[#083459] group-hover:text-[#0BA5DF] transition-colors font-bold text-[14px]"
+                            href="paralegal-legal-support-outsourcing.html">
+                            Legal Process Outsourcing
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3"
+                                class="mt-0.5 transition-transform group-hover:rotate-180">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg>
+                        </a>
+                        <div
+                            class="absolute top-full left-0 w-[320px] bg-[#083459] shadow-xl rounded-b-lg border-t-2 border-[#0BA5DF] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60]">
+                            <div class="py-2">
+                                <a href="personal-injury-case-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Personal
+                                    Injury Case Support</a>
+                                <a href="bankruptcy-petition-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Bankruptcy
+                                    Petition Support</a>
+                                <a href="workers-comp-case-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Workers'
+                                    Compensation Case Support</a>
+                                <a href="identity-theft-case-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Identity
+                                    Theft Case Support</a>
+                                <a href="fcra-litigation-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">FCRA
+                                    Litigation Support</a>
+                                <a href="legal-research-drafting.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Legal
+                                    Research & Drafting</a>
+                                <a href="virtual-paralegal-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold">Virtual
+                                    Paralegal Assistant</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group relative py-8">
+                        <a class="flex items-center gap-1 text-[#083459] group-hover:text-[#0BA5DF] transition-colors font-bold text-[14px]"
+                            href="hire-virtual-assistants.html">
+                            Hire Virtual Assistants
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3"
+                                class="mt-0.5 transition-transform group-hover:rotate-180">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg>
+                        </a>
+                        <div
+                            class="absolute top-full left-0 w-[320px] bg-[#083459] shadow-xl rounded-b-lg border-t-2 border-[#0BA5DF] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60]">
+                            <div class="py-2">
+                                <a href="real-estate-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Real
+                                    Estate Virtual Assistant</a>
+                                <a href="ecommerce-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Ecommerce
+                                    Virtual Assistant</a>
+                                <a href="small-business-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Small
+                                    Business Virtual Assistant</a>
+                                <a href="credit-repair-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Credit
+                                    Repair Virtual Assistant</a>
+                                <a href="startup-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Startup
+                                    Virtual Assistant</a>
+                                <a href="coaches-consultants-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Coaches
+                                    & Consultants Virtual Assistant</a>
+                                <a href="law-firm-virtual-assistant.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold">Law
+                                    Firm Virtual Assistant</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group relative py-8">
+                        <a class="flex items-center gap-1 text-[#083459] group-hover:text-[#0BA5DF] transition-colors font-bold text-[14px]"
+                            href="property-management-outsourcing.html">
+                            Property Management
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3"
+                                class="mt-0.5 transition-transform group-hover:rotate-180">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg>
+                        </a>
+                        <div
+                            class="absolute top-full right-0 w-[350px] bg-[#083459] shadow-xl rounded-b-lg border-t-2 border-[#0BA5DF] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60]">
+                            <div class="py-2">
+                                <a href="tenant-screening-application-processing.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Tenant
+                                    Screening & Application Processing</a>
+                                <a href="leasing-tenant-placement.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Leasing
+                                    & Tenant Placement Support</a>
+                                <a href="property-maintenance-coordination.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Property
+                                    Maintenance & Coordination Outsourcing</a>
+                                <a href="property-accounting.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Property
+                                    Accounting & Bookkeeping Services</a>
+                                <a href="property-preservation.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">Property
+                                    Preservation Processing</a>
+                                <a href="hoa-support.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold border-b border-white/10">HOA
+                                    & Community Association Support</a>
+                                <a href="str-management.html"
+                                    class="block px-6 py-3 text-white hover:bg-white/10 text-[13px] font-semibold">Short-Term
+                                    Rental Management Support</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="bg-[#FCC312] text-[#083459] px-7 py-3 rounded-lg font-bold hover:bg-[#e5af10] transition-all transform hover:scale-105 shadow-md ml-4 whitespace-nowrap"
+                        href="contact.html">
+                        Get Started
+                    </a>
+                </div>
+
+                <div class="min-[1240px]:hidden">
+                    <button id="mobile-menu-open" class="text-[#083459] p-2" aria-label="Toggle menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="4" x2="20" y1="12" y2="12"></line>
+                            <line x1="4" x2="20" y1="6" y2="6"></line>
+                            <line x1="4" x2="20" y1="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <div id="mobile-sidebar"
+        class="fixed inset-y-0 right-0 w-full max-w-[320px] bg-[#083459] z-[100] transform translate-x-full transition-transform duration-300 ease-in-out min-[1240px]:hidden flex flex-col shadow-2xl">
+
+        <div class="flex items-center justify-between p-6 border-b border-white/10 bg-[#062846]">
+            <img src="./assest/img/logo/logo.avif" alt="Logo" class="h-8 brightness-0 invert">
+            <button id="mobile-menu-close" class="text-white p-2 text-3xl leading-none">&times;</button>
+        </div>
+
+        <div class="flex-1 overflow-y-auto py-4 px-6 custom-scrollbar">
+            <div class="space-y-1">
+
+                <div class="border-b border-white/5 py-1">
+                    <div class="flex items-center justify-between">
+                        <a href="credit-repair-outsourcing.html"
+                            class="text-white font-bold text-[15px] py-3 flex-1">Credit Repair Outsourcing</a>
+                        <button class="mobile-chevron-btn p-3 text-[#0BA5DF] transition-transform duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div
+                        class="mobile-dropdown-content hidden flex flex-col gap-4 pl-4 pt-2 pb-6 border-l border-[#0BA5DF]/30 mt-1">
+                        <a href="full-cycle-credit-repair-processing.html" class="text-white/70 text-sm">Full-Cycle
+                            Credit Repair Processing</a>
+                        <a href="credit-dispute-outsourcing.html" class="text-white/70 text-sm">Credit Dispute
+                            Outsourcing</a>
+                        <a href="credit-report-audit-analysis.html" class="text-white/70 text-sm">Credit Report Audit &
+                            Analysis</a>
+                        <a href="fcra-fdcpa-compliance-support.html" class="text-white/70 text-sm">FCRA & FDCPA
+                            Compliance Support</a>
+                        <a href="virtual-assistants-for-credit-repair.html" class="text-white/70 text-sm">VAs for Credit
+                            Repair Companies</a>
+                        <a href="credit-repair-fulfillment.html" class="text-white/70 text-sm">Credit Repair Fulfillment
+                            Services</a>
+                        <a href="automation-workflow-outsourcing.html" class="text-white/70 text-sm">Automation &
+                            Workflow Services</a>
+                    </div>
+                </div>
+
+                <div class="border-b border-white/5 py-1">
+                    <div class="flex items-center justify-between">
+                        <a href="paralegal-legal-support-outsourcing.html"
+                            class="text-white font-bold text-[15px] py-3 flex-1">Legal Process Outsourcing</a>
+                        <button class="mobile-chevron-btn p-3 text-[#0BA5DF] transition-transform duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div
+                        class="mobile-dropdown-content hidden flex flex-col gap-4 pl-4 pt-2 pb-6 border-l border-[#0BA5DF]/30 mt-1">
+                        <a href="personal-injury-case-support.html" class="text-white/70 text-sm">Personal Injury Case
+                            Support</a>
+                        <a href="bankruptcy-petition-support.html" class="text-white/70 text-sm">Bankruptcy Petition
+                            Support</a>
+                        <a href="workers-comp-case-support.html" class="text-white/70 text-sm">Workers' Comp Case
+                            Support</a>
+                        <a href="identity-theft-case-support.html" class="text-white/70 text-sm">Identity Theft Case
+                            Support</a>
+                        <a href="fcra-litigation-support.html" class="text-white/70 text-sm">FCRA Litigation Support</a>
+                        <a href="legal-research-drafting.html" class="text-white/70 text-sm">Legal Research &
+                            Drafting</a>
+                        <a href="virtual-paralegal-assistant.html" class="text-white/70 text-sm">Virtual Paralegal
+                            Assistant</a>
+                    </div>
+                </div>
+
+                <div class="border-b border-white/5 py-1">
+                    <div class="flex items-center justify-between">
+                        <a href="hire-virtual-assistants.html" class="text-white font-bold text-[15px] py-3 flex-1">Hire
+                            Virtual Assistants</a>
+                        <button class="mobile-chevron-btn p-3 text-[#0BA5DF] transition-transform duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div
+                        class="mobile-dropdown-content hidden flex flex-col gap-4 pl-4 pt-2 pb-6 border-l border-[#0BA5DF]/30 mt-1">
+                        <a href="real-estate-virtual-assistant.html" class="text-white/70 text-sm">Real Estate Virtual
+                            Assistant</a>
+                        <a href="ecommerce-virtual-assistant.html" class="text-white/70 text-sm">Ecommerce Virtual
+                            Assistant</a>
+                        <a href="small-business-virtual-assistant.html" class="text-white/70 text-sm">Small Business
+                            Virtual Assistant</a>
+                        <a href="credit-repair-virtual-assistant.html" class="text-white/70 text-sm">Credit Repair
+                            Virtual Assistant</a>
+                        <a href="startup-virtual-assistant.html" class="text-white/70 text-sm">Startup Virtual
+                            Assistant</a>
+                        <a href="coaches-consultants-virtual-assistant.html" class="text-white/70 text-sm">Coaches &
+                            Consultants VA</a>
+                        <a href="law-firm-virtual-assistant.html" class="text-white/70 text-sm">Law Firm Virtual
+                            Assistant</a>
+                    </div>
+                </div>
+
+                <div class="border-b border-white/5 py-1">
+                    <div class="flex items-center justify-between">
+                        <a href="property-management-outsourcing.html"
+                            class="text-white font-bold text-[15px] py-3 flex-1">Property Management</a>
+                        <button class="mobile-chevron-btn p-3 text-[#0BA5DF] transition-transform duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div
+                        class="mobile-dropdown-content hidden flex flex-col gap-4 pl-4 pt-2 pb-6 border-l border-[#0BA5DF]/30 mt-1">
+                        <a href="tenant-screening-application-processing.html" class="text-white/70 text-sm">Tenant
+                            Screening & Application</a>
+                        <a href="leasing-tenant-placement.html" class="text-white/70 text-sm">Leasing & Tenant
+                            Placement</a>
+                        <a href="property-maintenance-coordination.html" class="text-white/70 text-sm">Maintenance &
+                            Coordination</a>
+                        <a href="property-accounting.html" class="text-white/70 text-sm">Accounting & Bookkeeping</a>
+                        <a href="property-preservation.html" class="text-white/70 text-sm">Property Preservation
+                            Processing</a>
+                        <a href="hoa-support.html" class="text-white/70 text-sm">HOA & Community Association</a>
+                        <a href="str-management.html" class="text-white/70 text-sm">Short-Term Rental Management</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-8 mb-12">
+                <a href="contact.html"
+                    class="block w-full bg-[#FCC312] text-[#083459] text-center py-4 rounded-xl font-bold shadow-lg">Get
+                    Started</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobile-overlay"
+        class="fixed inset-0 bg-[#083459]/80 backdrop-blur-sm z-[90] opacity-0 invisible transition-all duration-300 min-[1240px]:hidden">
+    </div>
+    <!-- end nav bar  -->
+
+    <main>
+        <!-- start hero banner -->
+        <section
+            class="relative  py-20 px-4 sm:px-8 overflow-hidden bg-gradient-to-br from-[#083459] via-[#0BA5DF] to-[#083459] text-white">
+            <div class="absolute inset-0 opacity-10 pointer-events-none">
+                <div class="absolute inset-0"
+                    style="background-image: url(&quot;data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E&quot;);">
+                </div>
+            </div>
+            <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                <div class="absolute font-bold animate-float-slow text-[#FCC312]"
+                    style="right: 5%; top: 10%; font-size: 28px;">+</div>
+                <div class="absolute font-bold animate-float-fast text-white"
+                    style="right: 12%; top: 25%; font-size: 18px;">+</div>
+                <div class="absolute font-bold animate-float-slow text-[#0BA5DF]"
+                    style="right: 8%; top: 45%; font-size: 35px;">+</div>
+                <div class="absolute font-bold animate-float-fast text-[#FCC312]"
+                    style="right: 15%; top: 65%; font-size: 22px;">+</div>
+                <div class="absolute font-bold animate-float-slow text-white"
+                    style="right: 4%; top: 80%; font-size: 30px;">+</div>
+                <div class="absolute font-bold animate-float-fast text-[#0BA5DF]"
+                    style="right: 10%; top: 90%; font-size: 20px;">+</div>
+                <div class="absolute font-bold animate-float-slow text-white"
+                    style="left: 50%; top: 5%; font-size: 25px;">+</div>
+                <div class="absolute font-bold animate-float-fast text-[#FCC312]"
+                    style="left: 65%; top: 8%; font-size: 16px;">+</div>
+                <div class="absolute font-bold animate-float-slow text-[#0BA5DF]"
+                    style="left: 80%; top: 3%; font-size: 28px;">+</div>
+                <div class="absolute font-bold animate-float-fast text-[#FCC312]"
+                    style="left: 5%; top: 40%; font-size: 20px;">+</div>
+                <div class="absolute font-bold animate-float-slow text-white"
+                    style="left: 12%; top: 48%; font-size: 32px;">+</div>
+                <div class="absolute font-bold animate-float-fast text-[#0BA5DF]"
+                    style="left: 3%; top: 55%; font-size: 18px;">+</div>
+                <div class="absolute font-bold animate-float-slow text-[#FCC312]"
+                    style="left: 10%; top: 62%; font-size: 26px;">+</div>
+                <div class="absolute font-bold animate-float-fast text-white"
+                    style="left: 6%; top: 70%; font-size: 15px;">+</div>
+            </div>
+            <div class="text-center max-w-5xl mx-auto mb-10 md:mb-16">
+                <div class="flex flex-wrap items-center justify-center gap-2 text-xs sm:text-sm mb-6 text-[#0BA5DF]">
+                    <a class="hover:text-[#FCC312] transition-colors" href="/">Home</a>
+                    <span>/</span>
+                    <span class="text-white">Contact Center Outsourcing</span>
+                </div>
+                <div class="inline-block mb-4 sm:mb-6">
+                    <div
+                        class="flex items-center gap-2 bg-[#0BA5DF]/20 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full border border-[#0BA5DF]/30">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-phone w-3 h-3 sm:w-4 sm:h-4 text-[#FCC312]">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                        <span class="text-xs sm:text-sm font-semibold text-[#FCC312]">Contact Center Outsourcing</span>
+                    </div>
+                </div>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                    Contact Center Outsourcing <span class="text-[#FCC312]">Services</span>
+                </h1>
+                <p class="text-base sm:xl md:text-2xl mb-8 text-gray-200 leading-relaxed">
+                    In today's always-on business environment, customer interactions no longer happen at convenient
+                    hours or through a single channel. Customers expect fast responses, consistent service quality, and
+                    seamless communication.
+                </p>
+                <p class="text-base sm:text-base md:text-xl  text-gray-300 leading-relaxed">
+                    At Ocean Clicks, we help businesses streamline customer communication by delivering reliable,
+                    scalable, and cost-effective contact center outsourcing solutions.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <div class="h-full">
+                    <a class="block bg-white/95 backdrop-blur-sm border-2 border-gray-200 rounded-2xl p-6 hover:border-[#FCC312] hover:shadow-xl transition-all group h-full"
+                        href="contact.html-center-outsourcing/inbound-call-center-services">
+                        <div
+                            class="w-14 h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-phone-incoming w-7 h-7 text-white">
+                                <polyline points="16 2 16 8 22 8"></polyline>
+                                <line x1="22" x2="16" y1="2" y2="8"></line>
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-[#083459] group-hover:text-[#0BA5DF] transition-colors">
+                            Inbound Call Center Services</h3>
+                        <p class="text-gray-600 text-sm mb-4 leading-relaxed">Handle customer inquiries, support
+                            requests, and service calls</p>
+                        <div
+                            class="flex items-center gap-2 text-[#083459] font-semibold group-hover:text-[#FCC312] transition-colors">
+                            Learn More
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-chevron-right w-4 h-4 group-hover:translate-x-1 transition-transform">
+                                <path d="m9 18 6-6-6-6"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="h-full">
+                    <a class="block bg-white/95 backdrop-blur-sm border-2 border-gray-200 rounded-2xl p-6 hover:border-[#FCC312] hover:shadow-xl transition-all group h-full"
+                        href="contact.html-center-outsourcing/outbound-call-center-services">
+                        <div
+                            class="w-14 h-14 bg-gradient-to-br from-[#083459] to-[#0BA5DF] rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-phone-outgoing w-7 h-7 text-white">
+                                <polyline points="22 8 22 2 16 2"></polyline>
+                                <line x1="16" x2="22" y1="8" y2="2"></line>
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-[#083459] group-hover:text-[#0BA5DF] transition-colors">
+                            Outbound Call Center Services</h3>
+                        <p class="text-gray-600 text-sm mb-4 leading-relaxed">Non-sales outreach, reminders, surveys,
+                            and follow-ups</p>
+                        <div
+                            class="flex items-center gap-2 text-[#083459] font-semibold group-hover:text-[#FCC312] transition-colors">
+                            Learn More
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-chevron-right w-4 h-4 group-hover:translate-x-1 transition-transform">
+                                <path d="m9 18 6-6-6-6"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="h-full">
+                    <a class="block bg-white/95 backdrop-blur-sm border-2 border-gray-200 rounded-2xl p-6 hover:border-[#FCC312] hover:shadow-xl transition-all group h-full"
+                        href="contact.html-center-outsourcing/customer-support-outsourcing">
+                        <div
+                            class="w-14 h-14 bg-gradient-to-br from-[#0BA5DF] to-[#FCC312] rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-headphones w-7 h-7 text-white">
+                                <path
+                                    d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-[#083459] group-hover:text-[#0BA5DF] transition-colors">
+                            Customer Support Outsourcing</h3>
+                        <p class="text-gray-600 text-sm mb-4 leading-relaxed">Multichannel support across voice, email,
+                            chat, and tickets</p>
+                        <div
+                            class="flex items-center gap-2 text-[#083459] font-semibold group-hover:text-[#FCC312] transition-colors">
+                            Learn More
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-chevron-right w-4 h-4 group-hover:translate-x-1 transition-transform">
+                                <path d="m9 18 6-6-6-6"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="h-full">
+                    <a class="block bg-white/95 backdrop-blur-sm border-2 border-gray-200 rounded-2xl p-6 hover:border-[#FCC312] hover:shadow-xl transition-all group h-full"
+                        href="contact.html-center-outsourcing/ecommerce-customer-support" data-discover="true">
+                        <div
+                            class="w-14 h-14 bg-gradient-to-br from-[#FCC312] to-[#0BA5DF] rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-shopping-cart w-7 h-7 text-white">
+                                <circle cx="8" cy="21" r="1"></circle>
+                                <circle cx="19" cy="21" r="1"></circle>
+                                <path
+                                    d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-[#083459] group-hover:text-[#0BA5DF] transition-colors">
+                            Ecommerce Customer Support</h3>
+                        <p class="text-gray-600 text-sm mb-4 leading-relaxed">Post-purchase support, returns, refunds,
+                            and order tracking</p>
+                        <div
+                            class="flex items-center gap-2 text-[#083459] font-semibold group-hover:text-[#FCC312] transition-colors">
+                            Learn More<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-chevron-right w-4 h-4 group-hover:translate-x-1 transition-transform">
+                                <path d="m9 18 6-6-6-6"></path>
+                            </svg></div>
+                    </a>
+                </div>
+                <div class="h-full">
+                    <a class="block bg-white/95 backdrop-blur-sm border-2 border-gray-200 rounded-2xl p-6 hover:border-[#FCC312] hover:shadow-xl transition-all group h-full"
+                        href="contact.html-center-outsourcing/24-7-support" data-discover="true">
+                        <div
+                            class="w-14 h-14 bg-gradient-to-br from-[#083459] to-[#0BA5DF] rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-clock w-7 h-7 text-white">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-[#083459] group-hover:text-[#0BA5DF] transition-colors">
+                            24/7 Contact Center</h3>
+                        <p class="text-gray-600 text-sm mb-4 leading-relaxed">Round-the-clock customer support across
+                            all time zones</p>
+                        <div
+                            class="flex items-center gap-2 text-[#083459] font-semibold group-hover:text-[#FCC312] transition-colors">
+                            Learn More<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-chevron-right w-4 h-4 group-hover:translate-x-1 transition-transform">
+                                <path d="m9 18 6-6-6-6"></path>
+                            </svg></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- end hero banner -->
+
+        <!-- start Contact Center Outsourcing Services -->
+        <section class="py-10 md:py-16 px-4 sm:px-8 bg-white">
+            <div class="max-w-[1440px] mx-auto">
+
+                <div class="text-center max-w-5xl mx-auto mb-10 md:mb-16" data-aos="fade-up">
+                    <div class="w-20 h-20 bg-[#0BA5DF]/10 rounded-2xl flex items-center justify-center mx-auto mb-8">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-globe w-10 h-10 text-[#0BA5DF]">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                            <path d="M2 12h20"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-2xl md:text-4xl font-bold mb-6 text-[#083459]">Contact Center Outsourcing Services
+                    </h2>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                        Contact center outsourcing involves partnering with a specialized service provider to manage
+                        customer communication functions on your behalf. Gain access to trained agents, proven
+                        processes, and modern technology without the complexity of internal staffing.
+                    </p>
+                </div>
+
+                <div class="text-center max-w-3xl mx-auto mb-6" data-aos="fade-up">
+                    <div class="inline-block mb-4">
+                        <div
+                            class="flex items-center gap-2 bg-[#FCC312]/20 px-4 py-2 rounded-full border border-[#FCC312]/40">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-target w-4 h-4 text-[#FCC312]">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <circle cx="12" cy="12" r="6"></circle>
+                                <circle cx="12" cy="12" r="2"></circle>
+                            </svg>
+                            <span class="text-sm font-semibold text-[#083459]">Problem & Solution</span>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl md:text-3xl font-bold mb-4 text-[#083459]">Common Challenges vs Ocean Clicks
+                        Solutions</h3>
+                    <p class="text-lg text-gray-600">See how we transform operational challenges into competitive
+                        advantages:</p>
+                </div>
+
+                <div class="max-w-6xl mx-auto space-y-6 mb-12">
+
+                    <div class="grid md:grid-cols-2 gap-6 p-6 rounded-xl hover:shadow-xl transition-all"
+                        data-aos="fade-up">
+                        <div class="flex items-start gap-4 p-4 bg-red-50 rounded-lg border-l-4 border-red-400">
+                            <div class="w-8 h-8 bg-red-400 rounded-full flex items-center justify-center flex-shrink-0">
+                                <span class="text-white font-bold text-sm md:text-lg">!</span>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-red-600 uppercase mb-2">Challenge</p>
+                                <p class="text-gray-700 leading-relaxed">Rising costs of hiring, training, and retaining
+                                    in-house agents</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-4 bg-[#0BA5DF]/10 rounded-lg border-l-4 border-[#0BA5DF]">
+                            <div
+                                class="w-8 h-8 bg-[#0BA5DF] rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-white">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-[#0BA5DF] uppercase mb-2">Ocean Clicks Solution</p>
+                                <p class="text-gray-700 leading-relaxed font-medium">Pre-trained professionals starting
+                                    at $8/hour with management included.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6 p-6 rounded-xl hover:shadow-xl transition-all"
+                        data-aos="fade-up">
+                        <div class="flex items-start gap-4 p-4 bg-red-50 rounded-lg border-l-4 border-red-400">
+                            <div class="w-8 h-8 bg-red-400 rounded-full flex items-center justify-center flex-shrink-0">
+                                <span class="text-white font-bold text-sm md:text-lg">!</span>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-red-600 uppercase mb-2">Challenge</p>
+                                <p class="text-gray-700 leading-relaxed">Increasing customer expectations for faster
+                                    response times</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-4 bg-[#0BA5DF]/10 rounded-lg border-l-4 border-[#0BA5DF]">
+                            <div
+                                class="w-8 h-8 bg-[#0BA5DF] rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-white">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-[#0BA5DF] uppercase mb-2">Ocean Clicks Solution</p>
+                                <p class="text-gray-700 leading-relaxed font-medium">Dedicated teams with &lt;30 second
+                                    answer speed and 24/7 availability.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6 p-6 rounded-xl hover:shadow-xl transition-all"
+                        data-aos="fade-up">
+                        <div class="flex items-start gap-4 p-4 bg-red-50 rounded-lg border-l-4 border-red-400">
+                            <div class="w-8 h-8 bg-red-400 rounded-full flex items-center justify-center flex-shrink-0">
+                                <span class="text-white font-bold text-sm md:text-lg">!</span>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-red-600 uppercase mb-2">Challenge</p>
+                                <p class="text-gray-700 leading-relaxed">Need for 24/7 customer support without operational strain</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-4 bg-[#0BA5DF]/10 rounded-lg border-l-4 border-[#0BA5DF]">
+                            <div
+                                class="w-8 h-8 bg-[#0BA5DF] rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-white">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-[#0BA5DF] uppercase mb-2">Ocean Clicks Solution</p>
+                                <p class="text-gray-700 leading-relaxed font-medium">Fully managed round-the-clock support with shift coverage, holiday staffing, and no infrastructure costs</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6 p-6 rounded-xl hover:shadow-xl transition-all"
+                        data-aos="fade-up">
+                        <div class="flex items-start gap-4 p-4 bg-red-50 rounded-lg border-l-4 border-red-400">
+                            <div class="w-8 h-8 bg-red-400 rounded-full flex items-center justify-center flex-shrink-0">
+                                <span class="text-white font-bold text-sm md:text-lg">!</span>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-red-600 uppercase mb-2">Challenge</p>
+                                <p class="text-gray-700 leading-relaxed">Seasonal or unpredictable call volumes</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-4 bg-[#0BA5DF]/10 rounded-lg border-l-4 border-[#0BA5DF]">
+                            <div
+                                class="w-8 h-8 bg-[#0BA5DF] rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-white">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-[#0BA5DF] uppercase mb-2">Ocean Clicks Solution</p>
+                                <p class="text-gray-700 leading-relaxed font-medium">Flexible scaling with 48-hour
+                                    ramp-up for additional agents.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6 p-6 rounded-xl hover:shadow-xl transition-all"
+                        data-aos="fade-up">
+                        <div class="flex items-start gap-4 p-4 bg-red-50 rounded-lg border-l-4 border-red-400">
+                            <div class="w-8 h-8 bg-red-400 rounded-full flex items-center justify-center flex-shrink-0">
+                                <span class="text-white font-bold text-sm md:text-lg">!</span>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-red-600 uppercase mb-2">Challenge</p>
+                                <p class="text-gray-700 leading-relaxed">Focus on core business activities instead of support management</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-4 bg-[#0BA5DF]/10 rounded-lg border-l-4 border-[#0BA5DF]">
+                            <div
+                                class="w-8 h-8 bg-[#0BA5DF] rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-white">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-[#0BA5DF] uppercase mb-2">Ocean Clicks Solution</p>
+                                <p class="text-gray-700 leading-relaxed font-medium">Complete operational management including hiring, training, QA, reporting, and performance optimization</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text-center bg-gradient-to-r from-[#083459] to-[#0BA5DF] py-10 px-6 rounded-2xl max-w-5xl mx-auto"
+                    data-aos="zoom-in">
+                    <p class="text-base md:text-xl font-semibold text-white mb-2">Transform operational challenges into strategic
+                        advantages.</p>
+                    <p class="text-lg text-white/90">Reduce costs by up to 70% and deliver exceptional service—without
+                        sacrificing control.</p>
+                </div>
+
+            </div>
+        </section>
+        <!-- end Contact Center Outsourcing Services -->
+
+        <!-- start Contact Center Outsourcing Services We Offer -->
+        <section class="py-10 md:py-16 px-4 sm:px-8 bg-gray-50">
+            <div class="max-w-[1440px] mx-auto">
+                <div class="text-center max-w-3xl mx-auto md:mb-16 mb-10" style="opacity: 1; transform: none;">
+                    <h2 class="text-2xl md:text-4xl font-bold mb-6 text-[#083459]">Contact Center Outsourcing Services
+                        We Offer</h2>
+                    <p class="text-lg text-gray-600 leading-relaxed">Our services are structured to support different
+                        customer interaction needs while maintaining clear operational boundaries.</p>
+                </div>
+                <div class="space-y-6 max-w-5xl mx-auto">
+                    <div class="bg-gray-50  p-4 md:p-8 rounded-2xl hover:shadow-xl transition-all"
+                        style="opacity: 1; transform: none;">
+                        <div class="felx-row md:flex items-start gap-6">
+                            <div
+                                class="w-16 h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-phone-incoming w-8 h-8 text-white">
+                                    <polyline points="16 2 16 8 22 8"></polyline>
+                                    <line x1="22" x2="16" y1="2" y2="8"></line>
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-3 text-[#083459]">Inbound Call Center Services</h3>
+                                <p class="text-gray-600 leading-relaxed text-lg">We manage inbound calls related to
+                                    customer inquiries, product support, order tracking, billing questions, and general
+                                    assistance. Our agents are trained to resolve issues efficiently, ensuring positive
+                                    customer experiences and higher satisfaction rates.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50  p-4 md:p-8 rounded-2xl hover:shadow-xl transition-all"
+                        style="opacity: 1; transform: none;">
+                        <div class="felx-row md:flex items-start gap-6">
+                            <div
+                                class="w-16 h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-phone-outgoing w-8 h-8 text-white">
+                                    <polyline points="22 8 22 2 16 2"></polyline>
+                                    <line x1="16" x2="22" y1="8" y2="2"></line>
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-3 text-[#083459]">Outbound Call Center Services
+                                    (Non-Sales)</h3>
+                                <p class="text-gray-600 leading-relaxed text-lg">Our outbound call center services focus
+                                    strictly on non-sales activities, such as customer follow-ups, appointment
+                                    reminders, feedback collection, surveys, retention outreach, and service
+                                    notifications.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50  p-4 md:p-8 rounded-2xl hover:shadow-xl transition-all"
+                        style="opacity: 1; transform: none;">
+                        <div class="felx-row md:flex items-start gap-6">
+                            <div
+                                class="w-16 h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-headphones w-8 h-8 text-white">
+                                    <path
+                                        d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-3 text-[#083459]">Customer Support Outsourcing</h3>
+                                <p class="text-gray-600 leading-relaxed text-lg">We provide comprehensive customer
+                                    support outsourcing across voice, email, chat, and ticketing systems. This service
+                                    is ideal for businesses looking to centralize support while maintaining consistent
+                                    communication across channels.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50  p-4 md:p-8 rounded-2xl hover:shadow-xl transition-all"
+                        style="opacity: 1; transform: none;">
+                        <div class="felx-row md:flex items-start gap-6">
+                            <div
+                                class="w-16 h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-shopping-cart w-8 h-8 text-white">
+                                    <circle cx="8" cy="21" r="1"></circle>
+                                    <circle cx="19" cy="21" r="1"></circle>
+                                    <path
+                                        d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-3 text-[#083459]">Ecommerce Customer Support
+                                    Outsourcing</h3>
+                                <p class="text-gray-600 leading-relaxed text-lg">For ecommerce businesses, we handle
+                                    post-purchase customer interactions including order status inquiries, returns,
+                                    refunds, delivery issues, and customer complaints.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50  p-4 md:p-8 rounded-2xl hover:shadow-xl transition-all"
+                        style="opacity: 1; transform: none;">
+                        <div class="felx-row md:flex items-start gap-6">
+                            <div
+                                class="w-16 h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-clock w-8 h-8 text-white">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-3 text-[#083459]">24/7 Contact Center Outsourcing</h3>
+                                <p class="text-gray-600 leading-relaxed text-lg">We offer round-the-clock contact center
+                                    outsourcing to ensure customers receive timely assistance regardless of time zones
+                                    or business hours. This is particularly valuable for global businesses and
+                                    online-first brands.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end Contact Center Outsourcing Services We Offer -->
+
+        <!-- statr Inbound vs Outbound Contact Center -->
+        <section class=" px-4 sm:px-8 bg-gray-50">
+            <div class="max-w-[1440px] mx-auto">
+
+                <div class="text-center max-w-3xl mx-auto md:mb-16 mb-10" data-aos="fade-up">
+                    <h2 class="text-2xl md:text-4xl font-bold mb-6 text-[#083459]">
+                        Inbound vs Outbound Contact Center Outsourcing
+                    </h2>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
+
+                    <div class="bg-white p-4 md:p-8rounded-2xl shadow-lg border-t-4 border-[#0BA5DF] transition-transform hover:-translate-y-1"
+                        data-aos="fade-right">
+                        <div class="w-16 h-16 bg-[#0BA5DF]/10 rounded-full flex items-center justify-center mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-phone-incoming w-8 h-8 text-[#0BA5DF]">
+                                <polyline points="16 2 16 8 22 8"></polyline>
+                                <line x1="22" x2="16" y1="2" y2="8"></line>
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-[#083459]">Inbound Contact Center</h3>
+                        <p class="text-gray-600 leading-relaxed text-lg">
+                            Inbound outsourcing handles customer-initiated communication. Services prioritize
+                            responsiveness, quick issue resolution, and high customer satisfaction.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-4 md:p-8rounded-2xl shadow-lg border-t-4 border-[#083459] transition-transform hover:-translate-y-1"
+                        data-aos="fade-left">
+                        <div class="w-16 h-16 bg-[#083459]/10 rounded-full flex items-center justify-center mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-phone-outgoing w-8 h-8 text-[#083459]">
+                                <polyline points="22 8 22 2 16 2"></polyline>
+                                <line x1="16" x2="22" y1="8" y2="2"></line>
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-[#083459]">Outbound Contact Center</h3>
+                        <p class="text-gray-600 leading-relaxed text-lg">
+                            Proactive outreach initiated by the business. In our model, this supports operational needs
+                            like reminders and service updates—not sales or lead generation.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="text-center bg-[#FCC312]/10 border-2 border-[#FCC312] py-8 px-6 rounded-2xl max-w-4xl mx-auto"
+                    data-aos="zoom-in">
+                    <p class="text-base md:text-xl font-semibold text-[#083459]">
+                        Keeping these functions separate ensures clarity, compliance, and better performance across your
+                        support channels.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+        <!-- end Inbound vs Outbound Contact Center -->
+
+        <!-- start Industries We Support -->
+        <section class="py-10 md:py-16 px-4 sm:px-8 bg-white">
+            <div class="max-w-[1440px] mx-auto">
+                <div class="text-center max-w-3xl mx-auto md:mb-16 mb-10" style="opacity: 1; transform: none;">
+                    <h2 class="text-2xl md:text-4xl font-bold mb-6 text-[#083459]">Industries We Support</h2>
+                    <p class="text-lg text-gray-600 leading-relaxed">Our contact center outsourcing solutions are
+                        designed to adapt across industries with specialized training and compliance protocols:</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12">
+                    <div class="group relative bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-[#0BA5DF] hover:shadow-2xl transition-all duration-300"
+                        style="opacity: 1; transform: none;">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-[#0BA5DF] to-[#083459] opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-300">
+                        </div>
+                        <div class="relative z-10">
+                            <div class="flex items-start justify-between mb-4">
+                                <div
+                                    class="w-14 h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-shopping-cart w-7 h-7 text-white">
+                                        <circle cx="8" cy="21" r="1"></circle>
+                                        <circle cx="19" cy="21" r="1"></circle>
+                                        <path
+                                            d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="text-right">
+                                    <div
+                                        class="text-2xl font-bold text-[#0BA5DF] group-hover:text-[#083459] transition-colors">
+                                        94%</div>
+                                    <div class="text-xs text-gray-500 leading-tight max-w-[100px]">First-Contact
+                                        Resolution Rate</div>
+                                </div>
+                            </div>
+                            <h3
+                                class="text-lg font-bold mb-3 text-[#083459] group-hover:text-[#0BA5DF] transition-colors">
+                                Ecommerce and retail</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">Order support, returns, shipping inquiries,
+                                and post-purchase service</p>
+                        </div>
+                        <div
+                            class="absolute top-0 right-0 w-20 h-20 bg-[#0BA5DF]/5 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                    </div>
+                    <div class="group relative bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-[#0BA5DF] hover:shadow-2xl transition-all duration-300"
+                        style="opacity: 1; transform: none;">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-[#FCC312] to-[#0BA5DF] opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-300">
+                        </div>
+                        <div class="relative z-10">
+                            <div class="flex items-start justify-between mb-4">
+                                <div
+                                    class="w-14 h-14 bg-gradient-to-br from-[#FCC312] to-[#0BA5DF] rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-zap w-7 h-7 text-white">
+                                        <path
+                                            d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="text-right">
+                                    <div
+                                        class="text-2xl font-bold text-[#0BA5DF] group-hover:text-[#083459] transition-colors">
+                                        &lt;2 min</div>
+                                    <div class="text-xs text-gray-500 leading-tight max-w-[100px]">Avg Response Time
+                                    </div>
+                                </div>
+                            </div>
+                            <h3
+                                class="text-lg font-bold mb-3 text-[#083459] group-hover:text-[#0BA5DF] transition-colors">
+                                SaaS and technology companies</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">Technical support, onboarding assistance,
+                                and subscription management</p>
+                        </div>
+                        <div
+                            class="absolute top-0 right-0 w-20 h-20 bg-[#0BA5DF]/5 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                    </div>
+                    <div class="group relative bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-[#0BA5DF] hover:shadow-2xl transition-all duration-300"
+                        style="opacity: 1; transform: none;">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-[#083459] to-[#0BA5DF] opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-300">
+                        </div>
+                        <div class="relative z-10">
+                            <div class="flex items-start justify-between mb-4">
+                                <div
+                                    class="w-14 h-14 bg-gradient-to-br from-[#083459] to-[#0BA5DF] rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-shield w-7 h-7 text-white">
+                                        <path
+                                            d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="text-right">
+                                    <div
+                                        class="text-2xl font-bold text-[#0BA5DF] group-hover:text-[#083459] transition-colors">
+                                        98%</div>
+                                    <div class="text-xs text-gray-500 leading-tight max-w-[100px]">Appointment Accuracy
+                                    </div>
+                                </div>
+                            </div>
+                            <h3
+                                class="text-lg font-bold mb-3 text-[#083459] group-hover:text-[#0BA5DF] transition-colors">
+                                Healthcare support services</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">Appointment scheduling, patient inquiries,
+                                and HIPAA-compliant communication</p>
+                        </div>
+                        <div
+                            class="absolute top-0 right-0 w-20 h-20 bg-[#0BA5DF]/5 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                    </div>
+                    <div class="group relative bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-[#0BA5DF] hover:shadow-2xl transition-all duration-300"
+                        style="opacity: 1; transform: none;">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-[#0BA5DF] to-[#FCC312] opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-300">
+                        </div>
+                        <div class="relative z-10">
+                            <div class="flex items-start justify-between mb-4">
+                                <div
+                                    class="w-14 h-14 bg-gradient-to-br from-[#0BA5DF] to-[#FCC312] rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-award w-7 h-7 text-white">
+                                        <path
+                                            d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526">
+                                        </path>
+                                        <circle cx="12" cy="8" r="6"></circle>
+                                    </svg>
+                                </div>
+                                <div class="text-right">
+                                    <div
+                                        class="text-2xl font-bold text-[#0BA5DF] group-hover:text-[#083459] transition-colors">
+                                        100%</div>
+                                    <div class="text-xs text-gray-500 leading-tight max-w-[100px]">Security Compliance
+                                    </div>
+                                </div>
+                            </div>
+                            <h3
+                                class="text-lg font-bold mb-3 text-[#083459] group-hover:text-[#0BA5DF] transition-colors">
+                                Financial services and insurance</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">Account inquiries, policy information, and
+                                secure data handling</p>
+                        </div>
+                        <div
+                            class="absolute top-0 right-0 w-20 h-20 bg-[#0BA5DF]/5 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                    </div>
+                    <div class="group relative bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-[#0BA5DF] hover:shadow-2xl transition-all duration-300"
+                        style="opacity: 1; transform: none;">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-[#083459] to-[#0BA5DF] opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-300">
+                        </div>
+                        <div class="relative z-10">
+                            <div class="flex items-start justify-between mb-4">
+                                <div
+                                    class="w-14 h-14 bg-gradient-to-br from-[#083459] to-[#0BA5DF] rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-target w-7 h-7 text-white">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <circle cx="12" cy="12" r="6"></circle>
+                                        <circle cx="12" cy="12" r="2"></circle>
+                                    </svg>
+                                </div>
+                                <div class="text-right">
+                                    <div
+                                        class="text-2xl font-bold text-[#0BA5DF] group-hover:text-[#083459] transition-colors">
+                                        15K+</div>
+                                    <div class="text-xs text-gray-500 leading-tight max-w-[100px]">Inquiries Handled
+                                        Monthly</div>
+                                </div>
+                            </div>
+                            <h3
+                                class="text-lg font-bold mb-3 text-[#083459] group-hover:text-[#0BA5DF] transition-colors">
+                                Logistics and supply chain businesses</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">Shipment tracking, delivery coordination,
+                                and status updates</p>
+                        </div>
+                        <div
+                            class="absolute top-0 right-0 w-20 h-20 bg-[#0BA5DF]/5 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                    </div>
+                    <div class="group relative bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-[#0BA5DF] hover:shadow-2xl transition-all duration-300"
+                        style="opacity: 1; transform: none;">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-[#0BA5DF] to-[#083459] opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-300">
+                        </div>
+                        <div class="relative z-10">
+                            <div class="flex items-start justify-between mb-4">
+                                <div
+                                    class="w-14 h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-users w-7 h-7 text-white">
+                                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg>
+                                </div>
+                                <div class="text-right">
+                                    <div
+                                        class="text-2xl font-bold text-[#0BA5DF] group-hover:text-[#083459] transition-colors">
+                                        92%</div>
+                                    <div class="text-xs text-gray-500 leading-tight max-w-[100px]">Client Satisfaction
+                                        Score</div>
+                                </div>
+                            </div>
+                            <h3
+                                class="text-lg font-bold mb-3 text-[#083459] group-hover:text-[#0BA5DF] transition-colors">
+                                Professional services firms</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">Client communication, appointment setting,
+                                and intake support</p>
+                        </div>
+                        <div
+                            class="absolute top-0 right-0 w-20 h-20 bg-[#0BA5DF]/5 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center bg-gradient-to-r from-[#083459] to-[#0BA5DF] py-8 px-6 rounded-2xl max-w-4xl mx-auto"
+                    style="opacity: 1; transform: none;">
+                    <p class="text-base md:text-xl font-semibold text-white">Each industry has unique customer communication
+                        requirements, and our teams are trained accordingly to ensure relevance, compliance, and
+                        accuracy.</p>
+                </div>
+            </div>
+        </section>
+        <!-- end Industries We Support -->
+
+        <!-- start Our Contact Center Outsourcing Process -->
+        <section class="py-10 md:py-16 px-4 sm:px-8 bg-gray-50">
+            <div class="max-w-[1440px] mx-auto">
+
+                <div class="text-center max-w-3xl mx-auto md:mb-16 mb-10" data-aos="fade-up">
+                    <div class="inline-block mb-6">
+                        <div
+                            class="flex items-center gap-2 bg-[#0BA5DF]/10 px-4 py-2 rounded-full border border-[#0BA5DF]/30">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings w-4 h-4 text-[#0BA5DF]"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                            <span class="text-sm font-semibold text-[#0BA5DF]">5-Step Implementation</span>
+                        </div>
+                    </div>
+                    <h2 class="text-2xl md:text-4xl font-bold mb-6 text-[#083459]">Our Contact Center Outsourcing
+                        Process</h2>
+                    <p class="text-lg text-gray-600">We follow a structured onboarding and delivery process to ensure
+                        seamless integration:</p>
+                </div>
+
+                <div class="relative max-w-6xl mx-auto mb-12">
+
+                    <div class="hidden lg:block absolute top-20 left-10 right-10 h-1">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-[#0BA5DF] via-[#FCC312] to-[#083459] rounded-full opacity-20">
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-8 relative z-10">
+
+                        <div class="relative group" data-aos="fade-up">
+                            <div class="hidden lg:block absolute top-[72px] -right-4 z-20">
+                                <i
+                                    class="fas fa-chevron-right text-[#0BA5DF] group-hover:text-[#FCC312] transition-colors animate-pulse"></i>
+                            </div>
+                            <div
+                                class="bg-white p-6 rounded-2xl text-center h-full shadow-md hover:shadow-2xl transition-all duration-300 border-2 border-transparent group-hover:border-[#0BA5DF]">
+                                <div class="relative mb-6">
+                                    <div
+                                        class="w-16 h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-2xl flex items-center justify-center mx-auto group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg">
+                                        <span class="text-2xl font-bold text-white">1</span>
+                                    </div>
+                                </div>
+                                <h3 class="font-bold text-sm md:text-lg mb-3 text-[#083459] group-hover:text-[#0BA5DF]">Requirement
+                                    Analysis</h3>
+                                <p class="text-sm text-gray-500">Call flow and requirement understanding</p>
+                            </div>
+                        </div>
+
+                        <div class="relative group" data-aos="fade-up" data-aos-delay="100">
+                            <div class="hidden lg:block absolute top-[72px] -right-4 z-20">
+                                <i
+                                    class="fas fa-chevron-right text-[#0BA5DF] group-hover:text-[#FCC312] transition-colors animate-pulse"></i>
+                            </div>
+                            <div
+                                class="bg-white p-6 rounded-2xl text-center h-full shadow-md hover:shadow-2xl transition-all duration-300 border-2 border-transparent group-hover:border-[#0BA5DF]">
+                                <div class="relative mb-6">
+                                    <div
+                                        class="w-16 h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-2xl flex items-center justify-center mx-auto group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg">
+                                        <span class="text-2xl font-bold text-white">2</span>
+                                    </div>
+                                </div>
+                                <h3 class="font-bold text-sm md:text-lg mb-3 text-[#083459] group-hover:text-[#0BA5DF]">Agent
+                                    Training</h3>
+                                <p class="text-sm text-gray-500">Brand guidelines and SOP setup</p>
+                            </div>
+                        </div>
+
+                        <div class="relative group" data-aos="fade-up" data-aos-delay="200">
+                            <div class="hidden lg:block absolute top-[72px] -right-4 z-20">
+                                <i
+                                    class="fas fa-chevron-right text-[#0BA5DF] group-hover:text-[#FCC312] transition-colors animate-pulse"></i>
+                            </div>
+                            <div
+                                class="bg-white p-6 rounded-2xl text-center h-full shadow-md hover:shadow-2xl transition-all duration-300 border-2 border-transparent group-hover:border-[#0BA5DF]">
+                                <div class="relative mb-6">
+                                    <div
+                                        class="w-16 h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-2xl flex items-center justify-center mx-auto group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg">
+                                        <span class="text-2xl font-bold text-white">3</span>
+                                    </div>
+                                </div>
+                                <h3 class="font-bold text-sm md:text-lg mb-3 text-[#083459] group-hover:text-[#0BA5DF]">Technology
+                                    Integration</h3>
+                                <p class="text-sm text-gray-500">CRM integration and system setup</p>
+                            </div>
+                        </div>
+
+                        <div class="relative group" data-aos="fade-up" data-aos-delay="300">
+                            <div class="hidden lg:block absolute top-[72px] -right-4 z-20">
+                                <i
+                                    class="fas fa-chevron-right text-[#0BA5DF] group-hover:text-[#FCC312] transition-colors animate-pulse"></i>
+                            </div>
+                            <div
+                                class="bg-white p-6 rounded-2xl text-center h-full shadow-md hover:shadow-2xl transition-all duration-300 border-2 border-transparent group-hover:border-[#0BA5DF]">
+                                <div class="relative mb-6">
+                                    <div
+                                        class="w-16 h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-2xl flex items-center justify-center mx-auto group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg">
+                                        <span class="text-2xl font-bold text-white">4</span>
+                                    </div>
+                                </div>
+                                <h3 class="font-bold text-sm md:text-lg mb-3 text-[#083459] group-hover:text-[#0BA5DF]">Pilot
+                                    Rollout</h3>
+                                <p class="text-sm text-gray-500">Quality benchmarking and feedback</p>
+                            </div>
+                        </div>
+
+                        <div class="relative group" data-aos="fade-up" data-aos-delay="400">
+                            <div
+                                class="bg-white p-6 rounded-2xl text-center h-full shadow-md hover:shadow-2xl transition-all duration-300 border-2 border-transparent group-hover:border-[#0BA5DF]">
+                                <div class="relative mb-6">
+                                    <div
+                                        class="w-16 h-16 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-2xl flex items-center justify-center mx-auto group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg">
+                                        <span class="text-2xl font-bold text-white">5</span>
+                                    </div>
+                                </div>
+                                <h3 class="font-bold text-sm md:text-lg mb-3 text-[#083459] group-hover:text-[#0BA5DF]">Full
+                                    Deployment</h3>
+                                <p class="text-sm text-gray-500">Scale-up and ongoing monitoring</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="relative overflow-hidden bg-gradient-to-r from-[#083459] via-[#0BA5DF] to-[#083459] py-10 px-8 rounded-2xl max-w-4xl mx-auto shadow-xl" style="opacity: 1; transform: none;">
+                   <div class="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-16 -mt-16"></div>
+                   <div class="absolute bottom-0 left-0 w-24 h-24 bg-white/5 rounded-full -ml-12 -mb-12"></div>
+                   <div class="relative z-10 flex items-center justify-center gap-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-8 h-8 text-[#FCC312] flex-shrink-0">
+                         <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                         <path d="m9 11 3 3L22 4"></path>
+                      </svg>
+                      <p class="text-base md:text-xl font-semibold text-white">This process ensures minimal disruption and consistent service quality from day one.</p>
+                   </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- end Our Contact Center Outsourcing Process -->
+
+        <!-- start What You Get With Our Contact Center Outsourcing -->
+        <section class="py-10 md:py-16 px-4 sm:px-8 bg-white">
+            <div class="max-w-[1440px] mx-auto">
+                <div class="text-center max-w-3xl mx-auto md:mb-16 mb-10" style="opacity: 1; transform: none;">
+                    <div class="inline-block mb-6">
+                        <div
+                            class="flex items-center gap-2 bg-[#FCC312]/20 px-4 py-2 rounded-full border border-[#FCC312]/40">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-star w-4 h-4 text-[#FCC312]">
+                                <path
+                                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                </path>
+                            </svg>
+                            <span class="text-sm font-semibold text-[#083459]">Complete Solution Included</span>
+                        </div>
+                    </div>
+                    <h2 class="text-2xl md:text-4xl font-bold mb-6 text-[#083459]">What You Get With Our Contact Center
+                        Outsourcing</h2>
+                    <p class="text-lg text-gray-600 leading-relaxed">Partner with Ocean Clicks and unlock a
+                        comprehensive contact center solution designed to elevate your customer experience:</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12">
+                    <div class="group relative bg-gradient-to-br from-gray-50 to-white p-4 md:p-8rounded-2xl hover:shadow-2xl transition-all duration-300 border-2 border-gray-100 hover:border-[#0BA5DF]"
+                        style="opacity: 1; transform: none;">
+                        <div
+                            class="absolute top-0 right-0 w-16 h-16 bg-[#0BA5DF]/5 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity">
+                        </div>
+                        <div class="relative">
+                            <div
+                                class="w-14 h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-trending-up w-7 h-7 text-white">
+                                    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                                    <polyline points="16 7 22 7 22 13"></polyline>
+                                </svg>
+                            </div>
+                            <p
+                                class="text-gray-700 font-bold text-sm md:text-lg leading-relaxed group-hover:text-[#083459] transition-colors">
+                                Reduced operational and staffing costs</p>
+                        </div>
+                        <div
+                            class="absolute -bottom-1 left-2 right-2 h-1 bg-gradient-to-r from-[#0BA5DF] to-[#FCC312] opacity-0 group-hover:opacity-100 transition-opacity rounded-b-2xl">
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-r from-[#0BA5DF] to-[#FCC312] group relative bg-gradient-to-br from-gray-50 to-white p-4 md:p-8rounded-2xl hover:shadow-2xl transition-all duration-300 border-2 border-gray-100 hover:border-[#0BA5DF]"
+                        style="opacity: 1; transform: none;">
+                        <div
+                            class="absolute top-0 right-0 w-16 h-16 bg-[#0BA5DF]/5 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity">
+                        </div>
+                        <div class="relative">
+                            <div
+                                class="w-14 h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-users w-7 h-7 text-white">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <p
+                                class="text-gray-700 font-bold text-sm md:text-lg leading-relaxed group-hover:text-[#083459] transition-colors">
+                                Access to trained customer support professionals</p>
+                        </div>
+                        <div
+                            class="absolute -bottom-1 left-2 right-2 h-1 bg-gradient-to-r from-[#0BA5DF] to-[#FCC312] opacity-0 group-hover:opacity-100 transition-opacity rounded-b-2xl">
+                        </div>
+                    </div>
+
+                    <div class="group relative bg-gradient-to-br from-gray-50 to-white p-4 md:p-8rounded-2xl hover:shadow-2xl transition-all duration-300 border-2 border-gray-100 hover:border-[#0BA5DF]"
+                        style="opacity: 1; transform: none;">
+                        <div
+                            class="absolute top-0 right-0 w-16 h-16 bg-[#0BA5DF]/5 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity">
+                        </div>
+                        <div class="relative">
+                            <div
+                                class="w-14 h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-zap w-7 h-7 text-white">
+                                    <path
+                                        d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <p
+                                class="text-gray-700 font-bold text-sm md:text-lg leading-relaxed group-hover:text-[#083459] transition-colors">
+                                Faster response times and improved SLAs</p>
+                        </div>
+                        <div
+                            class="absolute -bottom-1 left-2 right-2 h-1 bg-gradient-to-r from-[#0BA5DF] to-[#FCC312] opacity-0 group-hover:opacity-100 transition-opacity rounded-b-2xl">
+                        </div>
+                    </div>
+                    <div class="group relative bg-gradient-to-br from-gray-50 to-white p-4 md:p-8rounded-2xl hover:shadow-2xl transition-all duration-300 border-2 border-gray-100 hover:border-[#0BA5DF]"
+                        style="opacity: 1; transform: none;">
+                        <div
+                            class="absolute top-0 right-0 w-16 h-16 bg-[#0BA5DF]/5 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity">
+                        </div>
+                        <div class="relative">
+                            <div
+                                class="w-14 h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-chart-column w-7 h-7 text-white">
+                                    <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
+                                    <path d="M18 17V9"></path>
+                                    <path d="M13 17V5"></path>
+                                    <path d="M8 17v-3"></path>
+                                </svg>
+                            </div>
+                            <p
+                                class="text-gray-700 font-bold text-sm md:text-lg leading-relaxed group-hover:text-[#083459] transition-colors">
+                                Scalability during peak periods</p>
+                        </div>
+                        <div
+                            class="absolute -bottom-1 left-2 right-2 h-1 bg-gradient-to-r from-[#0BA5DF] to-[#FCC312] opacity-0 group-hover:opacity-100 transition-opacity rounded-b-2xl">
+                        </div>
+                    </div>
+                    <div class="group relative bg-gradient-to-br from-gray-50 to-white p-4 md:p-8rounded-2xl hover:shadow-2xl transition-all duration-300 border-2 border-gray-100 hover:border-[#0BA5DF]"
+                        style="opacity: 1; transform: none;">
+                        <div
+                            class="absolute top-0 right-0 w-16 h-16 bg-[#0BA5DF]/5 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity">
+                        </div>
+                        <div class="relative">
+                            <div
+                                class="w-14 h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star w-7 h-7 text-white">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <p
+                                class="text-gray-700 font-bold text-sm md:text-lg leading-relaxed group-hover:text-[#083459] transition-colors">
+                                Improved customer satisfaction and retention</p>
+                        </div>
+                        <div
+                            class="absolute -bottom-1 left-2 right-2 h-1 bg-gradient-to-r from-[#0BA5DF] to-[#FCC312] opacity-0 group-hover:opacity-100 transition-opacity rounded-b-2xl">
+                        </div>
+                    </div>
+                    <div class="group relative bg-gradient-to-br from-gray-50 to-white p-4 md:p-8rounded-2xl hover:shadow-2xl transition-all duration-300 border-2 border-gray-100 hover:border-[#0BA5DF]"
+                        style="opacity: 1; transform: none;">
+                        <div
+                            class="absolute top-0 right-0 w-16 h-16 bg-[#0BA5DF]/5 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity">
+                        </div>
+                        <div class="relative">
+                            <div
+                                class="w-14 h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-settings w-7 h-7 text-white">
+                                    <path
+                                        d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z">
+                                    </path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                            </div>
+                            <p
+                                class="text-gray-700 font-bold text-sm md:text-lg leading-relaxed group-hover:text-[#083459] transition-colors">
+                                Lower management and infrastructure overhead</p>
+                        </div>
+                        <div
+                            class="absolute -bottom-1 left-2 right-2 h-1 bg-gradient-to-r from-[#0BA5DF] to-[#FCC312] opacity-0 group-hover:opacity-100 transition-opacity rounded-b-2xl">
+                        </div>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden bg-gradient-to-r from-[#083459] via-[#0BA5DF] to-[#083459] py-10 px-8 rounded-2xl max-w-4xl mx-auto shadow-xl"
+                    style="opacity: 1; transform: none;">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-16 -mt-16"></div>
+                    <div class="absolute bottom-0 left-0 w-24 h-24 bg-white/5 rounded-full -ml-12 -mb-12"></div>
+                    <div class="relative z-10 flex items-center justify-center gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-award w-8 h-8 text-[#FCC312] flex-shrink-0">
+                            <path
+                                d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526">
+                            </path>
+                            <circle cx="12" cy="8" r="6"></circle>
+                        </svg>
+                        <p class="text-xl font-bold text-white">A complete, scalable contact center solution—without the
+                            overhead, complexity, or risk of building it yourself.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end What You Get With Our Contact Center Outsourcing -->
+
+        <!-- start -->
+        <section class="py-10 md:py-16 px-4 sm:px-8 bg-gray-50">
+            <div class="max-w-[1440px] mx-auto">
+                <div class="text-center max-w-4xl mx-auto" style="opacity: 1; transform: none;">
+                    <div class="w-20 h-20 bg-[#0BA5DF]/10 rounded-2xl flex items-center justify-center mx-auto mb-8">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-shield w-10 h-10 text-[#0BA5DF]">
+                            <path
+                                d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h2 class="text-2xl md:text-4xl font-bold mb-6 text-[#083459]">Technology, Tools &amp; Security
+                        Standards</h2>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-6">We work with modern contact center tools
+                        including CRM systems, ticketing platforms, call monitoring software, and analytics dashboards.
+                        Data security and compliance are prioritized through controlled access, secure infrastructure,
+                        and strict confidentiality protocols.</p>
+                    <p class="text-lg text-gray-700 leading-relaxed">Our processes align with industry best practices to
+                        ensure customer data is handled responsibly and securely.</p>
+                </div>
+            </div>
+        </section>
+        <!-- end -->
+        <!-- start -->
+        <section class="py-10 md:py-16 px-4 sm:px-8 bg-white">
+            <div class="max-w-[1440px] mx-auto">
+                <div class="text-center max-w-3xl mx-auto md:mb-16 mb-10" style="opacity: 1; transform: none;">
+                    <div class="inline-block mb-6">
+                        <div
+                            class="flex items-center gap-2 bg-[#0BA5DF]/10 px-4 py-2 rounded-full border border-[#0BA5DF]/30">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-chart-column w-4 h-4 text-[#0BA5DF]">
+                                <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
+                                <path d="M18 17V9"></path>
+                                <path d="M13 17V5"></path>
+                                <path d="M8 17v-3"></path>
+                            </svg>
+                            <span class="text-sm font-semibold text-[#0BA5DF]">Data-Driven Excellence</span>
+                        </div>
+                    </div>
+                    <h2 class="text-2xl md:text-4xl font-bold mb-6 text-[#083459]">Performance Standards We Deliver On
+                    </h2>
+                    <p class="text-lg text-gray-600 leading-relaxed">Quality isn't a promise—it's measured. Every
+                        interaction is tracked, analyzed, and optimized against industry-leading benchmarks:</p>
+                </div>
+                <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto mb-12">
+                    <div class="group relative bg-white border-2 border-gray-200 p-6 rounded-2xl text-center hover:shadow-2xl hover:border-[#0BA5DF] transition-all duration-300"
+                        style="opacity: 1; transform: none;">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-[#0BA5DF] to-[#083459] opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-300">
+                        </div>
+                        <div class="relative z-10">
+                            <div
+                                class="w-14 h-14 bg-gradient-to-br from-[#0BA5DF] to-[#083459] rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-circle-check-big w-7 h-7 text-white">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>
+                            </div>
+                            <div class="mb-3">
+                                <div
+                                    class="text-3xl font-bold text-[#0BA5DF] group-hover:text-[#083459] transition-colors">
+                                    92%+</div>
+                            </div>
+                            <p class="text-sm font-semibold text-gray-700 leading-tight">First-Call Resolution</p>
+                        </div>
+                        <div
+                            class="absolute top-0 right-0 w-12 h-12 bg-[#0BA5DF]/5 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                    </div>
+                    <div class="group relative bg-white border-2 border-gray-200 p-6 rounded-2xl text-center hover:shadow-2xl hover:border-[#0BA5DF] transition-all duration-300"
+                        style="opacity: 1; transform: none;">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-[#FCC312] to-[#0BA5DF] opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-300">
+                        </div>
+                        <div class="relative z-10">
+                            <div
+                                class="w-14 h-14 bg-gradient-to-br from-[#FCC312] to-[#0BA5DF] rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-clock w-7 h-7 text-white">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                            </div>
+                            <div class="mb-3">
+                                <div
+                                    class="text-3xl font-bold text-[#0BA5DF] group-hover:text-[#083459] transition-colors">
+                                    &lt;4 min</div>
+                            </div>
+                            <p class="text-sm font-semibold text-gray-700 leading-tight">Avg Handling Time</p>
+                        </div>
+                        <div
+                            class="absolute top-0 right-0 w-12 h-12 bg-[#0BA5DF]/5 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                    </div>
+                    <div class="group relative bg-white border-2 border-gray-200 p-6 rounded-2xl text-center hover:shadow-2xl hover:border-[#0BA5DF] transition-all duration-300"
+                        style="opacity: 1; transform: none;">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-[#083459] to-[#0BA5DF] opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-300">
+                        </div>
+                        <div class="relative z-10">
+                            <div
+                                class="w-14 h-14 bg-gradient-to-br from-[#083459] to-[#0BA5DF] rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star w-7 h-7 text-white">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="mb-3">
+                                <div
+                                    class="text-3xl font-bold text-[#0BA5DF] group-hover:text-[#083459] transition-colors">
+                                    4.7/5</div>
+                            </div>
+                            <p class="text-sm font-semibold text-gray-700 leading-tight">Customer Satisfaction</p>
+                        </div>
+                        <div
+                            class="absolute top-0 right-0 w-12 h-12 bg-[#0BA5DF]/5 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                    </div>
+                    <div class="group relative bg-white border-2 border-gray-200 p-6 rounded-2xl text-center hover:shadow-2xl hover:border-[#0BA5DF] transition-all duration-300"
+                        style="opacity: 1; transform: none;">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-[#0BA5DF] to-[#FCC312] opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-300">
+                        </div>
+                        <div class="relative z-10">
+                            <div
+                                class="w-14 h-14 bg-gradient-to-br from-[#0BA5DF] to-[#FCC312] rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-zap w-7 h-7 text-white">
+                                    <path
+                                        d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="mb-3">
+                                <div
+                                    class="text-3xl font-bold text-[#0BA5DF] group-hover:text-[#083459] transition-colors">
+                                    &lt;30 sec</div>
+                            </div>
+                            <p class="text-sm font-semibold text-gray-700 leading-tight">Response Time SLA</p>
+                        </div>
+                        <div
+                            class="absolute top-0 right-0 w-12 h-12 bg-[#0BA5DF]/5 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                    </div>
+                    <div class="group relative bg-white border-2 border-gray-200 p-6 rounded-2xl text-center hover:shadow-2xl hover:border-[#0BA5DF] transition-all duration-300"
+                        style="opacity: 1; transform: none;">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-[#083459] to-[#0BA5DF] opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-300">
+                        </div>
+                        <div class="relative z-10">
+                            <div
+                                class="w-14 h-14 bg-gradient-to-br from-[#083459] to-[#0BA5DF] rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-award w-7 h-7 text-white">
+                                    <path
+                                        d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526">
+                                    </path>
+                                    <circle cx="12" cy="8" r="6"></circle>
+                                </svg>
+                            </div>
+                            <div class="mb-3">
+                                <div
+                                    class="text-3xl font-bold text-[#0BA5DF] group-hover:text-[#083459] transition-colors">
+                                    95%+</div>
+                            </div>
+                            <p class="text-sm font-semibold text-gray-700 leading-tight">Quality Score</p>
+                        </div>
+                        <div
+                            class="absolute top-0 right-0 w-12 h-12 bg-[#0BA5DF]/5 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden bg-gradient-to-r from-[#083459] via-[#0BA5DF] to-[#083459] py-10 px-8 rounded-2xl max-w-4xl mx-auto shadow-xl"
+                    data-aos="zoom-in">
+
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-16 -mt-16"></div>
+                    <div class="absolute bottom-0 left-0 w-24 h-24 bg-white/5 rounded-full -ml-12 -mb-12"></div>
+
+                    <div
+                        class="relative z-10 flex flex-col md:flex-row items-center justify-center gap-6 text-center md:text-left">
+                        <div
+                            class="flex-shrink-0 w-16 h-16 bg-white/10 rounded-full flex items-center justify-center backdrop-blur-sm border border-white/20">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-trending-up w-8 h-8 text-[#FCC312]">
+                                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                                <polyline points="16 7 22 7 22 13"></polyline>
+                            </svg>
+                        </div>
+
+                        <p class="text-xl font-bold text-white leading-relaxed">
+                            Real-time dashboards, weekly reporting, and monthly performance reviews keep you informed
+                            and in full control of your operations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end -->
+        <!-- start  -->
+        <section class="py-10 md:py-16 px-4 sm:px-8 bg-gray-50">
+            <div class="max-w-[1440px] mx-auto">
+                <div class="text-center max-w-3xl mx-auto md:mb-16 mb-10" style="opacity: 1; transform: none;">
+                    <h2 class="text-2xl md:text-4xl font-bold mb-6 text-[#083459]">Why Choose Us as Your Contact Center
+                        Outsourcing Partner</h2>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-6">Ocean Clicks is not a generic call center. We
+                        position ourselves as a process-driven outsourcing partner focused on long-term operational
+                        reliability.</p>
+                    <p class="text-lg text-gray-700 font-semibold">What sets us apart:</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-12">
+                    <div class="flex items-start gap-4 bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all"
+                        style="opacity: 1; transform: none;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-circle-check-big w-6 h-6 text-[#0BA5DF] flex-shrink-0 mt-1">
+                            <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                            <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                        <p class="text-gray-700 text-lg">Clear separation between support and sales functions</p>
+                    </div>
+                    <div class="flex items-start gap-4 bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all"
+                        style="opacity: 1; transform: none;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-circle-check-big w-6 h-6 text-[#0BA5DF] flex-shrink-0 mt-1">
+                            <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                            <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                        <p class="text-gray-700 text-lg">Flexible engagement models</p>
+                    </div>
+                    <div class="flex items-start gap-4 bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all"
+                        style="opacity: 1; transform: none;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-circle-check-big w-6 h-6 text-[#0BA5DF] flex-shrink-0 mt-1">
+                            <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                            <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                        <p class="text-gray-700 text-lg">Dedicated account management</p>
+                    </div>
+                    <div class="flex items-start gap-4 bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all"
+                        style="opacity: 1; transform: none;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-circle-check-big w-6 h-6 text-[#0BA5DF] flex-shrink-0 mt-1">
+                            <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                            <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                        <p class="text-gray-700 text-lg">Scalable teams without quality compromise</p>
+                    </div>
+                    <div class="flex items-start gap-4 bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all"
+                        style="opacity: 1; transform: none;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-circle-check-big w-6 h-6 text-[#0BA5DF] flex-shrink-0 mt-1">
+                            <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                            <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                        <p class="text-gray-700 text-lg">Transparent reporting and communication</p>
+                    </div>
+                </div>
+                <div class="text-center bg-gradient-to-r from-[#083459] to-[#0BA5DF] py-10 px-8 rounded-2xl max-w-4xl mx-auto"
+                    style="opacity: 1; transform: none;">
+                    <p class="text-2xl font-bold text-white">We build partnerships, not just service contracts.</p>
+                </div>
+            </div>
+        </section>
+        <!-- end -->
+        <!-- start  -->
+        <section class="py-10 md:py-16 px-4 sm:px-8 bg-gray-50">
+            <div class="max-w-[1440px] mx-auto">
+                <div class="text-center max-w-5xl mx-auto mb-10 md:mb-16" style="opacity: 1; transform: none;">
+                    <div class="inline-block mb-6">
+                        <div
+                            class="flex items-center gap-2 bg-[#FCC312]/20 px-4 py-2 rounded-full border border-[#FCC312]/40">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-settings w-4 h-4 text-[#FCC312]">
+                                <path
+                                    d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z">
+                                </path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                            <span class="text-sm font-semibold text-[#083459]">Flexible &amp; Scalable</span>
+                        </div>
+                    </div>
+                    <h2 class="text-2xl md:text-4xl font-bold mb-6 text-[#083459]">Engagement Models Built For Growth
+                    </h2>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-4">Our engagement models are designed to grow
+                        with your business. Whether you need a small dedicated team or scalable support during
+                        high-demand periods, we offer flexible staffing and pricing structures aligned with your
+                        operational needs.</p>
+                    <p class="text-xl font-bold text-[#083459]">Choose the service model that fits your contact center
+                        requirements:</p>
+                </div>
+                <div class="grid md:grid-cols-4 gap-6 mb-12">
+                    <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all border-2 border-gray-200"
+                        style="opacity: 1; transform: none;">
+                        <div class="text-center mb-6">
+                            <h3 class="text-xl font-bold text-[#083459] mb-2">Free Call Strategy Review</h3>
+                            <div class="text-3xl  md:text-4xl font-bold text-[#0BA5DF] mb-2">$0</div>
+                            <p class="text-sm text-gray-600">Evaluating call workflow</p>
+                        </div>
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-center gap-2 text-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>
+                                <span>Call Flow &amp; Script Audit</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>
+                                <span>Process &amp; KPI Review</span>
+                            </div>
+                        </div>
+                        <a class="block w-full bg-[#0BA5DF] text-white text-center py-3 rounded-lg font-semibold hover:bg-[#083459] transition-colors"
+                            href="contact.html" data-discover="true">Book Free Review</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all border-2 border-gray-200"
+                        style="opacity: 1; transform: none;">
+                        <div class="text-center mb-6">
+                            <h3 class="text-xl font-bold text-[#083459] mb-2">Shared Agent Model</h3>
+                            <div class="text-sm text-gray-600 mb-2">Starter</div>
+                            <div class="text-3xl font-bold text-[#083459] mb-2">Custom</div>
+                            <p class="text-sm text-gray-600">Low / variable call volume</p>
+                        </div>
+                        <div class="space-y-3 mb-6 text-sm">
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>
+                                <span>Shared Agent Pool</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>
+                                <span>Inbound Call Handling</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>
+                                <span>CRM Logging &amp; Updates</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>
+                                <span>Basic Reporting</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>
+                                <span>Quality Monitoring (Basic)</span>
+                            </div>
+                        </div>
+                        <a class="block w-full bg-gray-100 text-[#083459] text-center py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors"
+                            href="contact.html" data-discover="true">Request Shared Model Quote</a>
+                    </div>
+                    <div class="bg-gradient-to-br from-[#FCC312] to-[#FCC312]/80 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all border-2 border-[#FCC312] relative"
+                        style="opacity: 1; transform: none;">
+                        <div
+                            class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#083459] text-white px-4 py-1 rounded-full text-sm font-bold">
+                            Most Popular</div>
+                        <div class="text-center mb-6">
+                            <h3 class="text-xl font-bold text-[#083459] mb-2">Dedicated Agent</h3>
+                            <div class="text-sm text-[#083459] mb-2">Most Popular</div>
+                            <div class="text-3xl font-bold text-[#083459] mb-2">From $1,200</div>
+                            <p class="text-sm text-[#083459]">per agent / month</p>
+                        </div>
+                        <div class="space-y-3 mb-6 text-sm">
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-circle-check-big w-4 h-4 text-[#083459] flex-shrink-0">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>
+                                <span class="text-[#083459]">1 Dedicated Agent</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-circle-check-big w-4 h-4 text-[#083459] flex-shrink-0">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>
+                                <span class="text-[#083459]">Inbound &amp; Outbound</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-circle-check-big w-4 h-4 text-[#083459] flex-shrink-0">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>
+                                <span class="text-[#083459]">CRM Logging &amp; Updates</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-circle-check-big w-4 h-4 text-[#083459] flex-shrink-0">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>
+                                <span class="text-[#083459]">Advanced Reporting</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-circle-check-big w-4 h-4 text-[#083459] flex-shrink-0">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>
+                                <span class="text-[#083459]">Quality Monitoring</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-circle-check-big w-4 h-4 text-[#083459] flex-shrink-0">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>
+                                <span class="text-[#083459]">Escalation Handling</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-circle-check-big w-4 h-4 text-[#083459] flex-shrink-0">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>
+                                <span class="text-[#083459]">Backup Coverage</span>
+                            </div>
+                        </div>
+                        <a class="block w-full bg-[#083459] text-white text-center py-3 rounded-lg font-semibold hover:bg-[#0BA5DF] transition-colors"
+                            href="contact.html" data-discover="true">Hire Dedicated Agent</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all border-2 border-[#0BA5DF]"
+                        style="opacity: 1; transform: none;">
+                        <div class="text-center mb-6">
+                            <h3 class="text-xl font-bold text-[#083459] mb-2">Dedicated Team Pod</h3>
+                            <div class="text-sm text-gray-600 mb-2">Multi-Agent</div>
+                            <div class="text-3xl font-bold text-[#083459] mb-2">Custom</div>
+                            <p class="text-sm text-gray-600">High-volume / 24-7 operations</p>
+                        </div>
+                        <div class="space-y-3 mb-6 text-sm">
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>
+                                <span>2+ Agents + Team Lead</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>
+                                <span>Inbound &amp; Outbound</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>
+                                <span>CRM Logging &amp; Updates</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>
+                                <span>Advanced KPI Dashboard</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>
+                                <span>Quality Monitoring</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>
+                                <span>24/7 Coverage (Included)</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-circle-check-big w-4 h-4 text-[#0BA5DF] flex-shrink-0">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>
+                                <span>Scalability</span>
+                            </div>
+                        </div>
+                        <a class="block w-full bg-[#0BA5DF] text-white text-center py-3 rounded-lg font-semibold hover:bg-[#083459] transition-colors"
+                            href="contact.html" data-discover="true">Build My Team</a>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-r from-[#083459] to-[#0BA5DF] p-4 md:p-8md:p-12 rounded-3xl text-center max-w-5xl mx-auto shadow-2xl relative overflow-hidden"
+                    data-aos="zoom-in">
+
+                    <div class="absolute -right-10 -top-10 w-40 h-40 bg-white/10 rounded-full blur-3xl"></div>
+
+                    <div class="relative z-10">
+                        <h3 class="text-2xl md:text-4xl font-extrabold text-white mb-4 tracking-tight">
+                            Estimated Savings vs US Hiring: <span class="text-[#FCC312]">60-70%</span>
+                        </h3>
+
+                        <div class="w-20 h-1 bg-[#FCC312] mx-auto mb-6 rounded-full"></div>
+
+                        <p class="text-gray-100 text-base md:text-xl  leading-relaxed max-w-2xl mx-auto">
+                            All models include <span class="font-semibold text-white">light VA support</span>, training
+                            & script optimization, and <span class="font-semibold text-white">dedicated account
+                                management</span>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end -->
+        <!-- start -->
+        <section class="py-10 md:py-16 px-4 sm:px-8 bg-white">
+            <div class="max-w-[1440px] mx-auto">
+                <div class="text-center max-w-3xl mx-auto md:mb-16 mb-10" style="opacity: 1; transform: none;">
+                    <h2 class="text-2xl md:text-4xl font-bold mb-6 text-[#083459]">Contact Center Outsourcing FAQs</h2>
+                </div>
+                <div class="space-y-6 max-w-4xl mx-auto">
+                    <div class="bg-white border border-gray-200 rounded-2xl p-4 md:p-8hover:shadow-lg transition-all"
+                        style="opacity: 1; transform: none;">
+                        <h3 class="text-xl font-bold text-[#083459] mb-4">What is contact center outsourcing?</h3>
+                        <p class="text-gray-700 leading-relaxed">Contact center outsourcing is the practice of hiring an
+                            external provider to manage customer communication channels such as phone, email, and chat.
+                        </p>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-2xl p-4 md:p-8hover:shadow-lg transition-all"
+                        style="opacity: 1; transform: none;">
+                        <h3 class="text-xl font-bold text-[#083459] mb-4">Is outsourced customer support secure?</h3>
+                        <p class="text-gray-700 leading-relaxed">Yes. With proper access controls, training, and
+                            compliance protocols, outsourced customer support can be as secure as in-house operations.
+                        </p>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-2xl p-4 md:p-8hover:shadow-lg transition-all"
+                        style="opacity: 1; transform: none;">
+                        <h3 class="text-xl font-bold text-[#083459] mb-4">Can outsourced agents represent our brand?
+                        </h3>
+                        <p class="text-gray-700 leading-relaxed">Absolutely. Our agents are trained using your scripts,
+                            tone guidelines, and SOPs to ensure brand consistency.</p>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-2xl p-4 md:p-8hover:shadow-lg transition-all"
+                        style="opacity: 1; transform: none;">
+                        <h3 class="text-xl font-bold text-[#083459] mb-4">Do you offer 24/7 contact center services?
+                        </h3>
+                        <p class="text-gray-700 leading-relaxed">Yes. We provide round-the-clock contact center
+                            outsourcing to support global customers.</p>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-2xl p-4 md:p-8hover:shadow-lg transition-all"
+                        style="opacity: 1; transform: none;">
+                        <h3 class="text-xl font-bold text-[#083459] mb-4">What industries benefit most from contact
+                            center outsourcing?</h3>
+                        <p class="text-gray-700 leading-relaxed">Ecommerce, SaaS, healthcare support, logistics, and
+                            service-based businesses benefit significantly from outsourcing contact center operations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end -->
+        <!-- start -->
+        <section
+            class="py-10 md:py-20 px-4 sm:px-8 bg-gradient-to-br from-[#083459] to-[#0a3d66] text-white relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <div class="absolute top-0 right-0 w-96 h-96 bg-[#FCC312] rounded-full blur-3xl"></div>
+                <div class="absolute bottom-0 left-0 w-96 h-96 bg-[#0BA5DF] rounded-full blur-3xl"></div>
+            </div>
+            <div class="max-w-[1440px] mx-auto relative z-10">
+                <div class="text-center mb-12" style="opacity: 1; transform: none;">
+                    <h3 class="text-3xl md:text-4xl font-bold mb-4">Maximize Your Contact Center Investment</h3>
+                    <p class="text-white/80 text-lg max-w-2xl mx-auto">Companies combining Contact Center with these
+                        services see 2.5x better customer retention</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div style="opacity: 1; transform: none;">
+                        <a class="block bg-white/10 backdrop-blur-sm p-4 md:p-8rounded-xl border-2 border-white/20 hover:border-[#FCC312] hover:bg-white/15 transition-all"
+                            href="/virtual-assistants" data-discover="true">
+                            <div class="flex items-start gap-6">
+                                <div
+                                    class="w-16 h-16 bg-[#FCC312] rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-users w-8 h-8 text-[#083459]">
+                                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <h4 class="text-xl font-bold mb-3 flex items-center gap-3">Virtual Assistant
+                                        Services<span
+                                            class="text-xs bg-[#FCC312] text-[#083459] px-3 py-1 rounded-full font-bold">Popular
+                                            Combo</span></h4>
+                                    <p class="text-white/80 mb-4">Perfect companion to contact centers. VAs handle
+                                        back-office tasks while agents focus on customer conversations.</p>
+                                    <span class="text-[#FCC312] font-semibold flex items-center gap-2 group">
+                                        Explore this service
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-arrow-right w-5 h-5 group-hover:translate-x-2 transition-transform">
+                                            <path d="M5 12h14"></path>
+                                            <path d="m12 5 7 7-7 7"></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div style="opacity: 1; transform: none;">
+                        <a class="block bg-white/10 backdrop-blur-sm p-4 md:p-8rounded-xl border-2 border-white/20 hover:border-[#FCC312] hover:bg-white/15 transition-all"
+                            href="/lead-generation-services" data-discover="true">
+                            <div class="flex items-start gap-6">
+                                <div
+                                    class="w-16 h-16 bg-[#FCC312] rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-trending-up w-8 h-8 text-[#083459]">
+                                        <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                                        <polyline points="16 7 22 7 22 13"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <h4 class="text-xl font-bold mb-3 flex items-center gap-3">Lead Generation Services
+                                    </h4>
+                                    <p class="text-white/80 mb-4">Fill your outbound queue with qualified leads. Our
+                                        contact center teams can immediately follow up and convert.</p>
+                                    <span class="text-[#FCC312] font-semibold flex items-center gap-2 group">
+                                        Explore this service
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-arrow-right w-5 h-5 group-hover:translate-x-2 transition-transform">
+                                            <path d="M5 12h14"></path>
+                                            <path d="m12 5 7 7-7 7"></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div style="opacity: 1; transform: none;">
+                        <a class="block bg-white/10 backdrop-blur-sm p-4 md:p-8rounded-xl border-2 border-white/20 hover:border-[#FCC312] hover:bg-white/15 transition-all"
+                            href="/credit-repair-outsourcing" data-discover="true">
+                            <div class="flex items-start gap-6">
+                                <div
+                                    class="w-16 h-16 bg-[#FCC312] rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-credit-card w-8 h-8 text-[#083459]">
+                                        <rect width="20" height="14" x="2" y="5" rx="2"></rect>
+                                        <line x1="2" x2="22" y1="10" y2="10"></line>
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <h4 class="text-xl font-bold mb-3 flex items-center gap-3">Credit Repair Outsourcing
+                                    </h4>
+                                    <p class="text-white/80 mb-4">Credit repair companies need call centers for client
+                                        consultations, payment processing, and retention calls.</p>
+                                    <span class="text-[#FCC312] font-semibold flex items-center gap-2 group">
+                                        Explore this service
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-arrow-right w-5 h-5 group-hover:translate-x-2 transition-transform">
+                                            <path d="M5 12h14"></path>
+                                            <path d="m12 5 7 7-7 7"></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div style="opacity: 1; transform: none;">
+                        <a class="block bg-white/10 backdrop-blur-sm p-4 md:p-8rounded-xl border-2 border-white/20 hover:border-[#FCC312] hover:bg-white/15 transition-all"
+                            href="/property-management-outsourcing" data-discover="true">
+                            <div class="flex items-start gap-6">
+                                <div
+                                    class="w-16 h-16 bg-[#FCC312] rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-building2 lucide-building-2 w-8 h-8 text-[#083459]">
+                                        <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path>
+                                        <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path>
+                                        <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path>
+                                        <path d="M10 6h4"></path>
+                                        <path d="M10 10h4"></path>
+                                        <path d="M10 14h4"></path>
+                                        <path d="M10 18h4"></path>
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <h4 class="text-xl font-bold mb-3 flex items-center gap-3">Property Management
+                                        Outsourcing</h4>
+                                    <p class="text-white/80 mb-4">24/7 tenant support and emergency maintenance calls.
+                                        Essential for property managers with large portfolios.</p>
+                                    <span class="text-[#FCC312] font-semibold flex items-center gap-2 group">
+                                        Explore this service
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-arrow-right w-5 h-5 group-hover:translate-x-2 transition-transform">
+                                            <path d="M5 12h14"></path>
+                                            <path d="m12 5 7 7-7 7"></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end -->
+        <!-- start  -->
+        <div class="my-16 md:my-24" style="opacity: 1; transform: none;">
+            <div
+                class="bg-gradient-to-r from-[#E2F4FB] to-[#FCC312]/20 border-2 border-[#0BA5DF]/20 rounded-2xl p-4 md:p-8md:p-12 text-center">
+                <h3 class="text-2xl md:text-3xl font-bold text-[#083459] mb-4">Ready to Delegate and Scale?</h3>
+                <p class="text-[#455A64] text-lg mb-6 max-w-2xl mx-auto">Join 500+ businesses that have hired VAs
+                    through Ocean Clicks. Start with a free 5-hour trial.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a class="inline-flex items-center justify-center gap-2 bg-[#0BA5DF] text-white px-8 py-4 rounded-lg font-bold hover:bg-[#0991c9] transition-all shadow-lg"
+                        href="contact.html" data-discover="true">
+                        Start Free Trial
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-arrow-right w-5 h-5">
+                            <path d="M5 12h14"></path>
+                            <path d="m12 5 7 7-7 7"></path>
+                        </svg>
+                    </a>
+                    <a class="inline-flex items-center justify-center gap-2 bg-white text-[#083459] px-8 py-4 rounded-lg font-bold hover:bg-gray-50 transition-all shadow-lg border-2 border-[#0BA5DF]/20"
+                        href="contact.html" data-discover="true">Schedule Consultation</a>
+                </div>
+            </div>
+        </div>
+        <!-- end -->
+
+    </main>
+
+    <!-- start Footer -->
+    <footer class="bg-[#083459] text-white">
+        <div class="max-w-[1440px] mx-auto px-4 md:px-8 py-12 md:py-16">
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-12 mb-8 md:mb-12">
+                <div class="md:col-span-3 lg:col-span-2"><img src="./assest/img/logo/logo.avif" alt="Ocean Clicks"
+                        class="h-8 md:h-10 mb-4 md:mb-6 brightness-0 invert">
+                    <p class="text-[#E2F4FB] mb-4 md:mb-6 leading-relaxed text-sm md:text-base">Specialized
+                        outsourcing
+                        solutions for regulated industries. We help law
+                        firms, credit repair companies, property
+                        managers, and B2B organizations scale
+                        efficiently.</p>
+                    <div class="flex gap-4"><a href="#linkedin"
+                            class="w-10 h-10 bg-[#0BA5DF] rounded-full flex items-center justify-center hover:bg-[#0991c9] transition-colors"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-linkedin w-5 h-5">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect width="4" height="12" x="2" y="9"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg></a><a href="#twitter"
+                            class="w-10 h-10 bg-[#0BA5DF] rounded-full flex items-center justify-center hover:bg-[#0991c9] transition-colors"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-twitter w-5 h-5">
+                                <path
+                                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                                </path>
+                            </svg></a><a href="#facebook"
+                            class="w-10 h-10 bg-[#0BA5DF] rounded-full flex items-center justify-center hover:bg-[#0991c9] transition-colors"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-facebook w-5 h-5">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg></a></div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-sm md:text-lg">Services</h4>
+                    <ul class="space-y-3 text-sm md:text-base">
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors"
+                                href="/credit-repair-outsourcing" data-discover="true">Credit Repair
+                                Outsourcing</a>
+                        </li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors"
+                                href="/paralegal-legal-support-outsourcing" data-discover="true">Legal Process
+                                Outsourcing</a></li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors"
+                                href="/hire-virtual-assistants.html" data-discover="true">Virtual
+                                Assistants</a></li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors"
+                                href="/property-management-outsourcing" data-discover="true">Property Management</a>
+                        </li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors"
+                                href="contact.html-center-outsourcing" data-discover="true">Contact Center</a></li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors"
+                                href="/b2b-lead-generation-services" data-discover="true">Lead
+                                Generation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-sm md:text-lg">Company</h4>
+                    <ul class="space-y-3 text-sm md:text-base">
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors" href="/about"
+                                data-discover="true">About Us</a></li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors" href="/careers"
+                                data-discover="true">Careers</a></li>
+                        <li><a class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors" href="/resources"
+                                data-discover="true">Resources</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-sm md:text-lg">Contact</h4>
+                    <ul class="space-y-4 text-sm md:text-base">
+                        <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-phone w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-1">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                            <div>
+                                <p class="text-[#E2F4FB]">US: +1 (631)
+                                    212-1341</p>
+                                <p class="text-[#E2F4FB]">India: +91 90853
+                                    16752</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-mail w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-1">
+                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg>
+                            <div>
+                                <p class="text-[#E2F4FB]">alex@ocean-clicks.com</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-map-pin w-5 h-5 text-[#0BA5DF] flex-shrink-0 mt-1">
+                                <path
+                                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                </path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <div>
+                                <p class="text-[#E2F4FB] text-sm">US: 66 W
+                                    Flagler St #6471<br>Miami, FL 33130</p>
+                                <p class="text-[#E2F4FB] text-sm mt-2">India:
+                                    6th Floor, 61-b, Sarkhej - Gandhinagar
+                                    Hwy<br>Ahmedabad, Gujarat 380054</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="border-t border-[#0BA5DF]/30 pt-6 md:pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-[#E2F4FB] text-xs md:text-sm text-center md:text-left">©
+                    2026 Ocean Clicks. All rights
+                    reserved.</p>
+                <div class="flex flex-wrap justify-center gap-4 md:gap-6 text-xs md:text-sm"><a
+                        class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors" href="/privacy-policy"
+                        data-discover="true">Privacy Policy</a><a
+                        class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors" href="/terms-of-service"
+                        data-discover="true">Terms of Service</a><a
+                        class="text-[#E2F4FB] hover:text-[#0BA5DF] transition-colors" href="/policies-compliance"
+                        data-discover="true">Policies &amp;
+                        Compliance</a></div>
+            </div>
+        </div>
+    </footer>
+    <!-- end Footer -->
+
+   
+
+    <script src="./assest/js/dev-script.js"></script>
+</body>
+
+</html>
